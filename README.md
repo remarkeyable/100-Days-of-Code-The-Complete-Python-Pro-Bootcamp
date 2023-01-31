@@ -8,7 +8,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>Beginner 🌱</h2>
 
- ✔️[Day 1 - Working with Variables in Python to Manage Data](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%201)
+ ✔️ [Day 1 - Working with Variables in Python to Manage Data](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%201)
  <em><ul>
  <li>Variables in Python</li>
  <li>String Manipulation</li>
@@ -16,17 +16,17 @@ I will overcome difficulties & achieve my goals ~</em>
  <li>Variable Naming Rules</li>
  <li>Mathematical Operations in Python</li></ul></em>
 
-✔️ <strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
+✔️ [Day 2 - Understanding Data Types and How to Manipulate Strings](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%202)
 <em><ul>
 <li>DataTypes</li>
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li></ul></em>
 
-✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
+✔️ [Day 3 - Control Flow and Logical Operators](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%203)
 <em><ul>
 <li>Logical Operators</li></ul></em>
  
-✔️ <strong>Day 4 - Randomisation and Python Lists</strong>
+✔️ [Day 4 - Randomisation and Python Lists](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%204)
 <em><ul>
 <li>Randomisation</li>
 <li>Error Handling</li>

@@ -4,6 +4,8 @@
 I will keep myself on track, even though some days I might feel tired or frustrated. I will keep myself accountable, even though I have lots of things to do.
 I will overcome difficulties & achieve my goals ~</em>
 
+// compiling my files here didn't actually cross my mind until day 22, so real time update actually started at day 22 //
+
 <h2>Beginner 🌱</h2>
 
  ✔️ <strong>Day 1 - Working with Variables in Python to Manage Data</strong>

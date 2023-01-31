@@ -72,10 +72,12 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ [Day 13 - Debugging: How to Find and Fix Errors in your Code](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2013)
 <em><ul>
 <li>Slicing the problem into chunks</li><em></ul>
+ <li>Debugging Techniques</li><em></ul>
  
 ✔️ [Day 14 - Higher Lower Game Project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2014)
 <em><ul>
-<li>Debugging Techniques</li><em></ul>
+ <li>Applied Debugging<em></ul>
+
 
 
 

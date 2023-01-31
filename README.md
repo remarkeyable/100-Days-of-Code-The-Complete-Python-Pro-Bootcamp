@@ -3,7 +3,7 @@
 
 <h2>#Beginner 🌱</h2>
 
-Variables in Python*
+*Variables in Python*
 
 
 

@@ -1,8 +1,8 @@
 # 100-Days-of-Code-The-Complete-Python-Pro-Bootcamp
 ~ Decided to accept this challenge to improve my programmming skills ~
 
-<h2>#Beginner 🌱</h2>
- Day 1 - Working with Variables in Python to Manage Data
+<h2>Beginner 🌱</h2>
+ **Day 1 - Working with Variables in Python to Manage Data**
 <li>Variables in Python</li>
 <li>String Manipulation</li>
 <li>Input and Print Functions</li>

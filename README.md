@@ -1,5 +1,6 @@
 # 100-Days-of-Code-The-Complete-Python-Pro-Bootcamp
-~ Decided to accept this challenge to improve my programmming skills ~
+~ Hi! I'm Ryn, I am committed to completing the 100 days of code Python challenge. I hereby pledge to code and practice Python programming for 100 days or more.
+~
 
 <h2>Beginner 🌱</h2>
 

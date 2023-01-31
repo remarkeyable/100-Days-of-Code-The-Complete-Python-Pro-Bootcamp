@@ -15,11 +15,10 @@ I will overcome difficulties & achieve my goals ~</em>
  <li>Mathematical Operations in Python</ul></em>
 
 ✔️ <strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
-<ul>
+<em><ul>
 <li>DataTypes</li>
 <li>Converting types</li>
-<li>Conditionals IF/ELIF/ELSE</li>
-</ul>
+<li>Conditionals IF/ELIF/ELSE</li></ul></em>
 ✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
 <ul><br>
 <li>Logical Operators</li>

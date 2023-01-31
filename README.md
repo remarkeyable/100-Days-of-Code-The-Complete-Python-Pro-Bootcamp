@@ -25,22 +25,24 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Logical Operators</li></ul></em>
  
 ✔️ <strong>Day 4 - Randomisation and Python Lists</strong>
- <em><ul>
+<em><ul>
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li></ul></em>
+
 ✔️ <strong>Day 5 -Python Loops</strong>
 <em><ul>
 <li>For Loops</li></ul></em>
+
 ✔️ <strong>Day 6 - Python Functions & Karel</strong>
 <em><ul>
 <li>While Loops</li>
-<li>Code blocks and Indentation</li>
-</ul><br>
+<li>Code blocks and Indentation</li><em><ul>
+ 
 ✔️ <strong>Day 7 - Beginner - Hangman</strong>
 <em><ul>
-<li>Flowchart Programming</li>
-</ul><br>
+<li>Flowchart Programming</li><em><ul>
+ 
 ✔️ <strong>Day 8 -Function Parameters & Caesar Cipher</strong>
 <em><ul>
 <li>Positional and Keyword Arguments</li>

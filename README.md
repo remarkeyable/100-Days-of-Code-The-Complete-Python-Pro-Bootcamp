@@ -38,7 +38,7 @@ I will overcome difficulties & achieve my goals ~</em>
 <br>
 <li>While Loops</li>
 <li>Code blocks and Indentation</li>
- <br>
+<br>
 ✔️ <strong>Day 7 - Beginner - Hangman</strong>
 <br>
 <li>Flowchart Programming</li>

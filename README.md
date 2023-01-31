@@ -20,6 +20,7 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Conditionals IF/ELIF/ELSE</li>
 <br></ul>
 ✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
+<br>
 <ul>
 <li>Logical Operators</li>
 </ul>

@@ -3,6 +3,7 @@
 
 <h2>Beginner 🌱</h2>
  <strong>Day 1 - Working with Variables in Python to Manage Data</strong>
+
 <li>Variables in Python</li>
 <li>String Manipulation</li>
 <li>Input and Print Functions</li>
@@ -10,12 +11,11 @@
 <li>Mathematical Operations in Python
 
 
+<strong>Day 2 -Understanding Data Types and How to Manipulate Strings</strong>
 
-Day 2 -Understanding Data Types and How to Manipulate Strings
-
-DataTypes
-Converting types
-Conditionals IF/ELIF/ELSE
+<li>DataTypes</li>
+<li>Converting types</li>
+<li>Conditionals IF/ELIF/ELSE</li>
 
 
 

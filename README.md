@@ -6,7 +6,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 // compiling my files here didn't actually cross my mind until day 22 so real time update actually started at day 22 //
 
-<h1> Technologies and tools to be used 👨🏻‍💻 </h1>
+<h1>🦾Technologies and tools to be used  </h1>
 <li>Python 3 - the latest version of Python</li>
 <li>PyCharm, Jupyter Notebook, Google Colab</li>
 <li>Python Scripting and Automation</li>
@@ -47,7 +47,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 
 
-<h2>Beginner 🌱</h2>
+<h2>🌱 Beginner</h2>
 
  ✔️ [Day 1 - Working with Variables in Python to Manage Data](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%201)
  <em><ul>
@@ -119,7 +119,7 @@ I will overcome difficulties & achieve my goals ~</em>
 <em><ul>
  <li>Applied Debugging Techniques</li></em></ul>
  
- <h2>Intermediate 🌿 </h2>
+ <h2>🌿 Intermediate</h2>
 
 ✔️ [Day 15 - Local Development Environment Setup & the Coffee Machine](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2015)
  <em><ul>

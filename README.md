@@ -87,13 +87,19 @@ I will overcome difficulties & achieve my goals ~</em>
  
 ✔️ [Day 17 - The Quiz Project & the Benefits of OOP](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2017)
 <em><ul>
-<li>Creating Classes in Python</li></ul>
+<li>Creating Classes in Python</li>
 <li>Python Methods/li></ul>
  
 ✔️ [Day 18 - Turtle & the Graphical User Interface (GUI)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2018)
 <em><ul>
-<li>Using External Python Modules/Import/li></ul>
-<li>Getting / Setting Attributes/li></ul>
+<li>Using External Python Modules/Import/li>
+<li>Getting / Setting Attributes</li></ul>
+<li>Python Turtle</li></ul> 
+ 
+✔️ [Day 19 - Instances, State and Higher Order Functions](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2019)
+<em><ul>
+<li>Python Instances and State</li>
+<li>Coordinates</li>
  
  
  

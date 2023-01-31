@@ -23,7 +23,6 @@ Day 3 - Control Flow and Logical Operators
 <li>Logical Operators</li>
 <li>Randomisation</li>
 
-
 Day 4 - Randomisation and Python Lists
 
 <li>Error Handling</li>

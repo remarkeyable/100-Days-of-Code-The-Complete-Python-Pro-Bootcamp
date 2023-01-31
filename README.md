@@ -54,26 +54,26 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Python Dictionaries and Lists</li>
 <li>Nested Collections</li><em></ul>
  
-✔️ <strong>Day 10 - Functions with Outputs</strong>
+✔️ [Day 10 - Functions with Outputs](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2010)
 <em><ul>
 <li>Returning Functions</li>
 <li> Return vs. Print </li>
 <li>Doc strings</li>
 <li>Doc Strings vs. Comments</li><em></ul>
  
-✔️ <strong>Day 11 - The Blackjack Capstone Project</strong>
+✔️ [Day 11 - The Blackjack Capstone Project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2011)
 <em><ul>
 <li> Refactoring and calling procedures </li><em></ul>
  
-✔️ <strong>Day 12  - Scope & Number Guessing Game</strong>
+✔️ [Day 12  - Scope & Number Guessing Game](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2012)
 <em><ul>
 <li>Scope and Local/Global Variables</li><em></ul>
  
-✔️ <strong>Day 13 - Debugging: How to Find and Fix Errors in your Code</strong>
+✔️ [Day 13 - Debugging: How to Find and Fix Errors in your Code](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2013)
 <em><ul>
 <li>Slicing the problem into chunks</li><em></ul>
  
-✔️ <strong>Day 14 - Higher Lower Game Project</strong>
+✔️ [Day 14 - Higher Lower Game Project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2014)
 <em><ul>
 <li>Debugging Techniques</li><em></ul>
 

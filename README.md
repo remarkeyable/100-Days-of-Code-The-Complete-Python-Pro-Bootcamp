@@ -12,7 +12,7 @@
 
 
 <strong>Day 2 -Understanding Data Types and How to Manipulate Strings</strong>
-
+ 
 <li>DataTypes</li>
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li>

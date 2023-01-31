@@ -14,17 +14,19 @@ I will overcome difficulties & achieve my goals ~</em>
  <li>Mathematical Operations in Python </ul>
 
 ✔️ <strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
-  <ul>
+ <ul>
 <li>DataTypes</li>
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li>
 <br></ul>
 ✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
- <ul>
+<ul>
 <li>Logical Operators</li>
-<br></ul>
+<br>
+</ul>
 ✔️ <strong>Day 4 - Randomisation and Python Lists<strong>   
-<br> <ul>
+<br> 
+<ul>
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li>

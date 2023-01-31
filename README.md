@@ -26,8 +26,7 @@ I will overcome difficulties & achieve my goals ~</em>
 </ul>
 <br>
 ✔️ <strong>Day 4 - Randomisation and Python Lists<strong>   
-<br> 
-<ul>
+<br> <ul>
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li>

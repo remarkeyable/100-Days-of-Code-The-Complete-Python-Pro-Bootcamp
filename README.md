@@ -103,6 +103,7 @@ I will overcome difficulties & achieve my goals ~</em>
  
 ✔️ [Day 20 - Build the Snake Game Part 1: Animation & Coordinates](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2020)
 <em><ul>
+<li>Game Development with Python and OOP</li>
 <li>Coordinates</li></ul>
  
 ✔️ [Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2021)

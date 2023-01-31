@@ -30,27 +30,29 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li>
-<br>
- </ul>
-✔️ <strong>Day 5 -Python Loops</strong>
- <br> <ul>
-<li>For Loops</li>
-<br>
 </ul>
-✔️ <strong>Day 6 - Python Functions & Karel</strong>
-<br> 
+<br>
+✔️ <strong>Day 5 -Python Loops</strong>
 <ul>
+<br>
+<li>For Loops</li>
+</ul>
+<br> 
+✔️ <strong>Day 6 - Python Functions & Karel</strong>
+<ul>
+<br> 
 <li>While Loops</li>
 <li>Code blocks and Indentation</li>
-<br>
 </ul>
+<br>
 ✔️ <strong>Day 7 - Beginner - Hangman</strong>
 <br>
 <ul>
 <li>Flowchart Programming</li>
-<br>
 </ul>
+<br>
 <strong>Day 8 -Function Parameters & Caesar Cipher</strong>
+<ul>
 <br>
 <li>Positional and Keyword Arguments</li>
 <br>

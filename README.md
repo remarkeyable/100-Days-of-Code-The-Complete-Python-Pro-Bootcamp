@@ -6,9 +6,10 @@
 
 <ul>Variables in Python
 <li>String Manipulation</li>
-Input and Print Functions
-Variable Naming Rules
-Mathematical Operations in Python</ul>
+<li>Input and Print Functions</li>
+<li>Variable Naming Rules</li>
+<li>Mathematical Operations in Python
+ </ul>
 
 
 Day 2 -Understanding Data Types and How to Manipulate Strings

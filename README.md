@@ -99,16 +99,16 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ [Day 19 - Instances, State and Higher Order Functions](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2019)
 <em><ul>
 <li>Python Instances and State</li>
-<li>Event Listenters</li>
+<li>Event Listenters</li></ul>
  
 ✔️ [Day 20 - Build the Snake Game Part 1: Animation & Coordinates](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2020)
 <em><ul>
-<li>Coordinates</li>
+<li>Coordinates</li></ul>
  
 ✔️ [Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2021)
 <em><ul>
 <li>Python Inheritance</li> 
-<li>Python Slice Function</li> 
+<li>Python Slice Function</li> </ul>
 
 
 

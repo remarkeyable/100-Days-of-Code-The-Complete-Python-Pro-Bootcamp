@@ -42,7 +42,7 @@ Day 7 - Beginner - Hangman
 
 Day 8 - Beginner - Function Parameters & Caesar Cipher
 
-
+<li>Positional and Keyword Arguments</li>
 
 Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction
 
@@ -52,15 +52,22 @@ Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction
 
 Day 10 - Beginner - Functions with Outputs
 
-<li>Multiple eturn Values</li>
+<li>Returning Functions</li>
+<li> Return vs. Print </li>
 <li>Doc strings</li>
+<li>Doc Strings vs. Comments</li>
 
 Day 11 - Beginner - The Blackjack Capstone Project
+
+<li> Refactoring and calling procedures </li>
+
 Day 12  - Beginner - Scope & Number Guessing Game
 
 <li>Scope and Local/Global Variables</li>
 
 Day 13 - Beginner - Debugging: How to Find and Fix Errors in your Code
+
+<li>Slicing the problem into chunks</li>
 
 Day 14 - Beginner - Higher Lower Game Project
 
@@ -71,14 +78,13 @@ Day 14 - Beginner - Higher Lower Game Project
 
 
 
-<li>Returning Functions</li>
 
-<li></li>
 
-Positional and Keyword Arguments
 
-Return vs. Print
-Doc Strings vs. Comments
+
+
+
+
 
 
 

@@ -2,6 +2,7 @@
 ~ Decided to accept this challenge to improve my programmming skills ~
 
 <h2>Beginner 🌱</h2>
+
  <strong>Day 1 - Working with Variables in Python to Manage Data</strong>
 
 <li>Variables in Python</li>

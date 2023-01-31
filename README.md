@@ -20,11 +20,9 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Conditionals IF/ELIF/ELSE</li>
 </ul>
 ✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
-<br>
-<ul>
+<br><ul>
 <li>Logical Operators</li>
-</ul>
-<br>
+</ul><br>
 ✔️ <strong>Day 4 - Randomisation and Python Lists<strong>   
 <br> <ul>
 <li>Randomisation</li>

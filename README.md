@@ -35,7 +35,6 @@ I will overcome difficulties & achieve my goals ~</em>
 </ul><br> 
 ✔️ <strong>Day 6 - Python Functions & Karel</strong>
 <ul><br>
-<br> 
 <li>While Loops</li>
 <li>Code blocks and Indentation</li>
 </ul><br>

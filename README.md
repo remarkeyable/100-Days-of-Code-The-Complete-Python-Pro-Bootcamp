@@ -76,6 +76,8 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ [Day 14 - Higher Lower Game Project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2014)
 <em><ul>
  <li>Applied Debugging Techniques</li><em></ul>
+ 
+ <h2>Intermediate 🌿 </h2>
 
 ✔️ [Day 15 - Local Development Environment Setup & the Coffee Machine](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2015)
  <em><ul>

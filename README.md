@@ -4,11 +4,11 @@
 <h2>#Beginner 🌱</h2>
  Day 1 - Working with Variables in Python to Manage Data
 
-Variables in Python
+<ul>Variables in Python
 String Manipulation
 Input and Print Functions
 Variable Naming Rules
-Mathematical Operations in Python
+Mathematical Operations in Python </ul>
 
 
 Day 2 -Understanding Data Types and How to Manipulate Strings

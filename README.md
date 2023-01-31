@@ -18,7 +18,7 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>DataTypes</li>
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li>
-<br></ul>
+</ul>
 ✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
 <br>
 <ul>

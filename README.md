@@ -17,59 +17,59 @@
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li>
 
-Day 3 - Control Flow and Logical Operators
+<strong>Day 3 - Control Flow and Logical Operators</strong>
 
 <li>Logical Operators</li>
 
-Day 4 - Randomisation and Python Lists
+<strong>Day 4 - Randomisation and Python Lists<strong>
 
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li>
 
-Day 5 -Python Loops
+<strong>Day 5 -Python Loops</strong>
 
 <li>For Loops</li>
 
-Day 6 - Python Functions & Karel
+<strong>Day 6 - Python Functions & Karel</strong>
 
 <li>While Loops</li>
 <li>Code blocks and Indentation</li>
 
-Day 7 - Beginner - Hangman
+<strong>Day 7 - Beginner - Hangman</strong>
 
 <li>Flowchart Programming</li>
 
-Day 8 - Beginner - Function Parameters & Caesar Cipher
+<strong>Day 8 -Function Parameters & Caesar Cipher</strong>
 
 <li>Positional and Keyword Arguments</li>
 
-Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction
+<strong>Day 9 - Dictionaries, Nesting and the Secret Auction</strong>
 
 <li>Python Dictionaries and Lists</li>
 <li>Nested Collections</li>
 
 
-Day 10 - Beginner - Functions with Outputs
+<strong>Day 10 - Functions with Outputs</strong>
 
 <li>Returning Functions</li>
 <li> Return vs. Print </li>
 <li>Doc strings</li>
 <li>Doc Strings vs. Comments</li>
 
-Day 11 - Beginner - The Blackjack Capstone Project
+<strong>Day 11 - The Blackjack Capstone Project</strong>
 
 <li> Refactoring and calling procedures </li>
 
-Day 12  - Beginner - Scope & Number Guessing Game
+<strong>Day 12  - Scope & Number Guessing Game</strong>
 
 <li>Scope and Local/Global Variables</li>
 
-Day 13 - Beginner - Debugging: How to Find and Fix Errors in your Code
+<strong>Day 13 - Debugging: How to Find and Fix Errors in your Code</strong>
 
 <li>Slicing the problem into chunks</li>
 
-Day 14 - Beginner - Higher Lower Game Project
+<strong>Day 14 - Higher Lower Game Project</strong>
 
 <li>Debugging Techniques</li>
 

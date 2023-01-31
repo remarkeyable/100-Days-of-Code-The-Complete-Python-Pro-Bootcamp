@@ -18,16 +18,16 @@
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li>
 
-
-
 Day 3 - Control Flow and Logical Operators
-Logical Operators
-Randomisation
+
+<li>Logical Operators</li>
+<li>Randomisation</li>
 
 
 Day 4 - Randomisation and Python Lists
-Error Handling
-Functions
+
+<li>Error Handling</li>
+<li>Functions</li>
 
 5
 For Loops

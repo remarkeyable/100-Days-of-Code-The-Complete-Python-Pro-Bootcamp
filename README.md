@@ -6,8 +6,8 @@ I will overcome difficulties & achieve my goals ~</em>
 
 // compiling my files here didn't actually cross my mind until day 22 so real time update actually started at day 22 //
 
-<h2> Technologies and tools to be used </h2>
-<ul>Python 3 - the latest version of Python</ul>
+<h1> Technologies and tools to be used </h1>
+<li>Python 3 - the latest version of Python</li>
 <ul>PyCharm, Jupyter Notebook, Google Colab</ul>
 <ul>Python Scripting and Automation</ul>
 <ul>Python Game Development</ul>

@@ -6,9 +6,8 @@ I will overcome difficulties & achieve my goals ~</em>
 
 // compiling my files here didn't actually cross my mind until day 22 so real time update actually started at day 22 //
 
-<h1> Tools & Technologies that will use </h1>
-<ul>
-Python 3 - the latest version of Python
+<h1> Technologies and tools to be used </h1>
+<ul>Python 3 - the latest version of Python</ul>
 PyCharm, Jupyter Notebook, Google Colab
 Python Scripting and Automation
 Python Game Development
@@ -43,7 +42,7 @@ SQLite
 PostgreSQL
 Authentication
 Web Design
-Deployment with GitHub Pages, Heroku and GUnicorn</ul>
+Deployment with GitHub Pages, Heroku and GUnicorn
 
 
 

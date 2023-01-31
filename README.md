@@ -93,13 +93,25 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ [Day 18 - Turtle & the Graphical User Interface (GUI)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2018)
 <em><ul>
 <li>Using External Python Modules/Import/li>
-<li>Getting / Setting Attributes</li></ul>
+<li>Getting / Setting Attributes</li>
 <li>Python Turtle</li></ul> 
  
 ✔️ [Day 19 - Instances, State and Higher Order Functions](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2019)
 <em><ul>
 <li>Python Instances and State</li>
+<li>Event Listenters</li>
+ 
+✔️ [Day 20 - Build the Snake Game Part 1: Animation & Coordinates](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2020)
+<em><ul>
 <li>Coordinates</li>
+ 
+✔️ [Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2021)
+<em><ul>
+<li>Python Inheritance</li> 
+<li>Python Slice Function</li> 
+
+
+
  
  
  

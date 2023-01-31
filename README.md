@@ -23,7 +23,7 @@ I will overcome difficulties & achieve my goals ~</em>
 <ul><br>
 <li>Logical Operators</li>
 </ul><br>
-✔️ <strong>Day 4 - Randomisation and Python Lists<strong>   
+✔️ <strong>Day 4 - Randomisation and Python Lists</strong>
 <ul><br>
 <li>Randomisation</li>
 <li>Error Handling</li>

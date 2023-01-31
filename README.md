@@ -12,7 +12,7 @@
 <li>Mathematical Operations in Python
 
 
-<strong>Day 2 -Understanding Data Types and How to Manipulate Strings</strong>
+<strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
  
 <li>DataTypes</li>
 <li>Converting types</li>

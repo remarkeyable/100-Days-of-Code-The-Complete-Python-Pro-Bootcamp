@@ -72,9 +72,9 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Slicing the problem into chunks</li>
 </ul>
 ✔️ <strong>Day 14 - Higher Lower Game Project</strong>
-<ul><br>
+<ul>
 <li>Debugging Techniques</li>
-</ul><br>
+</ul>
 
 
 

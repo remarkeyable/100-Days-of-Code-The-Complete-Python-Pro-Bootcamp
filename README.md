@@ -55,10 +55,11 @@ I will overcome difficulties & achieve my goals ~</em>
  <li>String Manipulation</li>
  <li>Input and Print Functions</li>
  <li>Variable Naming Rules</li>
- <li>Mathematical Operations in Python</li></ul></em>
+
 
 ✔️ [Day 2 - Understanding Data Types and How to Manipulate Strings](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%202)
 <em><ul>
+<li>Mathematical Operations in Python</li></ul></em>
 <li>DataTypes</li>
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li></ul></em>

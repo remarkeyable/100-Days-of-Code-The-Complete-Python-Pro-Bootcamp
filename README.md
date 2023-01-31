@@ -8,11 +8,11 @@ I will overcome difficulties & achieve my goals ~</em>
 
  ✔️ <strong>Day 1 - Working with Variables in Python to Manage Data</strong>
 
-    <li>Variables in Python</li>
-    <li>String Manipulation</li>
-    <li>Input and Print Functions</li>
-    <li>Variable Naming Rules</li>
-    <li>Mathematical Operations in Python 
+   <li>Variables in Python</li>
+   <li>String Manipulation</li>
+   <li>Input and Print Functions</li>
+   <li>Variable Naming Rules</li>
+   <li>Mathematical Operations in Python 
 
 ✔️ <strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
  

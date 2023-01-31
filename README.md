@@ -5,10 +5,10 @@
  Day 1 - Working with Variables in Python to Manage Data
 
 <ul>Variables in Python
-String Manipulation
+<li>String Manipulation</li>
 Input and Print Functions
 Variable Naming Rules
-Mathematical Operations in Python </ul>
+Mathematical Operations in Python</ul>
 
 
 Day 2 -Understanding Data Types and How to Manipulate Strings

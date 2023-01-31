@@ -7,13 +7,13 @@ I will overcome difficulties & achieve my goals ~</em>
 <h2>Beginner 🌱</h2>
 
  ✔️ <strong>Day 1 - Working with Variables in Python to Manage Data</strong>
-<ol>
+<ul>
  <li>Variables in Python</li>
  <li>String Manipulation</li>
  <li>Input and Print Functions</li>
  <li>Variable Naming Rules</li>
  <li>Mathematical Operations in Python 
- </ol>
+ </ul>
 
 ✔️ <strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
  

@@ -8,41 +8,41 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h1> Technologies and tools to be used </h1>
 <li>Python 3 - the latest version of Python</li>
-<ul>PyCharm, Jupyter Notebook, Google Colab</ul>
-<ul>Python Scripting and Automation</ul>
-<ul>Python Game Development</ul>
-<ul>Web Scraping</ul>
-<ul>Beautiful Soup</ul>
-<ul>Selenium Web Driver</ul>
-<ul>Request</ul>
-<ul>WTForms</ul>
-<ul>Data Science</ul>
-<ul>Pandas</ul>
-<ul>NumPy</ul>
-<ul>Matplotlib</ul>
-<ul>Plotly</ul>
-<ul>Scikit learn</ul>
-<ul>Seaborn</ul>
-<ul>Turtle</ul>
-<ul>Python GUI Desktop App Development</ul>
-<ul>Tkinter</ul>
-<ul>Front-End Web Development</ul>
-<ul>HTML 5</ul>
-<ul>CSS 3</ul>
-<ul>Bootstrap 4</ul>
-<ul>Bash Command Line</ul>
-<ul>Git, GitHub and Version Control</ul>
-<ul>Backend Web Development</ul>
-<ul>Flask</ul>
-<ul>REST</ul>
-<ul>APIs</ul>
-<ul>Databases</ul>
-<ul>SQL</ul>
-<ul>SQLite</ul>
-<ul>PostgreSQL</ul>
-<ul>Authentication</ul>
-<ul>Web Design</ul>
-<ul>Deployment with GitHub Pages, Heroku and GUnicorn</ul>
+<li>PyCharm, Jupyter Notebook, Google Colab</li>
+<li>Python Scripting and Automation</li>
+<li>Python Game Development</li>
+<li>Web Scraping</li>
+<li>Beautiful Soup</li>
+<li>Selenium Web Driver</li>
+<li>Request</li>
+<li>WTForms</li>
+<li>Data Science</li>
+<li>Pandas</li>
+<li>NumPy</li>
+<li>Matplotlib</li>
+<li>Plotly</li>
+<li>Scikit learn</li>
+<li>Seaborn</li>
+<li>Turtle</li>
+<li>Python GUI Desktop App Development</li>
+<li>Tkinter</li>
+<li>Front-End Web Development</li>
+<li>HTML 5</li>
+<li>CSS 3</li>
+<li>Bootstrap 4</li>
+<li>Bash Command Line</li>
+<li>Git, GitHub and Version Control</li>
+<li>Backend Web Development</li>
+<li>Flask</li>
+<li>REST</li>
+<li>APIs</li>
+<li>Databases</li>
+<li>SQL</li>
+<li>SQLite</li>
+<li>PostgreSQL</li>
+<li>Authentication</li>
+<li>Web Design</li>
+<li>Deployment with GitHub Pages, Heroku and GUnicorn</li>
 
 
 

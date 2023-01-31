@@ -8,41 +8,41 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h1> Technologies and tools to be used </h1>
 <ul>Python 3 - the latest version of Python</ul>
-PyCharm, Jupyter Notebook, Google Colab
-Python Scripting and Automation
-Python Game Development
-Web Scraping
-Beautiful Soup
-Selenium Web Driver
-Request
-WTForms
-Data Science
-Pandas
-NumPy
-Matplotlib
-Plotly
-Scikit learn
-Seaborn
-Turtle
-Python GUI Desktop App Development
-Tkinter
-Front-End Web Development
-HTML 5
-CSS 3
-Bootstrap 4
-Bash Command Line
-Git, GitHub and Version Control
-Backend Web Development
-Flask
-REST
-APIs
-Databases
-SQL
-SQLite
-PostgreSQL
-Authentication
-Web Design
-Deployment with GitHub Pages, Heroku and GUnicorn
+<ul>PyCharm, Jupyter Notebook, Google Colab</ul>
+<ul>Python Scripting and Automation</ul>
+<ul>Python Game Development</ul>
+<ul>Web Scraping</ul>
+<ul>Beautiful Soup</ul>
+<ul>Selenium Web Driver</ul>
+<ul>Request</ul>
+<ul>WTForms</ul>
+<ul>Data Science</ul>
+<ul>Pandas</ul>
+<ul>NumPy</ul>
+<ul>Matplotlib</ul>
+<ul>Plotly</ul>
+<ul>Scikit learn</ul>
+<ul>Seaborn</ul>
+<ul>Turtle</ul>
+<ul>Python GUI Desktop App Development</ul>
+<ul>Tkinter</ul>
+<ul>Front-End Web Development</ul>
+<ul>HTML 5</ul>
+<ul>CSS 3</ul>
+<ul>Bootstrap 4</ul>
+<ul>Bash Command Line</ul>
+<ul>Git, GitHub and Version Control</ul>
+<ul>Backend Web Development</ul>
+<ul>Flask</ul>
+<ul>REST</ul>
+<ul>APIs</ul>
+<ul>Databases</ul>
+<ul>SQL</ul>
+<ul>SQLite</ul>
+<ul>PostgreSQL</ul>
+<ul>Authentication</ul>
+<ul>Web Design</ul>
+<ul>Deployment with GitHub Pages, Heroku and GUnicorn</ul>
 
 
 

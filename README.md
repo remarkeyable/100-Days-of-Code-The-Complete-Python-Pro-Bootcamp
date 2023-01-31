@@ -12,7 +12,7 @@ I will overcome difficulties & achieve my goals ~</em>
  <li>String Manipulation</li>
  <li>Input and Print Functions</li>
  <li>Variable Naming Rules</li>
- <li>Mathematical Operations in Python</ul></em>
+ <li>Mathematical Operations in Python</li></ul></em>
 
 ✔️ <strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
 <em><ul>
@@ -22,11 +22,10 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
 <em><ul>
-<li>Logical Operators</li>
-</ul><br>
+<li>Logical Operators</li></ul></em>
  
 ✔️ <strong>Day 4 - Randomisation and Python Lists</strong>
-<ul><br>
+ <em><ul>
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li>

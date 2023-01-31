@@ -14,66 +14,66 @@ I will overcome difficulties & achieve my goals ~</em>
  <li>Mathematical Operations in Python </ul>
 
 ✔️ <strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
- 
+  <ul>
 <li>DataTypes</li>
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li>
-<br>
+<br></ul>
 ✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
-
+ <ul>
 <li>Logical Operators</li>
-<br>
+<br></ul>
 ✔️ <strong>Day 4 - Randomisation and Python Lists<strong>   
-<br>
+<br> <ul>
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li>
-<br>
+<br></ul>
 ✔️ <strong>Day 5 -Python Loops</strong>
- <br>
+ <br> <ul>
 <li>For Loops</li>
-<br>
+<br></ul>
 ✔️ <strong>Day 6 - Python Functions & Karel</strong>
-<br>
+<br> <ul>
 <li>While Loops</li>
 <li>Code blocks and Indentation</li>
-<br>
+<br></ul>
 ✔️ <strong>Day 7 - Beginner - Hangman</strong>
-<br>
+<br> <ul>
 <li>Flowchart Programming</li>
-<br>
+<br></ul>
 <strong>Day 8 -Function Parameters & Caesar Cipher</strong>
 <br>
 <li>Positional and Keyword Arguments</li>
- <br>
+ <br></ul>
 ✔️ <strong>Day 9 - Dictionaries, Nesting and the Secret Auction</strong>
-
+ <ul>
 <li>Python Dictionaries and Lists</li>
 <li>Nested Collections</li>
-<br>
+<br></ul>
 ✔️ <strong>Day 10 - Functions with Outputs</strong>
-<br>
+<br> <ul>
 <li>Returning Functions</li>
 <li> Return vs. Print </li>
 <li>Doc strings</li>
 <li>Doc Strings vs. Comments</li>
-<br>
+<br></ul>
 ✔️ <strong>Day 11 - The Blackjack Capstone Project</strong>
-<br>
+<br> <ul>
 <li> Refactoring and calling procedures </li>
-<br>
+<br></ul>
 ✔️ <strong>Day 12  - Scope & Number Guessing Game</strong>
-<br>
+<br> <ul>
 <li>Scope and Local/Global Variables</li>
- <br>
+ <br></ul>
 ✔️ <strong>Day 13 - Debugging: How to Find and Fix Errors in your Code</strong>
-<br>
+<br> <ul>
 <li>Slicing the problem into chunks</li>
- <br>
+ <br></ul>
 ✔️ <strong>Day 14 - Higher Lower Game Project</strong>
-<br>
+<br> <ul>
 <li>Debugging Techniques</li>
-
+</ul>
 
 
 

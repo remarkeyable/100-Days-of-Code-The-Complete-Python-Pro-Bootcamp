@@ -1,2 +1,7 @@
 # 100-Days-of-Code-The-Complete-Python-Pro-Bootcamp
-dasdsadsad
+Decided to accept this challenge to improve my programmming skils.
+
+
+
+
+

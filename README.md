@@ -43,7 +43,7 @@ I will overcome difficulties & achieve my goals ~</em>
 <ul><br>
 <li>Flowchart Programming</li>
 </ul><br>
-<strong>Day 8 -Function Parameters & Caesar Cipher</strong>
+✔️ <strong>Day 8 -Function Parameters & Caesar Cipher</strong>
 <ul><br>
 <li>Positional and Keyword Arguments</li>
 </ul><br>

@@ -35,10 +35,11 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ [Day 5 -Python Loops](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%205)
 <em><ul>
 <li>For Loops</li></ul></em>
+<li>While Loops</li>
 
 ✔️ [Day 6 - Python Functions & Karel](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%206)
 <em><ul>
-<li>While Loops</li>
+ 
 <li>Code blocks and Indentation</li></em></ul>
  
 ✔️ [Day 7 - Beginner - Hangman](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%207)

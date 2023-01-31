@@ -28,16 +28,16 @@ choice1 = input("Left or Right? ").lower()
 if choice1 == "left":
   ch_2 = input("Swim or Wait? ").lower()
   if ch_2 == "wait":
-   ch_3 = input("Which door? Red, Blue, or Yellow? ").lower()
-   if ch_3 == "yellow":
+    ch_3 = input("Which door? Red, Blue, or Yellow? ").lower()
+    if ch_3 == "yellow":
       print("You win!") 
-   elif ch_3 == "blue":
-    print("Eaten by beast, game over")
-   elif ch_3 == "red":
-    print("Burned by fire, Game over")
-   else:
-    print("You lose.")
+    if ch_3 == "blue":
+      print("Eaten by beast, game over")
+    if ch_3 == "red":
+      print("Burned by fire, Game over")
   else:
-    print("Game over")  
+    print("Game over!")    
 else:
   print("Game over!")
+  
+  

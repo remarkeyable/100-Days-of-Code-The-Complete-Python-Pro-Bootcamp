@@ -25,11 +25,11 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Logical Operators</li>
 <br>
 ✔️ <strong>Day 4 - Randomisation and Python Lists<strong>   
- <br>
+<br>
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li>
- <br>****
+<br>
 ✔️ <strong>Day 5 -Python Loops</strong>
  <br>
 <li>For Loops</li>

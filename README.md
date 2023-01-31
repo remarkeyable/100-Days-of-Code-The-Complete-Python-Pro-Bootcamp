@@ -45,11 +45,11 @@ I will overcome difficulties & achieve my goals ~</em>
 <em><ul>
 <li>Flowchart Programming</li><em></ul>
  
-✔️ <strong>Day 8 -Function Parameters & Caesar Cipher</strong>
+✔️ [Day 8 -Function Parameters & Caesar Cipher](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%208)
 <em><ul>
 <li>Positional and Keyword Arguments</li><em></ul>
  
-✔️ <strong>Day 9 - Dictionaries, Nesting and the Secret Auction</strong>
+✔️ [Day 9 - Dictionaries, Nesting and the Secret Auction](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%209)
 <em><ul>
 <li>Python Dictionaries and Lists</li>
 <li>Nested Collections</li><em></ul>

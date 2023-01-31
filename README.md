@@ -21,7 +21,6 @@ Day 3 - Control Flow and Logical Operators
 
 <li>Logical Operators</li>
 
-
 Day 4 - Randomisation and Python Lists
 
 <li>Randomisation</li>
@@ -32,21 +31,18 @@ Day 5 -Python Loops
 
 <li>For Loops</li>
 
-
-
-<li></li>
-
 Day 6 - Python Functions & Karel
 
 <li>While Loops</li>
 <li>Code blocks and Indentation</li>
-
 
 Day 7 - Beginner - Hangman
 
 <li>Flowchart Programming</li>
 
 Day 8 - Beginner - Function Parameters & Caesar Cipher
+
+
 
 Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction
 
@@ -55,25 +51,36 @@ Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction
 
 
 Day 10 - Beginner - Functions with Outputs
+
+<li>Multiple eturn Values</li>
+<li>Doc strings</li>
+
 Day 11 - Beginner - The Blackjack Capstone Project
 Day 12  - Beginner - Scope & Number Guessing Game
+
+<li>Scope and Local/Global Variables</li>
 
 Day 13 - Beginner - Debugging: How to Find and Fix Errors in your Code
 
 Day 14 - Beginner - Higher Lower Game Project
 
+<li>Debugging Techniques</li>
 
 
 
 
 
+
+<li>Returning Functions</li>
+
+<li></li>
 
 Positional and Keyword Arguments
-Returning Functions
+
 Return vs. Print
 Doc Strings vs. Comments
-Scope and Local/Global Variables
-Debugging Techniques
+
+
 
 
 

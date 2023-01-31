@@ -79,7 +79,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ [Day 15 - Local Development Environment Setup & the Coffee Machine](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2015)
  <em><ul>
-<li>PyCharm Tips and Tricks</li>
+<li>PyCharm Tips and Tricks</li></ul>
  
 ✔️ [Day 16  - Object Oriented Programming (OOP)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2016)
 <em><ul>

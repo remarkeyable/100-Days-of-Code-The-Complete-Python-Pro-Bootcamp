@@ -70,7 +70,7 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ <strong>Day 13 - Debugging: How to Find and Fix Errors in your Code</strong>
 <ul><br>
 <li>Slicing the problem into chunks</li>
-</ul><br>
+</ul>
 ✔️ <strong>Day 14 - Higher Lower Game Project</strong>
 <ul><br>
 <li>Debugging Techniques</li>

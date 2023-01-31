@@ -3,13 +3,12 @@
 
 <h2>#Beginner 🌱</h2>
  Day 1 - Working with Variables in Python to Manage Data
-
-<ul>Variables in Python
+<li>Variables in Python</li>
 <li>String Manipulation</li>
 <li>Input and Print Functions</li>
 <li>Variable Naming Rules</li>
 <li>Mathematical Operations in Python
- </ul>
+
 
 
 Day 2 -Understanding Data Types and How to Manipulate Strings

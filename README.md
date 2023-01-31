@@ -22,8 +22,8 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ <strong>Day 3 - Control Flow and Logical Operators</strong>
 <ul>
 <li>Logical Operators</li>
-<br>
 </ul>
+<br>
 ✔️ <strong>Day 4 - Randomisation and Python Lists<strong>   
 <br> 
 <ul>

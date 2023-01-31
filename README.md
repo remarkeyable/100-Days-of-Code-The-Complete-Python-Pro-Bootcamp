@@ -28,51 +28,49 @@ I will overcome difficulties & achieve my goals ~</em>
  <em><ul>
 <li>Randomisation</li>
 <li>Error Handling</li>
-<li>Functions</li>
-</ul><br>
+<li>Functions</li></ul></em>
 ✔️ <strong>Day 5 -Python Loops</strong>
-<ul><br>
-<li>For Loops</li>
-</ul><br> 
+<em><ul>
+<li>For Loops</li></ul></em>
 ✔️ <strong>Day 6 - Python Functions & Karel</strong>
-<ul><br>
+<em><ul>
 <li>While Loops</li>
 <li>Code blocks and Indentation</li>
 </ul><br>
 ✔️ <strong>Day 7 - Beginner - Hangman</strong>
-<ul><br>
+<em><ul>
 <li>Flowchart Programming</li>
 </ul><br>
 ✔️ <strong>Day 8 -Function Parameters & Caesar Cipher</strong>
-<ul><br>
+<em><ul>
 <li>Positional and Keyword Arguments</li>
 </ul><br>
 ✔️ <strong>Day 9 - Dictionaries, Nesting and the Secret Auction</strong>
-<ul><br>
+<em><ul>
 <li>Python Dictionaries and Lists</li>
 <li>Nested Collections</li>
 </ul><br>
 ✔️ <strong>Day 10 - Functions with Outputs</strong>
-<ul><br>
+<em><ul>
 <li>Returning Functions</li>
 <li> Return vs. Print </li>
 <li>Doc strings</li>
 <li>Doc Strings vs. Comments</li>
 </ul><br>
 ✔️ <strong>Day 11 - The Blackjack Capstone Project</strong>
-<ul><br>
+<em><ul>
 <li> Refactoring and calling procedures </li>
 </ul><br>
 ✔️ <strong>Day 12  - Scope & Number Guessing Game</strong>
-<ul><br>
+<em><ul>
 <li>Scope and Local/Global Variables</li>
 </ul><br>
 ✔️ <strong>Day 13 - Debugging: How to Find and Fix Errors in your Code</strong>
-<ul><br>
+<em><ul>
 <li>Slicing the problem into chunks</li>
 </ul>
 ✔️ <strong>Day 14 - Higher Lower Game Project</strong>
-<ul><br>
+<em><ul>
 <li>Debugging Techniques</li>
 </ul>
 

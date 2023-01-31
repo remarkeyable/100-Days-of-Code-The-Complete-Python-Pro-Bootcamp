@@ -32,16 +32,16 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Error Handling</li>
 <li>Functions</li></ul></em>
 
-✔️ <strong>Day 5 -Python Loops</strong>
+✔️ [Day 5 -Python Loops](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%205)
 <em><ul>
 <li>For Loops</li></ul></em>
 
-✔️ <strong>Day 6 - Python Functions & Karel</strong>
+✔️ [Day 6 - Python Functions & Karel](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%206)
 <em><ul>
 <li>While Loops</li>
 <li>Code blocks and Indentation</li><em></ul>
  
-✔️ <strong>Day 7 - Beginner - Hangman</strong>
+✔️ [Day 7 - Beginner - Hangman](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%207)
 <em><ul>
 <li>Flowchart Programming</li><em></ul>
  

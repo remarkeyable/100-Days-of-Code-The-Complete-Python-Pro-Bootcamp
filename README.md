@@ -8,7 +8,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>Beginner 🌱</h2>
 
- ✔️ <strong>[Day 1 - Working with Variables in Python to Manage Data]</strong>(https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%201)
+ ✔️ <strong>(Day 1 - Working with Variables in Python to Manage Data]</strong> "https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%201")
  <em><ul>
  <li>Variables in Python</li>
  <li>String Manipulation</li>

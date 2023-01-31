@@ -43,7 +43,7 @@ I will overcome difficulties & achieve my goals ~</em>
  
 ✔️ [Day 7 - Beginner - Hangman](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%207)
 <em><ul>
-<li>Flowchart Programming</li><em></ul>
+<li>Flowchart Programming</li></em></ul>
  
 ✔️ [Day 8 -Function Parameters & Caesar Cipher](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%208)
 <em><ul>

@@ -30,12 +30,22 @@ Day 4 - Randomisation and Python Lists
 
 Day 5 -Python Loops
 
-<li></li>
-<li></li>
+<li>For Loops</li>
+
+
+
 <li></li>
 
 Day 6 - Python Functions & Karel
+
+<li>While Loops</li>
+<li>Code blocks and Indentation</li>
+
+
 Day 7 - Beginner - Hangman
+
+<li>Flowchart Programming</li>
+
 Day 8 - Beginner - Function Parameters & Caesar Cipher
 
 Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction
@@ -47,17 +57,18 @@ Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction
 Day 10 - Beginner - Functions with Outputs
 Day 11 - Beginner - The Blackjack Capstone Project
 Day 12  - Beginner - Scope & Number Guessing Game
+
 Day 13 - Beginner - Debugging: How to Find and Fix Errors in your Code
+
 Day 14 - Beginner - Higher Lower Game Project
 
 
 
-For Loops
-Code blocks and Indentation
-While Loops
-Flowchart Programming
-Positional and Keyword Arguments
 
+
+
+
+Positional and Keyword Arguments
 Returning Functions
 Return vs. Print
 Doc Strings vs. Comments

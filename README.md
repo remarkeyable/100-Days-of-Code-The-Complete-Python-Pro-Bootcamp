@@ -3,7 +3,7 @@
 
 <h2>Beginner 🌱</h2>
 
- <strong>Day 1 - Working with Variables in Python to Manage Data</strong>
+ ✔️<strong>Day 1 - Working with Variables in Python to Manage Data</strong>
 
 <li>Variables in Python</li>
 <li>String Manipulation</li>
@@ -11,17 +11,17 @@
 <li>Variable Naming Rules</li>
 <li>Mathematical Operations in Python
 
-<strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
+✔️<strong>Day 2 - Understanding Data Types and How to Manipulate Strings</strong>
  
 <li>DataTypes</li>
 <li>Converting types</li>
 <li>Conditionals IF/ELIF/ELSE</li>
 
-<strong>Day 3 - Control Flow and Logical Operators</strong>
+✔️<strong>Day 3 - Control Flow and Logical Operators</strong>
 
 <li>Logical Operators</li>
 
-<strong>Day 4 - Randomisation and Python Lists<strong>
+✔️<strong>Day 4 - Randomisation and Python Lists<strong>
 
 <li>Randomisation</li>
 <li>Error Handling</li>

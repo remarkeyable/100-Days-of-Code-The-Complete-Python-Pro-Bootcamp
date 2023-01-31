@@ -37,44 +37,43 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ <strong>Day 6 - Python Functions & Karel</strong>
 <em><ul>
 <li>While Loops</li>
-<li>Code blocks and Indentation</li><em><ul>
+<li>Code blocks and Indentation</li><em></ul>
  
 ✔️ <strong>Day 7 - Beginner - Hangman</strong>
 <em><ul>
-<li>Flowchart Programming</li><em><ul>
+<li>Flowchart Programming</li><em></ul>
  
 ✔️ <strong>Day 8 -Function Parameters & Caesar Cipher</strong>
 <em><ul>
-<li>Positional and Keyword Arguments</li>
-</ul><br>
+<li>Positional and Keyword Arguments</li><em></ul>
+ 
 ✔️ <strong>Day 9 - Dictionaries, Nesting and the Secret Auction</strong>
 <em><ul>
 <li>Python Dictionaries and Lists</li>
-<li>Nested Collections</li>
-</ul><br>
+<li>Nested Collections</li><em></ul>
+ 
 ✔️ <strong>Day 10 - Functions with Outputs</strong>
 <em><ul>
 <li>Returning Functions</li>
 <li> Return vs. Print </li>
 <li>Doc strings</li>
-<li>Doc Strings vs. Comments</li>
-</ul><br>
+<li>Doc Strings vs. Comments</li><em></ul>
+ 
 ✔️ <strong>Day 11 - The Blackjack Capstone Project</strong>
 <em><ul>
-<li> Refactoring and calling procedures </li>
-</ul><br>
+<li> Refactoring and calling procedures </li><em></ul>
+ 
 ✔️ <strong>Day 12  - Scope & Number Guessing Game</strong>
 <em><ul>
-<li>Scope and Local/Global Variables</li>
-</ul><br>
+<li>Scope and Local/Global Variables</li><em></ul>
+ 
 ✔️ <strong>Day 13 - Debugging: How to Find and Fix Errors in your Code</strong>
 <em><ul>
-<li>Slicing the problem into chunks</li>
-</ul>
+<li>Slicing the problem into chunks</li><em></ul>
+ 
 ✔️ <strong>Day 14 - Higher Lower Game Project</strong>
 <em><ul>
-<li>Debugging Techniques</li>
-</ul>
+<li>Debugging Techniques</li><em></ul>
 
 
 

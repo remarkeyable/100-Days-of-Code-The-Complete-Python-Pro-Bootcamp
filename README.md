@@ -24,12 +24,11 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Logical Operators</li>
 </ul><br>
 ✔️ <strong>Day 4 - Randomisation and Python Lists<strong>   
-<br> <ul>
+<ul><br>
 <li>Randomisation</li>
 <li>Error Handling</li>
 <li>Functions</li>
-</ul>
-<br>
+</ul><br>
 ✔️ <strong>Day 5 -Python Loops</strong>
 <ul>
 <br>

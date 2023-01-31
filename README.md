@@ -94,7 +94,7 @@ I will overcome difficulties & achieve my goals ~</em>
  
 ✔️ [Day 18 - Turtle & the Graphical User Interface (GUI)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2018)
 <em><ul>
-<li>Using External Python Modules/Import/li>
+<li>Using External Python Modules/Import</li>
 <li>Getting / Setting Attributes</li>
 <li>Python Turtle</li></em></ul> 
  

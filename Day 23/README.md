@@ -1,4 +1,4 @@
-<em> So far, from day 1 to present this is where I've learned the most. I have lots of obvious mistakes that took me 2 hours of mental circus before figuring it out. 
+<em> So far, from day 1 to present this is where I learned the most. I have lots of obvious mistakes that took me 2 hours of mental circus before figuring it out. 
 The power of checking using print statement indeed saved me. lol. </em>
 
 

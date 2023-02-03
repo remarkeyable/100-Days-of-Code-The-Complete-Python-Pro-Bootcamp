@@ -46,6 +46,16 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌿 Intermediate</h2>
 
+✔️ [Day 23 - The Turtle Crossing Capstone Croject](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2023)
+<em><ul>
+<li>Class inheritance</li> 
+<li>Debugging using print statement</li></em></ul>
+
+✔️ [Day 22 - BBuild Pong: The famous arcade game](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2022)
+<em><ul>
+<li>Class inheritance</li> 
+<li>Turtle module</li></em></ul>
+
 ✔️ [Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2021)
 <em><ul>
 <li>Python Inheritance</li> 

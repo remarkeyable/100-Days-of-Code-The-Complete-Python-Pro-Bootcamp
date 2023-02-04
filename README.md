@@ -46,12 +46,18 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌿 Intermediate</h2>
 
+✔️ [Day 24 - Files, Directories & Paths](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2024)
+<em><ul>
+<li>Relative & Absolute Directory path</li> 
+<li>Difference between Main & Parent directory
+<li>Read & Write files</li></em></ul>
+
 ✔️ [Day 23 - The Turtle Crossing Capstone Croject](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2023)
 <em><ul>
 <li>Class inheritance</li> 
 <li>Debugging using print statement</li></em></ul>
 
-✔️ [Day 22 - BBuild Pong: The famous arcade game](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2022)
+✔️ [Day 22 - Build Pong: The famous arcade game](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2022)
 <em><ul>
 <li>Class inheritance</li> 
 <li>Turtle module</li></em></ul>

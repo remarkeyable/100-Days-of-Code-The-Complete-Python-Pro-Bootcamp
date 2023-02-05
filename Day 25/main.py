@@ -2,7 +2,6 @@ import turtle
 import pandas
 from game import Game
 
-
 screen = turtle.Screen()
 screen.title("USA Game")
 image = "blank_states_img.gif"
@@ -12,6 +11,7 @@ game = Game()
 on = True
 data = pandas.read_csv("50_states.csv")
 to_review = (data["state"]).to_list()
+
 
 while on:
     answer = screen.textinput(title=f" {game.track()}/ 50 States Correct", prompt="Guess the states").title()

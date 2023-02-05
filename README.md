@@ -46,6 +46,17 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌿 Intermediate</h2>
 
+
+✔️ [Day 26 - List Comprehensions & the NATO alphabet](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2026)
+<em><ul>
+<li>List Comprehensions</li> 
+<li>Dictionary Comprehensions</li></em></ul>
+
+✔️ [Day 25 - Working with CSV Data and the Pandas library](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2025)
+<em><ul>
+<li>Reading and Writing to CSV</li> 
+<li>Introduction to the Pandas Framework</li></em></ul>
+
 ✔️ [Day 24 - Files, Directories & Paths](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2024)
 <em><ul>
 <li>Relative & Absolute Directory path</li> 

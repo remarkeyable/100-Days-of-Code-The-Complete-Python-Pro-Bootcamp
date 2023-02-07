@@ -4,7 +4,7 @@
 I will keep myself on track, even though some days I might feel tired or frustrated. I will keep myself accountable, even though I have lots of things to do.
 I will overcome difficulties & achieve my goals ~</em>
 
-// compiling my files here didn't actually cross my mind until day 22 so real time update actually started at day 22 //
+// compiling my files here didn't actually cross my mind until day 22 so real time updates actually started at day 22 //
 
 <h1>🦾Technologies and tools to be used  </h1>
 <li>Python 3 - the latest version of Python</li>
@@ -46,6 +46,10 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌿 Intermediate</h2>
 
+✔️ [Day 27 - Tkinter, *args, **kwargs and creating GUI programs](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2027)
+<em><ul>
+<li>Packing and Unpacking Functions in Python</li> 
+<li>Creating Desktop GUI Apps with Tkinter</li></em></ul>
 
 ✔️ [Day 26 - List Comprehensions & the NATO alphabet](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2026)
 <em><ul>

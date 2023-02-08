@@ -48,7 +48,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ [Tkinter, Dynamic Typing & the Pomodoro GUI application.](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2028)
 <em><ul>
-<li>Strongly Dynamic Typing/li> 
+<li>Strongly Dynamic Typing</li></em><.ul>
 
 ✔️ [Day 27 - Tkinter, *args, **kwargs and creating GUI programs](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2027)
 <em><ul>

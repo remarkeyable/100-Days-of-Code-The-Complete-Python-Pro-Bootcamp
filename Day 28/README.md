@@ -3,4 +3,5 @@
 <li> Fixed the start button bugs by disabling the button before it reaches reps 6 </li>
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/122131469/217508498-a9fd8b18-f9f1-4f48-83e3-1a68c73c8a20.png)
+<br>
+![image](https://user-images.githubusercontent.com/122131469/217508596-fe2fa344-877c-41de-9040-ab5e51e0862d.png)

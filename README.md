@@ -46,7 +46,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌿 Intermediate</h2>
 
-✔️ [Tkinter, Dynamic Typing & the Pomodoro GUI application.](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2028)
+✔️ [Tkinter, Dynamic Typing & the Pomodoro GUI application](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2028)
 <em><ul>
 <li>Strongly Dynamic Typing</li></em></ul>
 

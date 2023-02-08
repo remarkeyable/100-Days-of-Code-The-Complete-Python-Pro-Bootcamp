@@ -4,4 +4,4 @@
 <br>
 <br>
 
-<img src="[/path/to/img.jpg" alt="Alt text" title="Optional title](https://user-images.githubusercontent.com/122131469/217511278-b7e0810b-cf44-4c77-989d-499e59681c23.JPG)">
+![Capture](https://user-images.githubusercontent.com/122131469/217511770-f3dff943-7669-4470-9bb3-ceefaa7aad90.JPG)

@@ -4,5 +4,5 @@ from search button, user can also search by pressing the enter button on website
 <br>
  
 
-https://user-images.githubusercontent.com/122131469/218307763-1c725633-ac24-440c-abc5-f6d46c6b4dc2.mp4
 
+![gif](https://user-images.githubusercontent.com/122131469/218308074-6f8416e6-a9b6-48e5-9215-4b4149b5bb1e.gif)

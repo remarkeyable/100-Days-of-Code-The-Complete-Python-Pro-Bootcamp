@@ -48,14 +48,14 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ [Day 31 - Flashcard app capstone project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2030)
 <em><ul>
-<li>Error handling % Exceptions</li></em></ul>
-<li>Try | Except | Raise</li></em></ul>
+<li>Error handling % Exceptions</li>
+<li>Try | Except | Raise</li>
 <li>Pandas & Csv</li></em></ul>
 
 ✔️ [Day 30 - Erros, Exceptions & JSON Data: Improving the password manager app](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2030)
 <em><ul>
-<li>Error handling % Exceptions</li></em></ul>
-<li>Try | Except | Raise</li></em></ul>
+<li>Error handling % Exceptions</li>
+<li>Try | Except | Raise</li>
 <li>Working with JSONS</li></em></ul>
 
 

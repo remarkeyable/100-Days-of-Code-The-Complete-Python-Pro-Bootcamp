@@ -48,7 +48,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ [Day 31 - Flashcard app capstone project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2030)
 <em><ul>
-<li>Error handling % Exceptions</li>
+<li>Error handling & Exceptions</li>
 <li>Try | Except | Raise</li>
 <li>Pandas & Csv</li></em></ul>
 

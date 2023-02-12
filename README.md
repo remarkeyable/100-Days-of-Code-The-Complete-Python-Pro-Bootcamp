@@ -46,6 +46,19 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌿 Intermediate</h2>
 
+✔️ [Day 31 - Flashcard app capstone project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2030)
+<em><ul>
+<li>Error handling % Exceptions</li></em></ul>
+<li>Try | Except | Raise</li></em></ul>
+<li>Pandas & Csv</li></em></ul>
+
+✔️ [Day 30 - Erros, Exceptions & JSON Data: Improving the password manager app](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2030)
+<em><ul>
+<li>Error handling % Exceptions</li></em></ul>
+<li>Try | Except | Raise</li></em></ul>
+<li>Working with JSONS</li></em></ul>
+
+
 ✔️ [Day 29 - Building a password manager GUI app with TKinter](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2029)
 <em><ul>
 <li>Password manager with TKinter</li></em></ul>

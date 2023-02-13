@@ -46,7 +46,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌿 Intermediate</h2>
 
-✔️ [Day 31 - Flashcard app capstone project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2030)
+✔️ [Day 31 - Flashcard app capstone project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2031)
 <em><ul>
 <li>Error handling & Exceptions</li>
 <li>Try | Except | Raise</li>

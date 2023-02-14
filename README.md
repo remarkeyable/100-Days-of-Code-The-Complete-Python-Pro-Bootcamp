@@ -46,10 +46,10 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
-✔️ [Day 32 - Send email(smtplib) & Manage dates (datetime)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2031)
+✔️ [Day 32 - Send email (smtplib) & Manage dates (datetime)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2031)
 <em><ul>
-<li>Sending Email with Python and SMTP</li>
-<li>Working with date & date and time</li>
+<li>Sending Email with Python & SMTP</li>
+<li>Working with date & time</li>
 <li>Hosting Python Code Online with PythonAnywhere</li></em></ul>
 
 <h2>🌿 Intermediate</h2>

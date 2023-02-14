@@ -62,7 +62,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ [Day 30 - Erros, Exceptions & JSON Data: Improving the password manager app](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2030)
 <em><ul>
-<li>Error handling % Exceptions</li>
+<li>Error handling & Exceptions</li>
 <li>Try | Except | Raise</li>
 <li>Working with JSONS</li></em></ul>
 

@@ -44,6 +44,14 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Web Design</li>
 <li>Deployment with GitHub Pages, Heroku and GUnicorn</li>
 
+<h2>🌾 Intermediate +</h2>
+
+✔️ [Day 32 - Send email(smtplib) & Manage dates (datetime)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2031)
+<em><ul>
+<li>Sending Email with Python and SMTP</li>
+<li>Working with date & date and time</li>
+<li>Hosting Python Code Online with PythonAnywhere</li></em></ul>
+
 <h2>🌿 Intermediate</h2>
 
 ✔️ [Day 31 - Flashcard app capstone project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2031)

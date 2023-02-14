@@ -1,7 +1,9 @@
-<strong>*Note: Extra functions added so the program still contain lots of bugs, will update if I have spare time*</strong>
+<strong>*I added extra functionalities*</strong>
 <br>
-I added extra functionality where user can switch from different languages.
+<li>{ Combo box } More languages option</li>
+<li>User can export and import their progress</li>
+<li>Login functionality</li>
 <br>
+<br>
+https://user-images.githubusercontent.com/122131469/218775256-9bab1acf-6d8e-4a1c-b9cf-68a68b5bd537.mp4
 
-
-![aaaaaa](https://user-images.githubusercontent.com/122131469/218611779-94dc78b7-2727-4f5e-b8a5-b44eddba65a3.gif)

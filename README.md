@@ -46,6 +46,11 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
+✔️ [Day 33 - API endpoints & API parameters - ISS overheard notifier)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2033)
+<em><ul>
+<li>Making HTTP Requests with the Requests module</li>
+<li>Sending Parameters with the Requests</li> </em></ul>
+
 ✔️ [Day 32 - Send email (smtplib) & Manage dates (datetime)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2032)
 <em><ul>
 <li>Sending Email with Python & SMTP</li>

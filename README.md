@@ -46,7 +46,12 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
-✔️ [Day 33 - API endpoints & API parameters - ISS overheard notifier)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2033)
+✔️ [Day 34 - API practice - Creating a GUI quiz app](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2034)
+<em><ul>
+<li>API</li>
+<li>Quiz app OOP</li> </em></ul>
+
+✔️ [Day 33 - API endpoints & API parameters - ISS overheard notifier](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2033)
 <em><ul>
 <li>Making HTTP Requests with the Requests module</li>
 <li>Sending Parameters with the Requests</li> </em></ul>

@@ -3,5 +3,5 @@
   difficulty modes & number of quizes</li>
 <li> True & False button will be disabled when user reach the
   quiz len</li>
-<li>Added a restart button & everything will be refresh</li>
+<li>Added a restart button which refresh all things from the game</li>
   

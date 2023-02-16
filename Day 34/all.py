@@ -5,7 +5,7 @@ from tkinter.messagebox import showinfo
 import html
 import customtkinter
 
-class Ui:
+class All:
     def __init__(self):
         self.score = 0
         self.quiz_count = 10

@@ -1,4 +1,4 @@
-from ui import Ui
+from all import All
 
 
-main = Ui()
+main = All()

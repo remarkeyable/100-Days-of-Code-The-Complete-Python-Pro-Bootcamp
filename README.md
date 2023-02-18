@@ -46,12 +46,12 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
-✔️ [Day 36 - Stock trading news alert project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2034)
+✔️ [Day 36 - Stock trading news alert project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2036)
 <em><ul>
 <li>API's with authentication</li>
 <li>Sending SMS with python</li> </em></ul>
 
-✔️ [Day 35 - Keys, Authentication & Environment variables : Send SMS](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2034)
+✔️ [Day 35 - Keys, Authentication & Environment variables : Send SMS](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2035)
 <em><ul>
 <li>API's with authentication</li>
 <li>Sending SMS with pythonP</li> </em></ul>

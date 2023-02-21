@@ -3,7 +3,7 @@ from datetime import datetime
 from requests.auth import HTTPBasicAuth
 import os
 
-#credentials & Endpoints
+#credentials & endpoints
 END_POINT = "https://trackapi.nutritionix.com/v2/natural/exercise"
 APP_ID = os.environ["APP_ID"]
 APP_KEY = os.environ["APP_KEY"]
@@ -26,7 +26,7 @@ ex_params = {
     "age": "22",
 }
 
-#data from nutrionx will be pass on sheet 
+#will get calorie data from nutrix api
 request = requests.post(END_POINT, json=ex_params, headers= header)
 
 data = request.json()
@@ -37,7 +37,7 @@ activity = data['exercises'][0]['name']
 duration = data['exercises'][0]['duration_min']
 calories = data['exercises'][0]['nf_calories']
 
-
+#will post details on gsheet using sheety api
 sheet_params = {
     "workout": {
         "date" : date,

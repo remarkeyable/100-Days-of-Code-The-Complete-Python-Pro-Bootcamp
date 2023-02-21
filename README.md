@@ -46,6 +46,18 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
+✔️ [Day 39 - Capstone Part1: Flight Deal Finder](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2039)
+<em><ul>
+<li>Sheety API </li>
+<li>Post & Put requests</li> </em></ul>
+
+
+✔️ [Day 38 - Workout Tracking Project using Google Sheets](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2038)
+<em><ul>
+<li>Sheety API </li>
+<li>Post & Put requests</li> </em></ul>
+
+
 ✔️ [Day 37 - Habit tracking project: API Post Requests & Headers](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2037)
 <em><ul>
 <li>API </li>

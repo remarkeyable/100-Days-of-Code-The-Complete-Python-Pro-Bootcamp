@@ -46,7 +46,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
-✔️ [Day 40 - Flight Deal Finder Part 2](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2040)
+✔️ [Day 40 - Flight Deal Finder Capstone Project Final](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2040)
 
 ✔️ [Day 39 - Flight Deal Finder](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2039)
 <em><ul>

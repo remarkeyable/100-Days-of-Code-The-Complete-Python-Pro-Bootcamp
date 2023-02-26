@@ -47,14 +47,14 @@ I will overcome difficulties & achieve my goals ~</em>
 <h2>🌾 Intermediate +</h2>
 
 ✔️ [Day 42 - Web Foundation part 2](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2041%20%26%2042)
-<li>Tables</li>
+<em><li>Tables</li>
 <li>Forms</li>
-<li>Publish a website</li>
+<li>Publish a website</li></em>
 
 ✔️ [Day 41 - Web Foundation part 1](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2041%20%26%2042)
-<li>Anatomy of tags</li>
+<em><li>Anatomy of tags</li>
 <li>Anchor tags</li>
-<li>List</li>
+<li>List</li></em>
 
 ✔️ [Day 40 - Flight Deal Finder Capstone Project Final](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2040)
 

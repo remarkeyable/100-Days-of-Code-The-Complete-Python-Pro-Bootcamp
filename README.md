@@ -46,13 +46,13 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
-✔️ [Day 44 - Web Foundation part 4](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2041%20%26%2042)
+✔️ [Day 44 - Web Foundation part 4 Final](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2043%20%26%2044)
 <ul><em><li>Divs</li>
 <li>The box model of Website Styling</li>
 <li>Display property</li>
 <li>Static, Relative & Absolute Positioning</li></em></ul>
 
-✔️ [Day 43 - Web Foundation part 3](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2041%20%26%2042)
+✔️ [Day 43 - Web Foundation part 3](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2043%20%26%2044)
 <ul><em><li>Selectors</li>
 <li>Classes vs Ids</li></em></ul>
 

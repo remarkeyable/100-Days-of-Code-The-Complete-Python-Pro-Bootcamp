@@ -49,7 +49,7 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ [Day 45 - Web scraping with Beautiful Soup](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2043%20%26%2045)
 <ul><em><li>Beautiful Soup</li>
 <li>Parsing HTML & Making Soup</li>
-<li>Finding & Selecting particular elements With Beautiful Soup</li></em></ul>)
+<li>Finding & Selecting particular elements With Beautiful Soup</li></em></ul>
 
 ✔️ [Day 44 - Web Foundation part 4 Final](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2043%20%26%2044)
 <ul><em><li>Divs</li>

@@ -46,6 +46,10 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
+✔️ [Day 46 -Create a Spotify Playlist using Musical Time Machine](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2043%20%26%2046)
+<ul><em><li>Authentication with Spotify</li>
+<li>Spotipy Python Library</li></em></ul>
+
 ✔️ [Day 45 - Web scraping with Beautiful Soup](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2043%20%26%2045)
 <ul><em><li>Beautiful Soup</li>
 <li>Parsing HTML & Making Soup</li>

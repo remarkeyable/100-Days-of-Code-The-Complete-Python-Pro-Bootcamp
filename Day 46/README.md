@@ -1,4 +1,4 @@
-Decided to level up this challenge and made a telegram bot out of this project.
+<em>Decided to level up this challenge and made a telegram bot out of this project.</em>
 
 <br>
 <img src="images/5.jpg" width=250>

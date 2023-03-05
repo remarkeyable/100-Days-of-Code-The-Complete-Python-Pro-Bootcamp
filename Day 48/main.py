@@ -32,7 +32,7 @@ while True:
             for item in products[::-1]:
                 item.click()
         except:
-            print("Not enough cookies")
+            pass
 
         start_time = time.time()
         increment += 5

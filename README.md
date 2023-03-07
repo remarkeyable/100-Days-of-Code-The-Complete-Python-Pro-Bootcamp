@@ -46,9 +46,12 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
+✔️ [Day 49 - Automating Job Applications on LinkedIn(https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2048)
+<ul><em><li>Selenium Web Driver</li></em></ul>
+
 ✔️ [Day 48 - Selenium Webdriver Browser & Game playing Bot](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2048)
 <ul><em><li>Selenium Web Driver</li>
-<ul><em><li>Forms & Buttons using Selenium</li>
+<em><li>Forms & Buttons using Selenium</li>
 <li>Select & Find  on a Website with Selenium</li></em></ul>
 
 ✔️ [Day 47 - Create an Automated Amazon Price Tracker](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2047)

@@ -1,0 +1,1 @@
+I faced several challenges such as security checks, a job list that became unresponsive, and difficulties with the "find_elements" syntax. To overcome these obstacles, I searched for solutions online and developed my own strategy to tackle these issues.

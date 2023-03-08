@@ -46,6 +46,9 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
+✔️ [Day 51 - Internet Speed Twitter Complaint Bot](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2051)
+<ul><em><li>Selenium Web Driver</li></em></ul>
+
 ✔️ [Day 49 - Automating Job Applications on LinkedIn](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2049)
 <ul><em><li>Selenium Web Driver</li></em></ul>
 

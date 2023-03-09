@@ -2,6 +2,6 @@
 I am unable to do so owing to the obstacle posed by the captcha system. </p>
 <br>
 <br>
-<p align="center>
+<p align="center">
 <img src="images/1.gif" width=550>
 </p>

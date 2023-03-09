@@ -48,7 +48,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ [Day 53 - Web Scaping Capstone - Data Entry Job Automation](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2053)
 <ul><em><li>Beautiful Soup</li>
-<ul><em><li>Selenium Web Driver</li></em></ul>
+<em><li>Selenium Web Driver</li></em></ul>
 
 ✔️ [Day 52 - Instagram follower bot](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2052)
 <ul><em><li>Selenium Web Driver</li></em></ul>

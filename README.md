@@ -46,6 +46,10 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
+✔️ [Day 56 - Rendering HTML/Static Files & Using Website Templates](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2056)
+<ul><em><li>Rendering HTML with Flask</li>
+<em><li>Serving Static Files with Flask</li></em></ul>
+
 ✔️ [Day 55 - HTML & URL Parsing in Flask & the higher lower game](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2055)
 <ul><em><li>Flask URL Paths & Flask Debugger</li>
 <em><li>Rendering HTML with Flask</li>

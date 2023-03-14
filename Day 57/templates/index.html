@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ryn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>Ryn's Blog</h1></div>
+    </div>
+    <div class="content">
+        <div class="card">
+            {% for i in blogg: %}
+            {% if i['id'] == 1: %}
+            <h2>{{i['title']}}</h2>
+            <p class="text">{{i['subtitle']}} </p>
+            <a href="{{url_for('the_blog', num=1)}}">Read</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <h2> {% elif i['id'] == 2: %}</h2>
+            <h2>{{i['title']}}</h2>
+            <p class="text">{{i['subtitle']}} </p>
+            <a href="{{url_for('the_blog', num=2)}}">Read</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <p>Made with ♥️ in PH.</p>
+</footer>
+</html>

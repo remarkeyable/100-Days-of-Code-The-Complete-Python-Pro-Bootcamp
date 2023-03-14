@@ -49,7 +49,7 @@ I will overcome difficulties & achieve my goals ~</em>
 ✔️ [Day 57 - Templating with Jinja in Flask Applications](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2057)
 <ul><em><li>Using Jinja to Produce Dynamic HTML</li>
 <ul><em><li>Multiline Statements with Jinja</li>
-<em><li>URL Building with Flask</li></em></ul>
+<em><li>URL Building with Flask</li></em></li></ul>
 
 ✔️ [Day 56 - Rendering HTML/Static Files & Using Website Templates](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2056)
 <ul><em><li>Rendering HTML with Flask</li>

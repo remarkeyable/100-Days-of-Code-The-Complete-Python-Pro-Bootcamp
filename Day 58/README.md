@@ -1,4 +1,4 @@
-<p align="center"  style="font-size: 200px; text-decoration: none">
+<p align="center">
 <a href="https://remarkeyable.github.io/TinDog-BS/"> Live Demo </a>  
 </p>
 <p align="center">

@@ -46,6 +46,14 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
+✔️ [Day 58 - Web Foundation Bootstrap](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2058)
+<ul><em><li>Grid & Layouts</li>
+<ul><li>Containers</li>
+<li>Z-index & Stacking Order</li>
+<ul><li>Media Query Breakpoints</li>
+<ul><li>Combining Selectors</li>
+<li>URL Building with Flask</li></em></li></ul>
+
 ✔️ [Day 57 - Templating with Jinja in Flask Applications](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2057)
 <ul><em><li>Using Jinja to Produce Dynamic HTML</li>
 <li>Multiline Statements with Jinja</li>

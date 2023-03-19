@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "header.html"%}
+<body>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href={{url_for('home')}}>Book Reviews</a>
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarResponsive" data-bs-toggle="collapse" type="button">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href={{url_for('home')}}>Home</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href={{url_for('about')}}>About</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href={{url_for('contact')}}>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('static/assets/img/about-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>About Me</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>On this blog, you'll find a wide variety of book reviews, covering everything from the latest
+                    bestsellers to hidden gems that you might not have heard of before. I pride myself on my attention
+                    to detail and my ability to communicate complex ideas in a clear and engaging way, so you can trust
+                    that my reviews are thorough and well-informed.
+
+                    Whether you're a lifelong bookworm or just getting started on your reading journey, I hope you'll
+                    find my reviews helpful and informative. If you have any questions or suggestions, feel free to get
+                    in touch - I'm always happy to chat about books!</p>
+
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Footer-->
+{% include "footer.html" %}
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>

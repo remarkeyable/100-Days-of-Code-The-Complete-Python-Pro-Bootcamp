@@ -46,6 +46,8 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
+✔️ [Day 59 - Blog Capstone Project Part 2 - Adding Styling](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2059)
+
 ✔️ [Day 58 - Web Foundation Bootstrap](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2058)
 <ul><em><li>Grid & Layouts</li>
 <li>Containers</li>

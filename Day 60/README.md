@@ -2,5 +2,8 @@
 <h5 align= "center"> <a href="https://github.com/remarkeyable/day60blog"> File </a>
 <h5 align= "center"> <a href="https://day60blog.herokuapp.com"> Live Demo </a>
 <p align= "center">
-<img src= "images/1.png">
+<img src= "images/1.png" width = 300>
+<img src= "images/2.png" width = 300>
+<img src= "images/3.png" width = 300>  
+<img src= "images/4.png" width = 300>
 </p>

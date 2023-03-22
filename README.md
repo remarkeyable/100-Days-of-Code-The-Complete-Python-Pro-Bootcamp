@@ -46,6 +46,13 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 61 - Building Advanced Forms with Flask-WTForms](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2061)
+<ul><em><li>Creating Forms with Flask-WTF</li>
+<li>519Adding Validation to Forms with Flask-WTF</li>
+<li>519Adding Validation to Forms with Flask-WTF</li>
+<li>Flask-Bootstrap Supports WTForms</li>
+<li>Inheriting Templates Using Jinja2</em></li></ul>
+
 ✔️ [Day 60 - Blog Capstone Final Make POST Requests with Flask and HTML Forms](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2060)
 <ul><em><li>Handle POST Requests with Flask Servers</li></em></li></ul>
 

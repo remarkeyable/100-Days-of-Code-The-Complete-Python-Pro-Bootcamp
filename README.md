@@ -46,7 +46,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
-✔️ [Day 62 - Section 62: Day 62 - Advanced - Flask, WTForms, Bootstrap and CSV - Coffee & Wifi Project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2062)
+✔️ [Day 62 - Flask, WTForms, Bootstrap and CSV - Coffee & Wifi Project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2062)
 
 ✔️ [Day 61 - Building Advanced Forms with Flask-WTForms](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2061)
 <ul><em><li>Creating Forms with Flask-WTF</li>

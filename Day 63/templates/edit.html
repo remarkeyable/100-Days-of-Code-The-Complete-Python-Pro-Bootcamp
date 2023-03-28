@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Ratings</title>
+</head>
+<body>
+{% for i in books %}
+{% if i.id == num %}
+<p>Book Name: {{i.title}}</p>
+<p>Current Rating: {{i.rating}}</p>
+
+<form action="{{url_for('edit_rating', num= i.id)}}" method="POST">
+    {% endif %}
+    {% endfor %}
+    <input name="edit" type="text">
+    <button type="submit"> Edit Rating</button>
+</form>
+
+
+</body>
+</html>

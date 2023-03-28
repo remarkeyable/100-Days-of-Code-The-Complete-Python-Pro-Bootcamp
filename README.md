@@ -46,6 +46,12 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 63 - Databases and with SQLite and SQLAlchemy ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2063)
+<ul><em><li>SQLite Databases</li>
+<li>SQLAlchemy</li>
+<li>CRUD Operations with SQLAlchemy</em></li></ul>
+
+
 ✔️ [Day 62 - Flask, WTForms, Bootstrap and CSV - Coffee & Wifi Project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2062)
 
 ✔️ [Day 61 - Building Advanced Forms with Flask-WTForms](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2061)

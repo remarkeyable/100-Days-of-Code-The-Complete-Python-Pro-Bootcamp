@@ -48,8 +48,8 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ [Day 65 - Web Design School - How to Create a Website that People will Love ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2065)
 <ul><em><li>Understanding Color Theory</li>
-<li>Understanding Color Theory</li>
-<li>Understanding Color Theory</em></li></ul>
+<li>Understanding Typography and how to Choose Fonts</li>
+<li>User Experience(UX) Design</em></li></ul>
 
 ✔️ [Day 64 - My Top 10 Movies Website ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2064)
 <ul><em><li>SQLite Databases</li>

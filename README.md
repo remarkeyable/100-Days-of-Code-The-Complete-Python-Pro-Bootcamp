@@ -46,7 +46,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
-✔️ [Day 66 - Building Your Own API with RESTful Routing ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2066)
+✔️ [Day 66 - Building Own API with RESTful Routing ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2066)
 <ul><em><li>HTTP GET</li>
 <li>Postman - The all in one API Testing Tool</li>
 <li>HTTP POST</li>

@@ -46,6 +46,13 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 66 - Building Your Own API with RESTful Routing ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2066)
+<ul><em><li>HTTP GET</li>
+<li>Postman - The all in one API Testing Tool</li>
+<li>HTTP POST</li>
+<li>HTTP PUT vs. PATCH</li>
+<li>HTTP DELETE</em></li></ul>
+
 ✔️ [Day 65 - Web Design School - How to Create a Website that People will Love ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2065)
 <ul><em><li>Understanding Color Theory</li>
 <li>Understanding Typography and how to Choose Fonts</li>

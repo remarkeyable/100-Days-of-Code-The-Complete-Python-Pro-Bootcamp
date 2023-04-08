@@ -48,7 +48,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 ✔️ [Day 68 - Authentication with Flask ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2066)
 <ul><em><li>Login & Registering Users with Authentication</li>
-<li>Login & Registering Users with Authentication</li>
+<li>Encryption & Hashing</li>
 <li>Salting Passwords</li>
 <li>Hashing Passwords using Werkzeug</li>
 <li>Authenticating Users with Flask-Login</li>

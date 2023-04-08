@@ -46,6 +46,14 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 68 - Authentication with Flask ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2066)
+<ul><em><li>Login & Registering Users with Authentication</li>
+<li>Login & Registering Users with Authentication</li>
+<li>Salting Passwords</li>
+<li>Hashing Passwords using Werkzeug</li>
+<li>Authenticating Users with Flask-Login</li>
+<li>Flask Flash Messages</em></li></ul>
+
 ✔️ [Day 67 -  Blog Capstone Project Part 3 - RESTful Routing ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2067)
 
 ✔️ [Day 66 - Building Own API with RESTful Routing ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2066)

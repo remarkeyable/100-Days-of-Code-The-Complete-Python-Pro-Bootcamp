@@ -46,7 +46,19 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
-✔️ [Day 68 - Authentication with Flask ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2066)
+✔️ [Day 70 - Deploying Web Application with Heroku ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2070)
+<ul><em><li>Version Control & Git</li>
+<li>Use gunicorn & Heroku to host a website</li>
+<li>Version Control & Git</li>
+<li>Setup a WSGI server with gunicorn</li>
+<li>Upgrade SQlite Database to PostgreSQL</em></li></ul>
+
+
+✔️ [Day 69 - Authentication with Flask ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2069)
+<ul><em><li>Relational Databases</em></li></ul>
+
+
+✔️ [Day 68 - Authentication with Flask ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2068)
 <ul><em><li>Login & Registering Users with Authentication</li>
 <li>Encryption & Hashing</li>
 <li>Salting Passwords</li>

@@ -1,0 +1,35 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About this blog</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>On this blog, you'll find a wide variety of book reviews, covering everything from the latest
+                    bestsellers to hidden gems that you might not have heard of before. I pride myself on my attention
+                    to detail and my ability to communicate complex ideas in a clear and engaging way, so you can trust
+                    that my reviews are thorough and well-informed.
+
+                    Whether you're a lifelong bookworm or just getting started on your reading journey, I hope you'll
+                    find my reviews helpful and informative. If you have any questions or suggestions, feel free to get
+                    in touch - I'm always happy to chat about books!</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}

@@ -46,6 +46,11 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 71 - Data Exploration with Pandas: College Major v.s. Your Salary ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2071)
+<ul><em><li>Preliminary Data Exploration & Data Cleaning with Pandas</li>
+<li>Accessing Columns & Individual Cells in a Dataframe</li>
+<li>Grouping & Pivoting Data with Pandas</em></li></ul>
+
 ✔️ [Day 70 - Deploying Web Application with Heroku ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2070)
 <ul><em><li>Version Control & Git</li>
 <li>Use gunicorn & Heroku to host a website</li>

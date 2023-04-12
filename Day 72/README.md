@@ -16,3 +16,5 @@
 <li>added a legend to tell apart which line is which by colour</li>
 
 <li>smoothed out our time-series observations with .rolling().mean() and plotted them to better identify trends over time.</li> </ul>
+<br>
+<img src="/images/1.JPG">

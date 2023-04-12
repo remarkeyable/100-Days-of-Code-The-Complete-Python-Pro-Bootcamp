@@ -17,4 +17,4 @@
 
 <li>smoothed out our time-series observations with .rolling().mean() and plotted them to better identify trends over time.</li> </ul>
 <br>
-<img src="images/1.JPG">
+<img src="images/1.JPG" width=500>

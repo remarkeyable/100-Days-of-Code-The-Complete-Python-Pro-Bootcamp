@@ -46,6 +46,12 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 72 -Data Visualisation with Matplotlib: Programming Languages ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2072)
+<ul><em><li>Data Cleaning</li>
+<li>Accessing Data Manipulation : Pivoting DataFrames</li>
+<li>Data Visualization with Matplotlib</li>
+<li>Data Visualization with Matplotlib</em></li></ul>
+
 ✔️ [Day 71 - Data Exploration with Pandas: College Major v.s. Your Salary ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2071)
 <ul><em><li>Preliminary Data Exploration & Data Cleaning with Pandas</li>
 <li>Accessing Columns & Individual Cells in a Dataframe</li>

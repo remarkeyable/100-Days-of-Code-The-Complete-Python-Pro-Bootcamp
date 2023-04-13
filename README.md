@@ -46,6 +46,12 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 73 - Aggregate & Merge Data with Pandas: Analyse the LEGO Dataset ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2073)
+<ul><em><li>How to use the Pandas .agg() function</li>
+<li>Superimposing Line Charts with Seperate Axes</li>
+<li>Relational Database Schemas: Primary & Foreign Keys</li>
+<li>How to Merge DataFrames & Create Bar Charts</em></li></ul>
+
 ✔️ [Day 72 -Data Visualisation with Matplotlib: Programming Languages ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2072)
 <ul><em><li>Data Cleaning</li>
 <li>Accessing Data Manipulation : Pivoting DataFrames</li>

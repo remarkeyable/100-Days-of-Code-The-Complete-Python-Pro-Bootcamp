@@ -46,6 +46,17 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 75 - Beautiful Plotly Charts & Analysing the Android App Store ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2075)
+<ul><em><li>Data Cleaning: Removing NaN Values & Duplicates</li>
+<li>Data Visualisation with Plotly: Create Pie & Donut Charts</li>
+<li>Numeric Type Conversions</em></li></ul>
+
+
+✔️ [Day 74 - Googl Trends Data: Resampling & Visualising Time Series ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2074)
+<ul><em><li>Data Cleaning - Resampling Time Series Data</li>
+<li>Data Visualisation</li>
+<li>Using Locatorts & DateFormatters</em></li></ul>
+
 ✔️ [Day 73 - Aggregate & Merge Data with Pandas: Analyse the LEGO Dataset ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2073)
 <ul><em><li>How to use the Pandas .agg() function</li>
 <li>Superimposing Line Charts with Seperate Axes</li>

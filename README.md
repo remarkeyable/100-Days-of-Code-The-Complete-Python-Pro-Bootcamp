@@ -46,6 +46,24 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
+✔️ [Day 79 - The tragic discovery of handwashing: t-Tests & Distribution ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2079)
+<ul><em><li>Preliminary Data Exploration & Visualising Births & Deaths at Vienna Hospital</li>
+<li>Visualising Distributions & Testing for Statistical Significance</em></li></ul>
+
+✔️ [Day 78 - Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2078)
+<ul><em><li>plotly Bar & Donut Charts</li>
+<li>Using Matplotlib to Visualise Trends over time</em></li></ul>
+
+✔️ [Day 77 - Linear Regression & Data Visualization with Seaborn ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2077)
+<ul><em><li>Seaborn Data Visualisation: Bubble Charts</li>
+<li>Plotting Linear Regressions with Seaborn</li>
+<li>Use scikit-learn to Run own Regression</em></li></ul>
+
+✔️ [Day 76 - Computation with Numpy & N-Dimensional Array ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2076)
+<ul><em><li>Generating & Manipulating ndarrays</li>
+<li>Broadcasting, Scalars & Matrix Multiplication</li>
+<li>Manipulating Images as ndarrays</em></li></ul>
+
 ✔️ [Day 75 - Beautiful Plotly Charts & Analysing the Android App Store ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2075)
 <ul><em><li>Data Cleaning: Removing NaN Values & Duplicates</li>
 <li>Data Visualisation with Plotly: Create Pie & Donut Charts</li>

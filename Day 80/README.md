@@ -14,4 +14,6 @@
 <li>How to improve a regression model using (a log) data transformation.</li>
 
 <li>How to specify your own values for various features and use your model to make a prediction.</li>
+<br>
+<img src="image/1.png">
 

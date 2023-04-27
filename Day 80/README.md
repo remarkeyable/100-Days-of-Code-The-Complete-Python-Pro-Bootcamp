@@ -15,5 +15,5 @@
 
 <li>How to specify your own values for various features and use your model to make a prediction.</li>
 <br>
-<img src="image/1.png" width="250">
+<img src="image/1.png" width="500">
 

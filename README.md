@@ -318,7 +318,7 @@ I will overcome difficulties & achieve my goals ~</em>
 <li>Difference between Main & Parent directory
 <li>Read & Write files</li></em></ul>
 
-✔️ [Day 23 - The Turtle Crossing Capstone Croject](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2023)
+✔️ [Day 23 - The Turtle Crossing Capstone Project](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2023)
 <em><ul>
 <li>Class inheritance</li> 
 <li>Debugging using print statement</li></em></ul>

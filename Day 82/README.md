@@ -4,4 +4,6 @@
   <li>Used Bootstrap Template to speed up development process</li>
   <li>Used Flask web framework</li>
   </ul>
+  <br>
+  <img src="image/1.png">
   

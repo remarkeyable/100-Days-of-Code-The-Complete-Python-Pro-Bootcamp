@@ -47,9 +47,9 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2> 🏞️ Portfolio Projects </h2>
 
-✔️ [Day 81 - Text to Morse Code ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2081)
-
 ✔️ [Day 82 - Portfolio ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2082)
+
+✔️ [Day 81 - Text to Morse Code ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2081)
 
 <h2>🌳 Advanced + </h2>
 

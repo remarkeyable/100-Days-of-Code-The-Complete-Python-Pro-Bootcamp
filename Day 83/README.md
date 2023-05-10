@@ -13,16 +13,9 @@
     <br>
   <p>‣ Sample output when a player win.</p> 
  <img src="images/3.JPG" width=700>  
-  
- 
 <br>
-
-https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/assets/122131469/5b09cb53-675f-49cf-8a78-467d30b5d541
-
-
-
-
-
+<br>
+https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/assets/122131469/b23ee973-68fd-4aa7-81e7-af00676ab764
 
 
 

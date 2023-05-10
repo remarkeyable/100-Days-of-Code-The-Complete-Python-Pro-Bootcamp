@@ -8,7 +8,11 @@
   <br>
     <br>
   <p>‣ Sample output when all moves have already been made or that the player has input an invalid move command.</p> 
- <img src="images/2.JPG" width=700>  
+ <img src="images/2.JPG" width=700> 
+   <br>
+    <br>
+  <p>‣ Sample output when a player win.</p> 
+ <img src="images/3.JPG" width=700>  
   
  
 

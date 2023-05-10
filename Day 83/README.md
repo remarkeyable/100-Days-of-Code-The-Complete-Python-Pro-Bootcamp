@@ -3,6 +3,7 @@
 <a href="https://replit.com/@RynSample/DAY-83?v=1"> LIVE DEMO </a> 
   <br>
   <br>
+  <p>‣ Sample output if all squares in board already filled </p> 
 <img src="images/1.JPG">  
   
  

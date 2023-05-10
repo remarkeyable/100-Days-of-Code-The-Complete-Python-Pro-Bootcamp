@@ -3,8 +3,10 @@
 <a href="https://replit.com/@RynSample/DAY-83?v=1"> LIVE DEMO </a> 
   <br>
   <br>
-  <p>‣ Sample output if all squares in board already filled </p> 
+  <p>‣ Sample output if all squares in board already filled.</p> 
 <img src="images/1.JPG">  
+  <p>‣ Sample output when all moves have already been made or that the player has input an invalid move command.</p> 
+ <img src="images/2.JPG">  
   
  
 

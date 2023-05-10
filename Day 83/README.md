@@ -4,7 +4,7 @@
   <br>
   <br>
   <p>‣ Sample output if all squares in board already filled.</p> 
-<img src="images/1.JPG" width=1000>  
+<img src="images/1.JPG" width=700>  
   <p>‣ Sample output when all moves have already been made or that the player has input an invalid move command.</p> 
  <img src="images/2.JPG">  
   

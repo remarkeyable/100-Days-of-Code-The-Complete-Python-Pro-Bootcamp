@@ -70,8 +70,8 @@ def slider_event(value):
 
 button = customtkinter.CTkButton(window, text="Open image", command=image_loc)
 button.place(y=450, x=230)
-aspen = ImageTk.PhotoImage(file="images/1.jpg")
-my_label = Label(window, image=aspen, width=400, height=400, borderwidth=1, bg="#282424")
+img = ImageTk.PhotoImage(file="images/1.jpg")
+my_label = Label(window, image=img, width=400, height=400, borderwidth=1, bg="#282424")
 my_label.pack(pady=20)
 mark_entry = customtkinter.CTkEntry(window, placeholder_text="Text watermark")
 mark_entry.place(y=490, x=230)

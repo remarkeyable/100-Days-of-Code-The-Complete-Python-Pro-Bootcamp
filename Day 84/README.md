@@ -7,5 +7,6 @@
            <br>
            <img src ="img/3.jpg">
   
-  
 </p>  
+
+<h2> Sample Output </h2>

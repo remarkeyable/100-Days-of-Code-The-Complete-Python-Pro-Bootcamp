@@ -10,3 +10,8 @@
 </p>  
 
 <h2> Sample Output </h2>
+<p align ="center">
+           <img src ="img/4.jpg">
+        
+  
+</p>  

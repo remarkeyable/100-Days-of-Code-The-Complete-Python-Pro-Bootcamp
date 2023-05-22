@@ -72,6 +72,7 @@ def edit_text(value):
                       fill=tuple(map(int, the_color)))
 
         except:
+
             CTkMessagebox(title="Info", message="Font size invalid, please double check your input", width=150,
                           icon_size=(30, 30), icon="cancel")
             font_size.set("150")
@@ -108,13 +109,13 @@ def edit_logo(value):
     try:
         # addding the logo to the image
         img1.paste(logo, (int(lg_position_x.get()), int(lg_position_y.get())), logo)
-        img1.save(f"edited/hd_edited_{file_name}")
+        img1.save(f"edited/lg_hd_edited_{file_name}")
     except ValueError:
         # if the logo is not png, this will execute, we remove the third parameter which indicate a mask
         img1.paste(logo, (int(lg_position_x.get()), int(lg_position_y.get())))
-        img1.save(f"edited/hd_edited_{file_name}")
+        img1.save(f"edited/lg_hd_edited_{file_name}")
 
-    edited = Image.open(f"edited/hd_edited_{file_name}")
+    edited = Image.open(f"edited/lg_hd_edited_{file_name}")
     edited.thumbnail((400, 400))
     # & configure the label
     edited1 = ImageTk.PhotoImage(edited)
@@ -139,7 +140,23 @@ def save_pic():
         CTkMessagebox(title="Info", message="Image Saved", width=150, icon_size=(30, 30), icon="check")
         font_size.set("150")
     except FileNotFoundError:
-        CTkMessagebox(title="Info", message="Something went wrong. Image empty as you.", width=150, icon_size=(30, 30), icon="cancel")
+        CTkMessagebox(title="Info", message="Something went wrong. Image empty as you.", width=150, icon_size=(30, 30),
+                      icon="cancel")
+        font_size.set("150")
+
+
+def save_pic_logo():
+    # Will delete the input on entry box
+    try:
+        mark_entry.delete(0, END)
+        file_name = os.path.basename(loc)
+        # Final image will be move to another folder
+        shutil.move(f"edited/lg_hd_edited_{file_name}", f"save_pics/lg_hd_edited_{file_name}")
+        CTkMessagebox(title="Info", message="Image Saved", width=150, icon_size=(30, 30), icon="check")
+        font_size.set("150")
+    except FileNotFoundError:
+        CTkMessagebox(title="Info", message="Something went wrong. Image empty as you.", width=150, icon_size=(30, 30),
+                      icon="cancel")
         font_size.set("150")
 
 
@@ -213,7 +230,7 @@ lg_size = customtkinter.CTkSlider(master=tabview.tab("Logo Watermark"), from_=5,
 lg_size.set(100)
 lg_size.place(y=155, x=88)
 
-lg_save = customtkinter.CTkButton(master=tabview.tab("Logo Watermark"), text="Save", command=save_pic, width=215)
+lg_save = customtkinter.CTkButton(master=tabview.tab("Logo Watermark"), text="Save", command=save_pic_logo, width=215)
 lg_save.place(y=185, x=86)
 
 window.mainloop()

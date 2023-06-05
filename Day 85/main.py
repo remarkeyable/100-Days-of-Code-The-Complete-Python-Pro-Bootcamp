@@ -18,34 +18,14 @@ word_counts = 0
 
 
 def start(event):
-    global chosen_word, entry, word_counts
+    global chosen_word, entry, word_counts, timer, label2
+    window.after(20000,lambda : entry.configure(state='disabled'))
     if chosen_word == entry.get() + event.char:
         entry.delete(0, 'end')
         window.after(100, lambda: entry.delete(0, 'end'))
         word_counts += 1
-        print(time_time)
         generate_word()
         words.configure(text=chosen_word)
-
-
-import time
-
-
-def timer(seconds):
-    start_time = time.time()
-    end_time = start_time + seconds
-
-    while time.time() < end_time:
-        remaining_time = int(end_time - time.time())
-        print(f"Time remaining: {remaining_time} seconds")
-        time.sleep(1)
-
-    print("Time's up!")
-
-
-# Example usage: Set the timer for 10 seconds
-timer(10)
-
 
 def generate_word():
     global chosen_word
@@ -54,9 +34,7 @@ def generate_word():
         chosen_word = random.choice(words).strip()
 
 
-def timer():
-    global time_time
-    time_time = time.time()
+
 
 
 
@@ -70,11 +48,12 @@ label.pack()
 entry = customtkinter.CTkEntry(window)
 entry.pack()
 
-start_t = customtkinter.CTkButton(window, text="start", command=timer)
+start_t = customtkinter.CTkButton(window, text="restart")
 start_t.pack()
 entry.focus()
 entry.bind("<Key>", start)
 
-
+label2 = customtkinter.CTkLabel(window, text="hello")
+label2.pack()
 
 window.mainloop()

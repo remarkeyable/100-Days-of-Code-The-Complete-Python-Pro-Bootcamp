@@ -47,6 +47,8 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2> 🏞️ Portfolio Projects </h2>
 
+✔️ [Day 85 - Typing Speed Test ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2085)
+
 ✔️ [Day 84 - Image Watermarking Desktop app ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2084)
 
 ✔️ [Day 83 - Tic Tac Toe ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2083)

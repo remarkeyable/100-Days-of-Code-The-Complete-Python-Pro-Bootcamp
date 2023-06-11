@@ -36,10 +36,7 @@ def ExitOrPlay():
         screen.bye()
     else:
         score.lives += 1
-        for i in range(42):
-            if i == 6:
-                blocks.turts[i].color('#472183')
-
+        blocks.restart()
 
 on = True
 while on:

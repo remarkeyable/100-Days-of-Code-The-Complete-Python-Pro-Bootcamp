@@ -4,7 +4,9 @@ from turtle import Turtle
 class Blocks():
     def __init__(self):
         super().__init__()
+        #clear self turts
         self.turts = []
+        self.turts_restart = []
         self.positions = []
         self.produce_blocks()
 
@@ -17,6 +19,7 @@ class Blocks():
             x += 115
             self.turtle = Turtle()
             self.turts.append(self.turtle)
+            self.turts_restart.append(self.turtle)
             self.turtle.shape("square")
             self.turtle.shapesize(1, 5.4)
             self.turtle.penup()
@@ -49,3 +52,19 @@ class Blocks():
                 x = -454
                 y = 195
                 y -= 5
+
+    def restart(self):
+        count = 46
+        for i in self.turts:
+            count -= 1
+            print(count)
+            if count < 6:
+                i.color("#feb144")
+            elif count < 13:
+                i.color("#fdfd97")
+            elif count < 20:
+                i.color("#9ee09e")
+            elif count < 27:
+                i.color("#9ec1cf")
+            elif count < 34:
+                i.color("#cc99c9")

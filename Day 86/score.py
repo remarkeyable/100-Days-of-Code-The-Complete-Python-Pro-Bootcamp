@@ -12,8 +12,8 @@ class Score(Turtle):
         self.g_over.penup()
         self.g_over.hideturtle()
         self.g_over.color('#526D82')
-        self.score = 0
-        self.lives = 6
+        self.scoree = 0
+        self.lives = 3
         self.penup()
         self.color('#526D82')
         self.goto(180, 360)
@@ -22,7 +22,7 @@ class Score(Turtle):
 
     def the_score(self):
         self.text_score.goto(315, 360)
-        self.text_score.write(f"SCORE: {self.score}", align="center", font=("Courier", 15, "bold"))
+        self.text_score.write(f"SCORE: {self.scoree}", align="center", font=("Courier", 15, "bold"))
 
     def clear_lives(self):
         self.clear()
@@ -31,13 +31,4 @@ class Score(Turtle):
 
     def add_score(self):
         self.text_score.clear()
-        self.lives -= 1
-        self.text_score.write(f"SCORE: {self.score}", align="center", font=("Courier", 15, "bold"))
-
-    def game_over(self):
-        self.goto(0, 0)
-        self.g_over.write("GAME OVER !", align="center", font=("Courier", 15, "bold"))
-
-
-    def clear_the_game(self):
-        pass
+        self.text_score.write(f"SCORE: {self.scoree}", align="center", font=("Courier", 15, "bold"))

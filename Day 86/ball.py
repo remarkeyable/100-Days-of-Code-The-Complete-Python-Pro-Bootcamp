@@ -10,12 +10,10 @@ class Ball(Turtle):
         self.shapesize(1, 1)
         self.color("#8294C4")
         self.penup()
-        self.x = 15
-        self.y = 15
-        self.ball_speed = 0.1
+        self.x = 10
+        self.y = 10
+        self.ball_speed = 0.05
         self.goto(0, -330)
-        self.xx = 10
-        self.yy = 10
 
     def move(self):
         x = self.xcor() + self.x

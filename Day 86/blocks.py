@@ -4,7 +4,6 @@ from turtle import Turtle
 class Blocks():
     def __init__(self):
         super().__init__()
-        #clear self turts
         self.turts = []
         self.turts_restart = []
         self.positions = []
@@ -26,7 +25,7 @@ class Blocks():
             self.turtle.goto(x, y)
             self.turtle.color(f"{color}")
             self.turtle.speed(speed=0)
-            self.positions.append((self.turtle.xcor(),self.turtle.ycor()))
+            self.positions.append((self.turtle.xcor(), self.turtle.ycor()))
             if i == 6:
                 color = "#feb144"
                 x = -454
@@ -54,17 +53,21 @@ class Blocks():
                 y -= 5
 
     def restart(self):
-        count = 46
+        count = 42
+        # Will clear the turtles from turts list
+        self.turts.clear()
+        # Will copy the turtles from turts restart list to turts list
+        self.turts.extend(self.turts_restart)
+        # here we iterate the turts to change their colors into original colors
         for i in self.turts:
             count -= 1
-            print(count)
-            if count < 6:
-                i.color("#feb144")
-            elif count < 13:
-                i.color("#fdfd97")
-            elif count < 20:
-                i.color("#9ee09e")
-            elif count < 27:
-                i.color("#9ec1cf")
-            elif count < 34:
-                i.color("#cc99c9")
+            if count < 7:
+                i.color("#cc99c9")  # VIOLET
+            elif count < 14:
+                i.color("#9ec1cf")  # BLUE
+            elif count < 21:
+                i.color("#9ee09e")  # GREEN
+            elif count < 28:
+                i.color("#fdfd97")  # YELLOW
+            elif count > 42:
+                i.color("#feb144")  # ORANGE

@@ -1,19 +1,26 @@
-from flask import Flask,render_template
-
-from flask_sqlalchemy import SQLAlchemy
-from flask_bootstrap import Bootstrap4
-from flask_wtf import FlaskForm
-
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 
+items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 8', 'Item 9', 'Item 10']
+
+
+ITEMS_PER_PAGE = 4
+
+
 @app.route('/')
-def home():
-    return render_template('index.html')
+def index():
+    page = int(request.args.get('page', 1))  # Get the current page number from the query parameters
+    total_pages = (len(items) + ITEMS_PER_PAGE - 1) // ITEMS_PER_PAGE  # Calculate the total number of pages
+    start_index = (page - 1) * ITEMS_PER_PAGE  # Calculate the starting index for the current page
+    end_index = start_index + ITEMS_PER_PAGE  # Calculate the ending index for the current page
+    current_items = items[start_index:end_index]  # Get the items to display for the current page
+
+    return render_template('index.html', items=current_items, page_nums=range(1, total_pages + 1), current_page=page,
+                           has_prev=(page > 1), has_next=(page < total_pages), prev_page=(page - 1),
+                           next_page=(page + 1))
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-
+    app.run()

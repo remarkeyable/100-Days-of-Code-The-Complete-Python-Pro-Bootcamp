@@ -10,3 +10,15 @@
     color: #27374D;
 
 }
+
+
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.cropped-image {
+  width: 286px;
+  max-width: 100%;
+}

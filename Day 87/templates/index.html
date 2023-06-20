@@ -1,9 +1,7 @@
+{% extends 'base.html' %}
 
-<body style="background-color:#F8F6F4;">
+{% block content %}
 
-<nav class="navbar navbar-light bg-dark">
-    <span class="navbar-brand mb-0 h1 text-white">May Wifi Ba</span>
-</nav>
 <div class="container">
     <div class="holder">
         <div class="row justify-content-center">
@@ -17,7 +15,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">{{ item.name }}</h5>
                                     <p class="card-text">{{item.location}}</p>
-                                    <a class="btn btn-dark" href="#">Go somewhere</a>
+                                    <a class="btn btn-dark" href="{{url_for('details', cafe_id= item.id)}}">View Details</a>
                                 </div>
                             </div>
                         </div>
@@ -69,5 +67,5 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+
+{% endblock %}

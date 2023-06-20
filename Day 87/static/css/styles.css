@@ -6,10 +6,17 @@
 .container{
     padding-top: 2%;
 }
+
 .page-link{
     color: #27374D;
+}
+
+
+.d-flex{
+    padding-top: 2%;
 
 }
+
 
 
 
@@ -21,4 +28,10 @@
 .cropped-image {
   width: 286px;
   max-width: 100%;
+}
+
+
+.card-img-top-dt{
+  height: 500px;
+  object-fit: cover;
 }

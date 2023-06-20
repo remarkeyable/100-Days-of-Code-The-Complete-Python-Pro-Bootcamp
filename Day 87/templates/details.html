@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center">
+    <div class="card" style="width: 50rem;">
+        {% for i in cafe: %}
+        {% if id == i.id %}
+        <img alt="Card image cap" class="card-img-top-dt" src="{{ i.img_url }}">
+        <div class="card-body">
+
+
+            <h5 class="card-title">{{ i.name }}</h5>
+            <a class="card-text" href="{{ i.map_url }}">{{ i.location }}</a>
+        </div>
+
+        <ul class="list-group list-group-flush">
+
+            {% if i.has_sockets == True %}
+            <li class="list-group-item">🔌 Sockets</li>
+            {% endif %}
+              {% if i.has_toilet == True %}
+            <li class="list-group-item">🚽 Toilet</li>
+            {% endif %}
+            {% if i.has_wifi == True %}
+            <li class="list-group-item">🌐 Wifi</li>
+            {% endif %}
+            {% if i.can_take_calls == True %}
+            <li class="list-group-item">☎ Calls</li>
+                 {% endif %}
+            <li class="list-group-item">🪑 {{ i.seats }} Seats</li>
+            <li class="list-group-item">💲 Coffee Price starts at {{ i.coffee_price }}</li>
+        </ul>
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-dark">Update</button>
+                    <button type="button" class="btn btn-outline-dark">Add Cafe</button>
+
+                </div>
+    </div>
+</div>
+
+
+{% endif %}
+{% endfor %}
+{% endblock %}

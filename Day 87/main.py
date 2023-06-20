@@ -45,5 +45,13 @@ def index():
                            next_page=(page + 1))
 
 
+@app.route('/details/<int:cafe_id>')
+def details(cafe_id):
+    cafes = Cafe.query.all()
+    id = cafe_id
+    print(id)
+    return render_template('details.html', cafe=cafes, id=id)
+
+
 if __name__ == '__main__':
     app.run(debug=True)

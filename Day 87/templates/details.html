@@ -18,6 +18,8 @@
 
             {% if i.has_sockets == True %}
             <li class="list-group-item">🔌 Sockets</li>
+            {% else %}
+             <li class="list-group-item">🔌 No Sockets Available</li>
             {% endif %}
               {% if i.has_toilet == True %}
             <li class="list-group-item">🚽 Toilet</li>
@@ -30,11 +32,11 @@
                  {% endif %}
             <li class="list-group-item">🪑 {{ i.seats }} Seats</li>
             <li class="list-group-item">💲 Coffee Price starts at {{ i.coffee_price }}</li>
+
         </ul>
                 <div class="card-body">
-                    <button type="button" class="btn btn-outline-dark">Update</button>
-                    <button type="button" class="btn btn-outline-dark">Add Cafe</button>
-
+                   <a class="btn btn-outline-dark" href="{{url_for('update', cafe_id=i.id)}}">Update</a>
+                        <a class="btn btn-outline-dark" href="{{url_for('add')}}">Add Cafe</a>
                 </div>
     </div>
 </div>

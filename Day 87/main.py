@@ -1,15 +1,14 @@
 from flask import Flask, render_template, redirect, url_for, flash, request
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm import relationship
 from sqlalchemy.sql.functions import current_user
-from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 from functools import wraps
 from flask import abort
-from wtforms.validators import DataRequired, URL, Email
-
 from forms import Loginform, Update, Add
 
+# CONNECT TO DB
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6WlSihBXox7C0sKR6b'
 Bootstrap(app)
@@ -18,8 +17,15 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 app.app_context().push()
 
-items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 8', 'Item 9', 'Item 10']
 ITEMS_PER_PAGE = 6
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return Admin.query.get(int(user_id))
 
 
 class Cafe(db.Model):
@@ -36,14 +42,13 @@ class Cafe(db.Model):
     coffee_price = db.Column(db.Float)
 
 
-# class Admin(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     email = db.Column(db.String(120), unique=True, nullable=False)
-#     password = db.Column(db.String(128), nullable=False)
-#
-#     def __init__(self, email, password):
-#         self.email = email
-#         self.password = generate_password_hash(password)
+class Admin(UserMixin, db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    password = db.Column(db.String(128), nullable=False)
+
+    # def __init__(self, email, password):  #     self.email = email  #     self.password = generate_password_hash(password)
+
 
 db.create_all()
 
@@ -93,18 +98,35 @@ def details(cafe_id):
     return render_template('details.html', cafe=cafes, id=cafe_id)
 
 
-@app.route('/adm_login')
+@app.route('/adm_login', methods=['GET', 'POST'])
 def adm_login():
     form = Loginform()
-    return render_template('login.html', form=form)
+    if form.validate_on_submit():
+        email = form.email.data
+        password = form.password.data
+        user = Admin.query.filter_by(email=email).first()
+        if not user:
+            flash(
+                'Uh-oh, it seems like that email address is as non-existent as a unicorn. Time to dust off your magic and try again!')
+            return redirect(url_for('adm_login'))
+        elif not check_password_hash(user.password, password):
+            flash(
+                'Access denied! Your password must have gone rogue like a spy who forgot the secret code. Better luck next time, Sherlock.')
+            return redirect(url_for('adm_login'))
+        else:
+            login_user(user)
+            print(current_user.id)
+            return redirect(url_for('index'))
+    return render_template('login.html', form=form, current_user=current_user)
 
 
 @app.route('/update/<int:cafe_id>', methods=['GET', 'POST'])
+@admin_only
 def update(cafe_id):
+    cafes = Cafe.query.all()
     cafe = Cafe.query.get(cafe_id)
     edit_form = Update()
     if edit_form.validate_on_submit():
-        print(edit_form.sockets.data)
         cafe.has_sockets = edit_form.sockets.data
         cafe.has_toilet = edit_form.toilets.data
         cafe.has_wifi = edit_form.wifi.data
@@ -113,10 +135,11 @@ def update(cafe_id):
         cafe.coffee_price = edit_form.price.data
         db.session.commit()
         return redirect((url_for('details', cafe_id=cafe_id)))
-    return render_template('edit.html', edit_form=edit_form)
+    return render_template('edit.html', edit_form=edit_form, cafe_id=cafe_id, cafes=cafes)
 
 
 @app.route('/add', methods=['GET', 'POST'])
+@admin_only
 def add():
     add_cafe = Add()
     if add_cafe.validate_on_submit():
@@ -129,6 +152,22 @@ def add():
         db.session.commit()
         return redirect((url_for('index')))
     return render_template('add.html', add_cafe=add_cafe)
+
+
+@app.route('/logout')
+@admin_only
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
+
+
+@app.route('/delete/<cafe_id>')
+@admin_only
+def delete(cafe_id):
+    to_delete = Cafe.query.get(cafe_id)
+    db.session.delete(to_delete)
+    db.session.commit()
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':

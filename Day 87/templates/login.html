@@ -3,7 +3,14 @@
 {% block content %}
 
 <div class="d-flex justify-content-center">
-  <div class="col-sm-6 col-md-1">
+  <div class="col-sm-6 col-md-6">
+          {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+         <p>{{ message }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
 {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "dark"}) }}
 </div>
      </div>

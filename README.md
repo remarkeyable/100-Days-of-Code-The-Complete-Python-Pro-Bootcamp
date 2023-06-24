@@ -74,8 +74,11 @@ I will overcome difficulties & achieve my goals ~</em>
   </tr>
 </table>
 
+
 <h2> 🏞️ Portfolio Projects </h2>
-| Project Title                              | GitHub Repository                                                                                |
+
+
+| Project Title                              | GitHub Repository                                                                                
 |--------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Day 87 - Cafe & Wifi Website               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2087) |
 | Day 86 - Breakout Game                      | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2086) |

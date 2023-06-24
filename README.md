@@ -72,6 +72,17 @@ I will overcome difficulties & achieve my goals ~</em>
       </a>
     </td>
   </tr>
+  <tr>
+    <td align="left"><h4>Version Control and Collaboration</h4></td>
+    <td align="left">
+      <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+        <img src="https://imgtr.ee/images/2023/06/24/dv6Mr.png" alt="Git" width="20" height="20"/>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noreferrer">
+        <img src="https://imgtr.ee/images/2023/06/24/dvVaq.png" alt="GitHub" width="20" height="20"/>
+      </a>
+    </td>
+  </tr>
 </table>
 
 

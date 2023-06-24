@@ -7,42 +7,25 @@ I will overcome difficulties & achieve my goals ~</em>
 // compiling my files here didn't actually cross my mind until day 22 so real time updates actually started at day 22 //
 
 <h1>🦾Technologies and tools </h1>
-<li>Python 3 - the latest version of Python</li>
-<li>PyCharm, Jupyter Notebook, Google Colab</li>
-<li>Python Scripting and Automation</li>
-<li>Python Game Development</li>
-<li>Web Scraping</li>
-<li>Beautiful Soup</li>
-<li>Selenium Web Driver</li>
-<li>Request</li>
-<li>WTForms</li>
-<li>Data Science</li>
-<li>Pandas</li>
-<li>NumPy</li>
-<li>Matplotlib</li>
-<li>Plotly</li>
-<li>Scikit learn</li>
-<li>Seaborn</li>
-<li>Turtle</li>
-<li>Python GUI Desktop App Development</li>
-<li>Tkinter</li>
-<li>Front-End Web Development</li>
-<li>HTML 5</li>
-<li>CSS 3</li>
-<li>Bootstrap 4</li>
-<li>Bash Command Line</li>
-<li>Git, GitHub and Version Control</li>
-<li>Backend Web Development</li>
-<li>Flask</li>
-<li>REST</li>
-<li>APIs</li>
-<li>Databases</li>
-<li>SQL</li>
-<li>SQLite</li>
-<li>PostgreSQL</li>
-<li>Authentication</li>
-<li>Web Design</li>
-<li>Deployment with GitHub Pages, Heroku and GUnicorn</li>
+
+<h3 align="left">IDEs and Editors</h3>
+<p align="left">
+  <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noreferrer">
+    <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/pycharm-icon.svg" alt="PyCharm" width="40" height="40"/>
+  </a>
+  <a href="https://jupyter.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter Notebook" width="40" height="40"/>
+  </a>
+  <a href="https://colab.research.google.com/" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab" width="40" height="40"/>
+  </a>
+</p>
+
+<h3 align="left">Web Development</h3>
+<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </p>
+
+
+
 
 
 <h2> 🏞️ Portfolio Projects </h2>

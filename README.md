@@ -8,52 +8,71 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h1>🦾Technologies and tools </h1>
 
-<h3 align="left">IDEs and Editors</h3>
-<p align="left">
-  <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noreferrer">
-    <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/pycharm-icon.svg" alt="PyCharm" width="40" height="40"/>
-  </a>
-  <a href="https://jupyter.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter Notebook" width="40" height="40"/>
-  </a>
-  <a href="https://colab.research.google.com/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab" width="40" height="40"/>
-  </a>
-</p>
-
-<h3 align="left">Web Development</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </p>
-
-
-<h3 align="left">Python Scripting and Automation</h3>
-<p align="left">
-  <a href="https://www.python.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="Python 3" width="40" height="40"/>
-<a href="https://customtkinter.tomschimansky.com" target="_blank" rel="noreferrer">
-    <img src="https://imgtr.ee/images/2023/06/24/dJBA7.md.png" alt="Python 3" width="40" height="40"/>
-  </a>
-  
-  </a>
-   <a href="https://customtkinter.tomschimansky.com" target="_blank" rel="noreferrer">
-    <img src="https://customtkinter.tomschimansky.com/img/icon.ico" alt="Python 3" width="40" height="40"/>
-  </a>
-  
-</p>
-<h3 align="left">Data Science</h3>
-<p align="left">
-  <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original-wordmark.svg" alt="Pandas" width="40" height="40"/>
-  </a>
-  <a href="https://numpy.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original-wordmark.svg" alt="NumPy" width="40" height="40"/>
-  </a>
-  <a href="https://matplotlib.org/" target="_blank" rel="noreferrer">
-    <img src="https://seeklogo.com/images/M/matplotlib-logo-7676870AC0-seeklogo.com.png" alt="Matplotlib" width="40" height="40"/>
-  </a>
-  <a href="https://plotly.com/" target="_blank" rel="noreferrer">
-    <img src="https://imgtr.ee/images/2023/06/24/dJF6z.png" alt="Plotly" width="40" height="40"/>
-  </a>
-</p>
+<table>
+  <tr>
+    <th align="left">Category</th>
+    <th align="left">Tools</th>
+  </tr>
+  <tr>
+    <td align="left"><h4>IDEs and Editors</h4></td>
+    <td align="left">
+      <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noreferrer">
+        <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/pycharm-icon.svg" alt="PyCharm" width="20" height="20"/>
+      </a>
+      <a href="https://jupyter.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter Notebook" width="20" height="20"/>
+      </a>
+      <a href="https://colab.research.google.com/" target="_blank" rel="noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab" width="20" height="20"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="left"><h4>Web Development</h4></td>
+    <td align="left">
+      <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="20" height="20"/>
+      </a>
+      <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="20" height="20"/>
+      </a>
+      <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="20" height="20"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="left"><h4>Python Scripting and Automation</h4></td>
+    <td align="left">
+      <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="Python 3" width="20" height="20"/>
+      </a>
+      <a href="https://customtkinter.tomschimansky.com" target="_blank" rel="noreferrer">
+        <img src="https://imgtr.ee/images/2023/06/24/dJBA7.md.png" alt="Python 3" width="20" height="20"/>
+      </a>
+      <a href="https://customtkinter.tomschimansky.com" target="_blank" rel="noreferrer">
+        <img src="https://customtkinter.tomschimansky.com/img/icon.ico" alt="Python 3" width="20" height="20"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="left"><h4>Data Science</h4></td>
+    <td align="left">
+      <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original-wordmark.svg" alt="Pandas" width="20" height="20"/>
+      </a>
+      <a href="https://numpy.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original-wordmark.svg" alt="NumPy" width="20" height="20"/>
+      </a>
+      <a href="https://matplotlib.org/" target="_blank" rel="noreferrer">
+        <img src="https://seeklogo.com/images/M/matplotlib-logo-7676870AC0-seeklogo.com.png" alt="Matplotlib" width="20" height="20"/>
+      </a>
+      <a href="https://plotly.com/" target="_blank" rel="noreferrer">
+        <img src="https://imgtr.ee/images/2023/06/24/dJF6z.png" alt="Plotly" width="20" height="20"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 <h2> 🏞️ Portfolio Projects </h2>

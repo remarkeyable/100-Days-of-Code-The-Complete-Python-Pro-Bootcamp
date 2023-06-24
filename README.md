@@ -46,7 +46,8 @@ I will overcome difficulties & achieve my goals ~</em>
 
 
 <h2> 🏞️ Portfolio Projects </h2>
-✔️ [Day 87 - Cafe & Website ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2087)
+
+✔️ [Day 87 - Cafe & Wifi Website ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2087)
 
 ✔️ [Day 86 - Breakout Game ](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2086)
 

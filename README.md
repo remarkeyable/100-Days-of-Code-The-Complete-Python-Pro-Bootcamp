@@ -39,6 +39,9 @@ I will overcome difficulties & achieve my goals ~</em>
       <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="20" height="20"/>
       </a>
+       <a href="https://flask.palletsprojects.com/en/2.3.x/" target="_blank" rel="noreferrer">
+        <img src="https://i.ibb.co/vwXjxQf/pngwing-com-2.png" alt="flask" width="20" height="20"/>
+      </a>
     </td>
   </tr>
   <tr>

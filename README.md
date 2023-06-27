@@ -96,6 +96,20 @@ I will overcome difficulties & achieve my goals ~</em>
     </td>
   </tr>
 
+
+
+  <tr>
+    <td align="left"><h4>Deployment</h4></td>
+    <td align="left">
+      <a href="https://www.heroku.com" target="_blank" rel="noreferrer">
+        <img src="https://seeklogo.com/images/H/heroku-logo-90FDE34A7D-seeklogo.com.png" alt="Heroku" width="20" height="20"/>
+      </a>
+      <a href="https://gunicorn.org" target="_blank" rel="noreferrer">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/gunicorn-logo-png-transparent.png" alt="gunicorn" width="20" height="20"/>
+      </a>
+    </td>
+  </tr>
+
   
 </table>
 

@@ -83,6 +83,20 @@ I will overcome difficulties & achieve my goals ~</em>
       </a>
     </td>
   </tr>
+
+ <tr>
+    <td align="left"><h4>Databases</h4></td>
+    <td align="left">
+      <a href="https://www.sqlite.org/index.html" target="_blank" rel="noreferrer">
+        <img src="https://i.ibb.co/64CRDBL/pngegg.png" alt="SQLite" width="20" height="20"/>
+      </a>
+      <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" width="20" height="20"/>
+      </a>
+    </td>
+  </tr>
+
+  
 </table>
 
 

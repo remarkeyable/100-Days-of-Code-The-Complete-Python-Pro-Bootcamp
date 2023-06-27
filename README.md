@@ -101,7 +101,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌳 Advanced + </h2>
 
-| Project Title                                                         | GitHub Repository                                                                                                 |
+| Topic                                                         | GitHub Repository                                                                                                 |
 |----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Day 80 - Predict House Prices                                         | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2080) |
 | Day 79 - The tragic discovery of handwashing: t-Tests & Distribution | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2079) |
@@ -147,7 +147,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌾 Intermediate +</h2>
 
-| Project Title                                                         | GitHub Repository                                                                                                 |
+|  Topic                                                         | GitHub Repository                                                                                                 |
 |----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Day 58 - Web Foundation Bootstrap                                     | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2058) |
 |                                                                      | <ul><em><li>Grid & Layouts</li><li>Containers</li><li>Z-index & Stacking Order</li><li>Media Query Breakpoints</li><li>Combining Selectors</li></em></li></ul> |
@@ -202,7 +202,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌿 Intermediate</h2>
 
-| Project Title                                                         | GitHub Repository                                                                                                 |
+| Topic                                                         | GitHub Repository                                                                                                 |
 |----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Day 31 - Flashcard app capstone project                               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2031) |
 |                                                                      | <em><ul><li>Error handling & Exceptions</li><li>Try | Except | Raise</li><li>Pandas & Csv</li></ul></em>           |
@@ -242,7 +242,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 <h2>🌱 Beginner</h2>
 
-| Project Title                                                         | GitHub Repository                                                                                                 |
+| Topic                                                         | GitHub Repository                                                                                                 |
 |----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Day 14 - Higher Lower Game Project                                     | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2014) |
 |                                                                      | <em><ul><li>Applied Debugging Techniques</li></ul></em>                                                          |

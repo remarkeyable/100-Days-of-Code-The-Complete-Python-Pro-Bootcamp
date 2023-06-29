@@ -45,7 +45,7 @@ I will overcome difficulties & achieve my goals ~</em>
     </td>
   </tr>
   <tr>
-    <td align="left"><h4>Python Scripting and Automation</h4></td>
+    <td align="left"><h4>Scripting and Automation</h4></td>
     <td align="left">
       <a href="https://www.python.org/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="Python 3" width="20" height="20"/>

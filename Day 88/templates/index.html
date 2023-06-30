@@ -1,0 +1,13 @@
+
+
+<!DOCTYPE html>
+{% import "bootstrap/wtf.html" as wtf %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+</head>
+<body>
+{{ wtf.quick_form(add_task, novalidate=True, button_map={"submit": "dark"}) }}
+</body>
+</html>

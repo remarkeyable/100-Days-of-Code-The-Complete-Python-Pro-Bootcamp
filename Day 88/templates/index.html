@@ -1,13 +1,16 @@
+{% extends 'base.html' %}
 
 
-<!DOCTYPE html>
-{% import "bootstrap/wtf.html" as wtf %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ToDo</title>
-</head>
+{% block content %}
+
+
+
 <body>
-{{ wtf.quick_form(add_task, novalidate=True, button_map={"submit": "dark"}) }}
+
+<h1>Hello</h1>
+
+
 </body>
-</html>
+{% endblock %}
+
+

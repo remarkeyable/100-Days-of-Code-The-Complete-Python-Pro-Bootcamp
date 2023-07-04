@@ -10,27 +10,41 @@ h1{
 
 .form-group  {
   margin-bottom: 15px;
-  font-family: 'Alkatra', cursive;
+  font-size: 20px;
+  font-family: 'Dongle', sans-serif;
+
 }
 
 .btn{
-    font-family: 'Alkatra', cursive;
+   font-family: 'Dongle', sans-serif;
+   font-size: 20px;
 
 }
 
 .d-flex{
 
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     background-color: #ffeddb;
     background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
 -webkit-box-shadow: 12px 18px 37px -15px rgba(92,88,92,0.23);
     width: 35%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     display: inline-block;
+
 
 }
 
 
+.form-check-input{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-check-label{
+    padding-left: 15%;
+    padding-bottom: 5%;
+}

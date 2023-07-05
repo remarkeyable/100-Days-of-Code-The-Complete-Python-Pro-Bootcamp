@@ -3,16 +3,36 @@
 
 {% block content %}
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('input[type="checkbox"]').change(function() {
+    if ($(this).is(':checked')) {
+      $(this).next('label').addClass('crossed-out');
+    } else {
+      $(this).next('label').removeClass('crossed-out');
+    }
+  });
+});
+
+</script>
+
+<style>
+.crossed-out {
+  text-decoration: line-through;
+  color: #999;
+}
+
+</style>
 
 <div class="d-flex justify-content-center">
     <div class="col-sm-6 col-md-6">
-        {% for i in task: %}
+        {% for i in task %}
         <br>
         <input class="form-check-input" id="flexCheckDefault" type="checkbox" value="">
         <label class="form-check-label" for="flexCheckDefault">
             {{ i }}
         </label>
-
         {% endfor %}
         <p></p>
         <p>
@@ -20,18 +40,14 @@
                href="#collapseExample" role="button">
                 Add task
             </a>
+        </p>
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
-
                 {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "secondary","signin":
                 "outline-secondary"}) }}
             </div>
-            </p>
-
-
         </div>
     </div>
+</div>
 
-    {% endblock %}
-
-
+{% endblock %}

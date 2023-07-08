@@ -3,38 +3,76 @@
 
 {% block content %}
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-  $('input[type="checkbox"]').change(function() {
-    if ($(this).is(':checked')) {
-      $(this).next('label').addClass('crossed-out');
-    } else {
-      $(this).next('label').removeClass('crossed-out');
-    }
-  });
-});
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<!--<script>-->
+<!--$(document).ready(function() {-->
+<!--  // Function to save the state of checkboxes in local storage-->
+<!--  function saveCheckboxState() {-->
+<!--    var checkboxState = {};-->
+<!--    $('input[type="checkbox"]').each(function() {-->
+<!--      checkboxState[$(this).attr('id')] = $(this).is(':checked');-->
+<!--    });-->
+<!--    localStorage.setItem('checkboxState', JSON.stringify(checkboxState));-->
+<!--  }-->
 
-</script>
+<!--  // Function to load the state of checkboxes from local storage-->
+<!--  function loadCheckboxState() {-->
+<!--    var checkboxState = localStorage.getItem('checkboxState');-->
+<!--    if (checkboxState) {-->
+<!--      checkboxState = JSON.parse(checkboxState);-->
+<!--      for (var id in checkboxState) {-->
+<!--        $('#' + id).prop('checked', checkboxState[id]);-->
+<!--        if (checkboxState[id]) {-->
+<!--          $('#' + id).next('label').addClass('crossed-out');-->
+<!--        }-->
+<!--      }-->
+<!--    }-->
+<!--  }-->
 
-<style>
-.crossed-out {
-  text-decoration: line-through;
-  color: #999;
-}
 
-</style>
+<!--  loadCheckboxState();-->
+
+<!--  // Save the state of checkboxes when they are changed-->
+<!--  $('input[type="checkbox"]').change(function() {-->
+<!--    if ($(this).is(':checked')) {-->
+<!--      $(this).next('label').addClass('crossed-out');-->
+<!--    } else {-->
+<!--      $(this).next('label').removeClass('crossed-out');-->
+<!--    }-->
+<!--    saveCheckboxState();-->
+<!--  });-->
+<!--});-->
+
+<!--</script>-->
+
+<!--<style>-->
+<!--.crossed-out {-->
+<!--  text-decoration: line-through;-->
+<!--  color: #999;-->
+<!--}-->
+
+<!--</style>-->
 
 <div class="d-flex justify-content-center">
     <div class="col-sm-6 col-md-6">
-        {% for i in task %}
+
         <br>
-        <input class="form-check-input" id="flexCheckDefault" type="checkbox" value="">
-        <label class="form-check-label" for="flexCheckDefault">
-            {{ i }}
-        </label>
+        {% for i in task %}
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                {% if i.done == False %}
+                <li class="list-group-item">{{ i.task }}</li>
+                {% else %}
+                <li class="list-group-item" style="color: #9BA4B5;"><s>{{ i.task }}</s></li>
+                {% endif %}
+            </ul>
+            <div class="card-body">
+                <a class="card-link" href="{{url_for('done', task_id= i.id) }}">Done</a>
+                <a class="card-link" href="#">Delete</a>
+            </div>
+        </div>
         {% endfor %}
-        <p></p>
+
         <p>
             <a aria-controls="collapseExample" aria-expanded="false" class="btn btn-primary" data-toggle="collapse"
                href="#collapseExample" role="button">

@@ -1,4 +1,5 @@
-from flask import Flask, render_template, redirect, url_for, flash, request
+import sqlite3
+from flask import Flask, render_template, redirect, url_for, flash, request,  jsonify
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
@@ -8,6 +9,7 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from functools import wraps
 from flask import abort
 from forms import RegisterForm, LoginForm, Task
+from wtforms import BooleanField
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6WlSihBXox7C0sKR6b'
@@ -20,6 +22,8 @@ app.app_context().push()
 # Authenticate
 login_manager = LoginManager()
 login_manager.init_app(app)
+
+
 
 
 @login_manager.user_loader
@@ -38,7 +42,8 @@ class Users(UserMixin, db.Model):
 class TheTasks(db.Model):
     __tablename__ = "thetasks"
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
+    # user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
+    done = db.Column(db.Boolean, default=False)
     task = db.Column(db.String(500), nullable=False)
 
 
@@ -49,17 +54,29 @@ class TheTasks(db.Model):
 #     user = Users(email=email, password=password)
 #     db.session.add(user)
 #     db.session.commit()
+
 list_of_task = []
 
-@app.route('/', methods=['GET','POST'])
+
+class ModifiedTask(TheTasks):
+    text = BooleanField('New Label')
+
+
+@app.route('/', methods=['GET', 'POST'])
 def index():
     global list_of_task
     form = Task()
+    task = TheTasks.query.all()
+    print(task)
+
     if form.validate_on_submit():
+        new_task = TheTasks(task=form.task.data)
+        db.session.add(new_task)
+        db.session.commit()
+
         list_of_task.append(form.task.data)
         return redirect(url_for('index'))
-
-    return render_template('index.html', form=form, task =list_of_task)
+    return render_template('index.html', form=form, task=task)
 
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -102,6 +119,13 @@ def signin():
         return redirect(url_for('signup'))
 
     return render_template('signin.html', form=form)
+
+@app.route('/done/<int:task_id>')
+def done(task_id):
+    edit_task = TheTasks.query.get(int(task_id))
+    edit_task.done = True
+    db.session.commit()
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':

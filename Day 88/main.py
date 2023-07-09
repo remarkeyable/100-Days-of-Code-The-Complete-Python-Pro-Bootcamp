@@ -127,6 +127,21 @@ def done(task_id):
     db.session.commit()
     return redirect(url_for('index'))
 
+@app.route('/undone/<int:task_id>')
+def undone(task_id):
+    edit_task = TheTasks.query.get(int(task_id))
+    edit_task.done = False
+    db.session.commit()
+    return redirect(url_for('index'))
+
+
+@app.route('/delete/<int:task_id>')
+def delete(task_id):
+    delete_task = TheTasks.query.get(int(task_id))
+    db.session.delete(delete_task)
+    db.session.commit()
+    return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -23,11 +23,24 @@ h1{
 
 
 .card {
+    padding-top: 1%;
     padding-bottom: 2%;
     background-color: #ffeddb;
     background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
     -webkit-box-shadow: 12px 18px 37px -15px rgba(92, 88, 92, 0.23);
-    margin: 5% auto 5%;
+    margin: 1% auto 1%;
+
+}
+
+.jumbotron{
+    font-family: 'Dongle', sans-serif;
+    color: #7D5A50;
+    padding-top: 2%;
+    background-color: #ffeddb;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+    -webkit-box-shadow: 12px 18px 37px -15px rgba(92, 88, 92, 0.23);
+    margin: 25% auto 1%;
+
 
 }
 
@@ -41,4 +54,36 @@ h1{
 .form-check-label{
     padding-left: 15%;
     padding-bottom: 5%;
+
 }
+
+.card-text{
+    font-family: 'Dongle', sans-serif;
+    font-size: 28px;
+    color: #B4846C;
+}
+
+.card-link{
+    color: #402218;
+}
+.sign {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffeddb;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+    -webkit-box-shadow: 12px 18px 37px -15px rgba(92, 88, 92, 0.23);
+    width: 35%;
+    display: block;
+     margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.username{
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0%;
+    color: #321E1E;
+}
+

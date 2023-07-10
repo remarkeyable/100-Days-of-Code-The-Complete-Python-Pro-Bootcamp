@@ -4,41 +4,51 @@
 {% block content %}
 
 <div class="d-flex justify-content-center">
-    <div class="col-sm-6 col-md-4">
-        <br>
+
+    <div class="col-sm-6 col-md-5">
+
+        {% if not current_user.is_authenticated: %}
+
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Taskinator!</h1>
+            <p class="lead">Taskinator is a user-friendly website designed to simplify your task management.</p>
+            <hr class="my-4">
+
+            <p class="lead">
+                <a class="btn btn-outline-secondary btn-sm" href="{{ url_for('signin') }}" role="button">Signin to Get
+                    Started</a>
+            </p>
+        </div>
+        {% else %}
+
+        <div class="card card-body" style="width: 27rem;">
+            <p class="username"><i>@{{ user }}</i></p>
+            {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "outline-secondary"}) }}
+        </div>
         {% for i in task %}
-        <div class="card mx-auto" style="width: 25rem; background-color: rgba(255, 255, 255, 0.5);">
-            <ul class="list-group list-group-flush">
-                {% if i.done == False %}
-                <li class="list-group-item">  {{ i.task }}</li>
-                {% else %}
-                <li class="list-group-item" style="color: #9BA4B5;"><s>{{ i.task }}</s></li>
-                {% endif %}
-            </ul>
+        {% if current == i.user_id %}
+        <div class="card" style="width: 27rem;">
+
             <div class="card-body">
                 {% if i.done == False %}
-                <a class="fa-solid fa-circle-check" href="{{url_for('done', task_id= i.id) }}">Done</a>
+                <p class="card-text">{{ i.task }}</p>
+                <a class="card-link" href="{{url_for('done', task_id= i.id)}}">Done</a>
                 {% else %}
-                <a class="fa-solid fa-circle-check" href="{{url_for('undone', task_id= i.id) }}">Undone</a>
+                <p class="card-text" style="color: #9BA4B5;"><s>{{ i.task }}</s></p>
+                <a class="card-link" href="{{url_for('undone', task_id= i.id)}}">Undone</a>
                 {% endif %}
                 <a class="card-link" href="{{url_for('delete', task_id= i.id)}}">Delete</a>
             </div>
         </div>
+        {% endif %}
         {% endfor %}
 
-        <p>
-            <a aria-controls="collapseExample" aria-expanded="false" class="btn btn-primary" data-toggle="collapse"
-               href="#collapseExample" role="button">
-                Add task
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "secondary","signin":
-                "outline-secondary"}) }}
-            </div>
-        </div>
+
+        {% endif %}
+
+
     </div>
 </div>
+
 
 {% endblock %}

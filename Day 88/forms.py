@@ -1,11 +1,11 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, PasswordField, BooleanField
+from wtforms import StringField, SubmitField, PasswordField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired
 
 
 class Task(FlaskForm):
-    task = StringField('', validators=[DataRequired()])
-    submit = SubmitField('Submit')
+    task =TextAreaField('', validators=[DataRequired()])
+    submit = SubmitField('Add task')
 
 
 class TheTaskss(FlaskForm):

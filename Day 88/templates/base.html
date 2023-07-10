@@ -27,16 +27,21 @@
 
     <!--    FONTS-->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 
     <nav class="navbar navbar-light" style="background-color: #FFEDDB;">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{url_for('index')}}">
             <img alt="" class="d-inline-block align-top" height="30"
                  src="static/images/logo.png" width="30">
             Taskinator
         </a>
+        {% if not current_user.is_authenticated: %}
+        <a class="nav-link text-secondary" href="{{url_for('signin')}}">Login</a>
+        {% else %}
+        <a class="nav-link text-secondary" href="{{url_for('logout')}}">Logout</a>
+        {% endif %}
     </nav>
 
 

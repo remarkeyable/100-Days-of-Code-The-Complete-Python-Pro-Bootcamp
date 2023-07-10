@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template, redirect, url_for, flash, request,  jsonify
+from flask import Flask, render_template, redirect, url_for, flash, request, jsonify
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
@@ -24,8 +24,6 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
-
-
 @login_manager.user_loader
 def load_user(user_id):
     return Users.query.get(int(user_id))
@@ -42,7 +40,7 @@ class Users(UserMixin, db.Model):
 class TheTasks(db.Model):
     __tablename__ = "thetasks"
     id = db.Column(db.Integer, primary_key=True)
-    # user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
+    user_id = db.Column(db.Integer, nullable=False)
     done = db.Column(db.Boolean, default=False)
     task = db.Column(db.String(500), nullable=False)
 
@@ -64,19 +62,25 @@ class ModifiedTask(TheTasks):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    global list_of_task
     form = Task()
+    user = Users()
     task = TheTasks.query.all()
-    print(task)
+    try:
+        current = current_user.id
+        user = current_user.user_name
+    except AttributeError:
+        current = 0
+        user = "null"
 
     if form.validate_on_submit():
-        new_task = TheTasks(task=form.task.data)
+        print(current_user.id)
+        new_task = TheTasks(task=form.task.data, user_id=current)
         db.session.add(new_task)
         db.session.commit()
 
         list_of_task.append(form.task.data)
         return redirect(url_for('index'))
-    return render_template('index.html', form=form, task=task)
+    return render_template('index.html', form=form, task=task, current=current, user=user)
 
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -120,12 +124,14 @@ def signin():
 
     return render_template('signin.html', form=form)
 
+
 @app.route('/done/<int:task_id>')
 def done(task_id):
     edit_task = TheTasks.query.get(int(task_id))
     edit_task.done = True
     db.session.commit()
     return redirect(url_for('index'))
+
 
 @app.route('/undone/<int:task_id>')
 def undone(task_id):
@@ -141,6 +147,12 @@ def delete(task_id):
     db.session.delete(delete_task)
     db.session.commit()
     return redirect(url_for('index'))
+
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('signin'))
 
 
 if __name__ == '__main__':

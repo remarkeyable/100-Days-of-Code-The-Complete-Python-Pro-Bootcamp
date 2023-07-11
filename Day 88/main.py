@@ -56,10 +56,6 @@ class TheTasks(db.Model):
 list_of_task = []
 
 
-class ModifiedTask(TheTasks):
-    text = BooleanField('New Label')
-
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     form = Task()

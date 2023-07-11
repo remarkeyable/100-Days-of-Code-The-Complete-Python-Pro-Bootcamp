@@ -122,6 +122,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 | Project Title                              | GitHub Repository                                                                                
 |--------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Day 88 - Todo List               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2088)
 | Day 87 - Cafe & Wifi Website               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2087) |
 | Day 86 - Breakout Game                      | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2086) |
 | Day 85 - Typing Speed Test                  | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2085) |

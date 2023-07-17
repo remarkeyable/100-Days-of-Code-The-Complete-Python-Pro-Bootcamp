@@ -10,33 +10,34 @@ window.maxsize(width=500, height=500)
 window.title('Disappearing Text')
 
 sec = 0
-
 pause = False
+trigger = False
 
 
 def countdown():
     global sec
-    time.sleep(1)
-    sec = 5
-    time.sleep(1)
-    sec = 4
-    time.sleep(1)
-    sec = 3
-    time.sleep(1)
-    sec = 2
-    time.sleep(1)
-    sec = 1
+    for i in range(5, -1, -1):
+        time.sleep(1)
+        label_timer.configure(text=f"Your text will disappear in {i}")
+        if pause:
+            break
 
 
 def is_typing(event):
-    global pause
+    global pause, trigger
     pause = True
-    window.after_cancel(event)
+    trigger = False
+    print("typing")
 
 
 def is_not_typing(event):
-    window.after(10000, lambda: user_input.delete("1.0", 'end'))
-    window.after(5000, lambda: label_timer.configure(text="Your text will disappear in 1"))
+    global trigger
+    trigger = True
+    j = window.after(10000, lambda: user_input.delete("1.0", 'end'))
+    i = window.after(5000, lambda: print("hello"))
+
+    if trigger is True:
+        window.after_cancel(j)
 
 
 input_var = customtkinter.StringVar()

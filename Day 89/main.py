@@ -1,55 +1,51 @@
 import customtkinter
 import tkinter as tk
 import time
-import keyboard
-from pynput import keyboard
 
 window = customtkinter.CTk()
-window.minsize(width=500, height=500)
-window.maxsize(width=500, height=500)
+window.minsize(width=550, height=550)
+window.maxsize(width=550, height=550)
 window.title('Disappearing Text')
 
 sec = 0
 pause = False
-trigger = False
+after_id = None
 
 
 def countdown():
-    global sec
+    global sec, after_id
     for i in range(5, -1, -1):
-        time.sleep(1)
         label_timer.configure(text=f"Your text will disappear in {i}")
+        window.update()
         if pause:
             break
+        window.after(1000)
+    if not pause:
+        user_input.delete("1.0", 'end')
+    after_id = None
 
 
 def is_typing(event):
-    global pause, trigger
-    pause = True
-    trigger = False
-    print("typing")
+    global pause, after_id
+    label_timer.configure(text=f"Nice, you're typing")
+    if after_id:
+        window.after_cancel(after_id)
 
 
 def is_not_typing(event):
-    global trigger
-    trigger = True
-    j = window.after(10000, lambda: user_input.delete("1.0", 'end'))
-    i = window.after(5000, lambda: print("hello"))
-
-    if trigger is True:
-        window.after_cancel(j)
+    global after_id
+    if after_id:
+        window.after_cancel(after_id)
+    after_id = window.after(5000, countdown)
 
 
 input_var = customtkinter.StringVar()
-user_input = customtkinter.CTkTextbox(window, width=450, height=450, fg_color="#F4EEE0", corner_radius=0,
-                                      font=('Arial', 20), text_color="#454545")
+user_input = customtkinter.CTkTextbox(window, width=500, height=450, fg_color="transparent", corner_radius=0,
+                                      font=('Arial', 18), text_color="#454545", border_width=2)
 user_input.focus_set()
 user_input.place(x=25, y=60)
-label_timer = customtkinter.CTkLabel(window, text="Your text will disappear in")
-label_timer.place(x=0)
-
-# is_typing()
-
+label_timer = customtkinter.CTkLabel(window, text="Start Typing", font=('Arial', 20), text_color="#454545")
+label_timer.place(x=30, y=20)
 
 window.bind("<KeyPress>", is_typing)
 window.bind("<KeyRelease>", is_not_typing)

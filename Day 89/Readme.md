@@ -1,1 +1,1 @@
-<h1>Functionaliy Details</h1>
+<h1>Functionality Details</h1>

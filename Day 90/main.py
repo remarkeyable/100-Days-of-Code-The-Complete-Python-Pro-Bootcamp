@@ -5,6 +5,7 @@ import os, os.path
 from PyPDF2 import PdfReader
 
 window = customtkinter.CTk()
+customtkinter.set_appearance_mode("dark")
 window.minsize(width=500, height=500)
 window.maxsize(width=500, height=500)
 
@@ -17,7 +18,6 @@ def open_pdf():
     pdf = filedialog.askopenfile(mode='r', filetypes=[('Pdf Files', '*.pdf')])
 
     if pdf:
-        count = 0
         file = pdf.name
         pdf_path = os.path.abspath(file)
         the_file_path = pdf_path
@@ -25,11 +25,9 @@ def open_pdf():
         read_pdf = PdfReader(the_file_path)
         number_of_pages = len(read_pdf.pages)
         for i in range(number_of_pages):
-            count += 1
             page = read_pdf.pages[i]
             pdf_text += page.extract_text()
-            print(count)
-        print(count)
+
         tts = gTTS(pdf_text, lang='en', tld='com.au')
 
         tts.save('audio.mp3')

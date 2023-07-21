@@ -3,8 +3,6 @@ from tkinter import ttk, filedialog
 from gtts import gTTS
 import os, os.path
 from PyPDF2 import PdfReader
-from io import BytesIO
-from playsound import playsound
 
 window = customtkinter.CTk()
 window.minsize(width=500, height=500)
@@ -19,7 +17,7 @@ def open_pdf():
     pdf = filedialog.askopenfile(mode='r', filetypes=[('Pdf Files', '*.pdf')])
 
     if pdf:
-
+        count = 0
         file = pdf.name
         pdf_path = os.path.abspath(file)
         the_file_path = pdf_path
@@ -27,13 +25,14 @@ def open_pdf():
         read_pdf = PdfReader(the_file_path)
         number_of_pages = len(read_pdf.pages)
         for i in range(number_of_pages):
+            count += 1
             page = read_pdf.pages[i]
             pdf_text += page.extract_text()
+            print(count)
+        print(count)
         tts = gTTS(pdf_text, lang='en', tld='com.au')
 
         tts.save('audio.mp3')
-
-        # tts = gTTS(pdf_text, lang='en', tld='com.au')
 
 
 def play_audio():
@@ -45,8 +44,5 @@ get_pdf.place(x=175, y=200)
 
 play_pdf = customtkinter.CTkButton(window, text="Play Audio", command=play_audio, width=150, height=50)
 play_pdf.place(x=175, y=260)
-
-status_label = customtkinter.CTkLabel(window, text='')
-status_label.place(x=175,y=160)
 
 window.mainloop()

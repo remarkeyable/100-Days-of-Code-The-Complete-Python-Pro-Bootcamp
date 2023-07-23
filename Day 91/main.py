@@ -4,8 +4,8 @@ from colorthief import ColorThief
 import matplotlib.pyplot as plt
 from form import UploadImage
 
-get_color = ColorThief('download.jpg')
-ten_colors = get_color.get_palette(color_count=5)
+get_color = ColorThief('static/download.jpg')
+ten_colors = get_color.get_palette(color_count=2)
 # plt.imshow([[ten_colors[i] for i in range(9)]])
 
 
@@ -15,9 +15,10 @@ for i in ten_colors:
 
 app = Flask(__name__)
 Bootstrap(app)
+app.config['SECRET_KEY'] = '8BYkEfBA6O6WlSihBXox7C0sKR6b'
 
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def home():
     form = UploadImage()
     return render_template('index.html', form=form)

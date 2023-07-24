@@ -1,0 +1,73 @@
+body{
+
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 8%;
+  margin-bottom: 8%;
+
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.cropped-image {
+  width: 286px;
+  max-width: 100%;
+}
+
+
+.card-link{
+    padding-top: 0px;
+}
+
+.d-flex{
+    border-radius: 26px;
+    background: #f5f5f5;
+    box-shadow:  8px 8px 16px #dfdfdf,
+             -8px -8px 16px #ffffff;
+    width: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.AddFile {
+	box-shadow:inset 0px 0px 3px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:14px;
+	padding:10px 54px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.AddFile:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.AddFile:active {
+	position:relative;
+	top:1px;
+}
+
+.form-control-file {
+    display: none;
+  }

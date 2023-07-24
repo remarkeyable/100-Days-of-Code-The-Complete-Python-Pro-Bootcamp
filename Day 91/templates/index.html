@@ -1,17 +1,30 @@
 {% extends 'base.html' %}
 {% block content %}
-
-
+{% for i in color_palette %}
+<body style="background-color: {{i}};">
+{% endfor %}
 <div class="box">
+    <div class="card" style="width: 30rem;">
+        <img alt="Card image cap" class="card-img-top cropped-image" src="static/uploads/{{file_name}}">
+        <div class="card-body">
+            <form action="/upload" enctype="multipart/form-data" method="POST">
+                <div class="form-group">
+                    <input class="form-control-file" id="file" name="file" type="file">
+                    <label class="AddFile" for="file">Choose a File</label>
+                    <button class="btn btn-secondary" type="submit">Upload</button>
 
-    <form enctype="multipart/form-data" method="POST">
-        {{form.hidden_tag()}}
-        {{form.image()}}
-        {{form.submit()}}
-
-    </form>
-
+                </div>
+            </form>
+        </div>
+        {% for i in color_palette %}
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="{{url_for('copy_code', code=i)}}"
+               style="background-color: {{i}};">HEX: {{i}}
+            </a>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 
-
+</body>
 {% endblock %}

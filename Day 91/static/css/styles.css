@@ -5,12 +5,11 @@ body{
 }
 
 .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin-top: 8%;
-  margin-bottom: 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
 }
 

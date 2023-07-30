@@ -18,6 +18,7 @@ class Assets:
         self.run = True
         self.clock = pygame.time.Clock()
 
+
     def ship_movement(self):
         keys_pressed = pygame.key.get_pressed()
         if keys_pressed[pygame.K_LEFT] and self.ship.x > 0:
@@ -35,15 +36,20 @@ class Assets:
         elif keys_pressed[pygame.K_SPACE]:
             bul = self.window.blit(BULLET, (self.bullet.x, self.bullet.y))
             self.fired.append(bul)
-            print(self.fired)
-            self.fire_bullet()
+            # self.fire_bullet()
 
     def update_window(self):
         self.window.fill(BG_COLOR)
-        self.window.blit(SPACE_SHIP, (self.ship.x, self.ship.y))
-        self.window.blit(BULLET, (self.bullet.x, self.bullet.y))
+        # self.window.blit(SPACE_SHIP, (self.ship.x, self.ship.y))
+
         pygame.display.update()
 
     def fire_bullet(self):
-        self.window.blit(BULLET, (self.bullet.x+20, self.bullet.y+25))
+        keys_pressed = pygame.key.get_pressed()
+        if keys_pressed[pygame.K_SPACE]:
+            bul = self.window.blit(BULLET, (self.bullet.x, self.bullet.y))
+            self.fired.append(bul)
+        for i in self.fired:
+            i.x += 5
+
 

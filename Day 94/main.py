@@ -1,5 +1,6 @@
 import pygame
 import os
+import time
 from assets import Assets
 
 FPS = 60
@@ -12,10 +13,11 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 assets.run = False
-
         assets.ship_movement()
         assets.update_window()
-
+        keys_pressed = pygame.key.get_pressed()
+        if keys_pressed[pygame.K_SPACE]:
+            assets.fire_bullet()
     pygame.quit()
 
 

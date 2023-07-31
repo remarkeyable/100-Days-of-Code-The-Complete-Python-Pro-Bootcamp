@@ -14,10 +14,11 @@ class Assets:
         pygame.display.set_caption('Space Invader')
         self.ship = pygame.Rect(295, 500, 60, 60)
         self.bullet = pygame.Rect(self.ship.x, self.ship.y, 60, 60)
+
         self.fired = []
         self.run = True
+        self.num = 0
         self.clock = pygame.time.Clock()
-
 
     def ship_movement(self):
         keys_pressed = pygame.key.get_pressed()
@@ -35,21 +36,14 @@ class Assets:
             self.bullet.y += 3
         elif keys_pressed[pygame.K_SPACE]:
             bul = self.window.blit(BULLET, (self.bullet.x, self.bullet.y))
-            self.fired.append(bul)
-            # self.fire_bullet()
+            self.fired.append(bul)  # self.fire_bullet()
 
     def update_window(self):
         self.window.fill(BG_COLOR)
-        # self.window.blit(SPACE_SHIP, (self.ship.x, self.ship.y))
-
+        self.window.blit(SPACE_SHIP, (self.ship.x, self.ship.y))
+        self.fire_bullet()
         pygame.display.update()
 
     def fire_bullet(self):
-        keys_pressed = pygame.key.get_pressed()
-        if keys_pressed[pygame.K_SPACE]:
-            bul = self.window.blit(BULLET, (self.bullet.x, self.bullet.y))
-            self.fired.append(bul)
         for i in self.fired:
-            i.x += 5
-
-
+            self.bullet.y -= 1

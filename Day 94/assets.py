@@ -1,6 +1,8 @@
 import pygame
 import os
 
+import self as self
+
 pygame.font.init()
 
 BG_COLOR = (14, 41, 84)
@@ -24,26 +26,38 @@ class Laser:
     def __init__(self, x, y, image):
         self.x = x
         self.y = y
-        self.lasers = image
-        self.mask = pygame.mask.from_surface(self.lasers)
+        self.image = image
+        self.mask = pygame.mask.from_surface(self.image)
 
     def move(self, vel):
         self.y += vel
 
     def draw(self, window):
-        window.blit(self.lasers, (self.x, self.y))
+        window.blit(self.image, (self.x, self.y))
+
+
+class Aliens:
+    def __init__(self, x, y, image):
+        self.x = x
+        self.y = y
+        self.image = image
+        self.mask = pygame.mask.from_surface(self.image)
+
+    def produce_aliens(self, window):
+        window.blit(self.image, (self.x, self.y))
 
 
 class Assets:
     def __init__(self):
         self.window = pygame.display.set_mode((600, 600))
         pygame.display.set_caption('Space Invader')
-        self.fps = 60
+        self.fps = 20
         self.ship = pygame.Rect(295, 500, 60, 60)
         self.bullet = pygame.Rect(self.ship.x, self.ship.y, 60, 60)
         self.bul = None
         self.action = None
         self.fired = []
+        self.aliens = []
         self.run = True
         self.num = 0
         self.clock = pygame.time.Clock()
@@ -54,17 +68,17 @@ class Assets:
     def ship_movement(self):
         keys_pressed = pygame.key.get_pressed()
         if keys_pressed[pygame.K_LEFT] and self.ship.x > 0:
-            self.ship.x -= 3
-            self.bullet.x -= 3
+            self.ship.x -= 10
+            self.bullet.x -= 10
         elif keys_pressed[pygame.K_RIGHT] and self.ship.x < 550:
-            self.ship.x += 3
-            self.bullet.x += 3
+            self.ship.x += 10
+            self.bullet.x += 10
         elif keys_pressed[pygame.K_UP] and self.ship.y > 0:
-            self.ship.y -= 3
-            self.bullet.y -= 3
+            self.ship.y -= 10
+            self.bullet.y -= 10
         elif keys_pressed[pygame.K_DOWN] and self.ship.y < 550:
-            self.ship.y += 3
-            self.bullet.y += 3
+            self.ship.y += 10
+            self.bullet.y += 10
         elif keys_pressed[pygame.K_a]:
 
             if len(self.fired) == 0:
@@ -75,8 +89,8 @@ class Assets:
 
         self.window.blit(BG, (0, 0))
         self.fire_bullet()
+        self.the_aliens()
         self.window.blit(SPACE_SHIP, (self.ship.x, self.ship.y))
-        self.action = None
 
         lives_text = self.font.render(f"Lives: {self.lives}", True, (255, 255, 255))
         score_text = self.font.render(f"Score: {self.score}", True, (255, 255, 255))
@@ -88,10 +102,16 @@ class Assets:
     def fire_bullet(self):
         for i in self.fired:
             i.draw(self.window)
-            i.y -= 10
+            i.y -= 15
             if i.y < 0:
                 self.fired = []
 
-    def move_lasers(self, vel):
-        for i in self.fired:
-            i.move(vel)
+    def append_aliens(self):
+        eyl = Aliens(25, 15, ALIEN1)
+        for i in range(5):
+            self.aliens.append(eyl)
+
+    def the_aliens(self):
+        for i in self.aliens:
+            i.produce_aliens(self.window)
+            i.y +=1

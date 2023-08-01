@@ -15,10 +15,7 @@ def main():
                 assets.run = False
         assets.ship_movement()
         assets.update_window()
-        keys_pressed = pygame.key.get_pressed()
-        # if keys_pressed[pygame.K_SPACE]:
-        #     assets.fire_bullet()
-
+        keys_pressed = pygame.key.get_pressed()  # if keys_pressed[pygame.K_SPACE]:  #     assets.fire_bullet()
 
     pygame.quit()
 

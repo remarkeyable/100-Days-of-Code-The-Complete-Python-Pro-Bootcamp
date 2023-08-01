@@ -30,8 +30,8 @@ class Laser:
     def move(self, vel):
         self.y += vel
 
-    def draw(self, window, x, y):
-        window.blit(self.lasers, (x, self.y))
+    def draw(self, window):
+        window.blit(self.lasers, (self.x, self.y))
 
 
 class Assets:
@@ -66,9 +66,10 @@ class Assets:
             self.ship.y += 3
             self.bullet.y += 3
         elif keys_pressed[pygame.K_a]:
-            en = Laser(self.bullet.x, self.bullet.y, BULLET)
-            # en.draw(self.window,self.bullet.x,self.bullet.y)
-            self.fired.append(en)
+
+            if len(self.fired) == 0:
+                en = Laser(self.bullet.x, self.bullet.y, BULLET)
+                self.fired.append(en)
 
     def update_window(self):
 
@@ -86,8 +87,10 @@ class Assets:
 
     def fire_bullet(self):
         for i in self.fired:
-            i.draw(self.window, self.bullet.x, self.bullet.y)
+            i.draw(self.window)
             i.y -= 10
+            if i.y < 0:
+                self.fired = []
 
     def move_lasers(self, vel):
         for i in self.fired:

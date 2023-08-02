@@ -1,5 +1,7 @@
 import pygame
 import os
+import time
+import random
 
 import self as self
 
@@ -17,6 +19,9 @@ SHIP = pygame.image.load(os.path.join('Assets', 'spaceship.png'))
 BULLET = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'bullet.png')), 90)
 SPACE_SHIP = pygame.transform.scale(SHIP, (60, 60))
 THE_BUL = []
+
+# RESIZED ALIENS
+ALIEN_1 = pygame.transform.scale(ALIEN1, (35, 35))
 
 # Background
 BG = pygame.image.load(os.path.join('Assets', 'space_bg.png'))
@@ -51,7 +56,7 @@ class Assets:
     def __init__(self):
         self.window = pygame.display.set_mode((600, 600))
         pygame.display.set_caption('Space Invader')
-        self.fps = 20
+        self.fps = 30
         self.ship = pygame.Rect(295, 500, 60, 60)
         self.bullet = pygame.Rect(self.ship.x, self.ship.y, 60, 60)
         self.bul = None
@@ -64,6 +69,7 @@ class Assets:
         self.font = pygame.font.SysFont('comicsans', 15)
         self.score = 0
         self.lives = 5
+        self.trig = False
 
     def ship_movement(self):
         keys_pressed = pygame.key.get_pressed()
@@ -79,11 +85,6 @@ class Assets:
         elif keys_pressed[pygame.K_DOWN] and self.ship.y < 550:
             self.ship.y += 10
             self.bullet.y += 10
-        elif keys_pressed[pygame.K_a]:
-
-            if len(self.fired) == 0:
-                en = Laser(self.bullet.x, self.bullet.y, BULLET)
-                self.fired.append(en)
 
     def update_window(self):
 
@@ -91,7 +92,6 @@ class Assets:
         self.fire_bullet()
         self.the_aliens()
         self.window.blit(SPACE_SHIP, (self.ship.x, self.ship.y))
-
         lives_text = self.font.render(f"Lives: {self.lives}", True, (255, 255, 255))
         score_text = self.font.render(f"Score: {self.score}", True, (255, 255, 255))
         self.window.blit(lives_text, (10, 10))
@@ -100,18 +100,21 @@ class Assets:
         pygame.display.update()
 
     def fire_bullet(self):
+
         for i in self.fired:
             i.draw(self.window)
             i.y -= 15
             if i.y < 0:
-                self.fired = []
+                self.fired.remove(i)
 
     def append_aliens(self):
-        eyl = Aliens(25, 15, ALIEN1)
+        random_position_x = random.randrange(25, 500)
+        random_position_y = random.randrange(-100, -10)
+        eyl = Aliens(random_position_x, random_position_y, ALIEN_1)
         for i in range(5):
             self.aliens.append(eyl)
 
     def the_aliens(self):
         for i in self.aliens:
             i.produce_aliens(self.window)
-            i.y +=1
+            i.y += 1

@@ -21,10 +21,7 @@ def main():
                     en = Laser(assets.bullet.x, assets.bullet.y, BULLET)
                     assets.fired.append(en)
 
-        if len(assets.aliens) == 0:
-            for i in range(5):
-                assets.append_aliens()
-
+        assets.append_aliens()
         assets.ship_movement()
         assets.update_window()
 

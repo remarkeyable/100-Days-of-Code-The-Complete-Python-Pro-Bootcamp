@@ -3,28 +3,22 @@ import os
 import time
 from assets import Assets
 from assets import Laser
-from assets import Aliens
+from assets import TheShip
 
+SHIP = pygame.image.load(os.path.join('Assets', 'spaceship.png'))
 BULLET = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'bullet.png')), 90)
-
+SPACE_SHIP = pygame.transform.scale(SHIP, (60, 60))
+LASER_PATH = "Assets/sounds/laser.wav"
+LASER_SOUND = pygame.mixer.Sound(LASER_PATH)
 assets = Assets()
 
 
 def main():
     while assets.run:
         assets.clock.tick(assets.fps)
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                assets.run = False
-            if event.type == pygame.KEYDOWN:
-                if pygame.key.name(event.key) == "space":
-                    en = Laser(assets.bullet.x, assets.bullet.y, BULLET)
-                    assets.fired.append(en)
-
         assets.append_aliens()
         assets.ship_movement()
         assets.update_window()
-
     pygame.quit()
 
 

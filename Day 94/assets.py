@@ -3,6 +3,7 @@ import os
 
 import random
 
+pygame.init()
 pygame.font.init()
 
 BG_COLOR = (14, 41, 84)
@@ -26,9 +27,17 @@ ALIEN_3 = pygame.transform.scale(ALIEN3, (80, 80))
 # Background
 BG = pygame.image.load(os.path.join('Assets', 'space_bg.png'))
 
+# SOUND FX
+HIT_SHIP_PATH = "Assets/sounds/hit.wav"
+HIT_SHIP_SOUND = pygame.mixer.Sound(HIT_SHIP_PATH)
+LASER_PATH = "Assets/sounds/laser.wav"
+LASER_SOUND = pygame.mixer.Sound(LASER_PATH)
+ALIEN_CRASH_PATH = "Assets/sounds/alien_crash.wav"
+ALIEN_CRASH_SOUND = pygame.mixer.Sound(ALIEN_CRASH_PATH)
 
-class Ship:
-    def __abs__(self, x, y, image):
+
+class TheShip:
+    def __init__(self, x, y, image):
         self.x = x
         self.y = y
         self.image = image
@@ -80,6 +89,7 @@ class Assets:
         self.lives = 5
         self.bullet_mask = pygame.mask.from_surface(BULLET)
         self.bullet_image = self.bullet_mask.to_surface()
+        self.the_shipp = None
 
     def ship_movement(self):
         keys_pressed = pygame.key.get_pressed()
@@ -96,11 +106,20 @@ class Assets:
             self.ship.y += 10
             self.bullet.y += 10
 
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                self.run = False
+            if event.type == pygame.KEYDOWN:
+                if pygame.key.name(event.key) == "space":
+                    LASER_SOUND.play()
+                    en = Laser(self.bullet.x, self.bullet.y, BULLET)
+                    self.fired.append(en)
+
     def update_window(self):
         self.window.blit(BG, (0, 0))
         self.fire_bullet()
         self.the_aliens()
-        self.window.blit(SPACE_SHIP, (self.ship.x, self.ship.y))
+        self.the_ship()
         lives_text = self.font.render(f"Lives: {self.lives}", True, (255, 255, 255))
         score_text = self.font.render(f"Score: {self.score}", True, (255, 255, 255))
         self.window.blit(lives_text, (10, 10))
@@ -125,17 +144,30 @@ class Assets:
         for i in self.aliens:
             i.produce_aliens(self.window)
             i.y += 1
+            if self.detect_collision(i, self.the_ship()):
+                self.lives -= 1
+                HIT_SHIP_SOUND.play()
+                # detect if the ship is on the right side or left side of the alien
+                if self.ship.x >= i.x:
+                    self.ship.x += 50
+                    self.bullet.x += 50
+                if self.ship.x < i.x:
+                    self.ship.x -= 50
+                    self.bullet.x -= 50
             if i.y > 550:
                 self.aliens.remove(i)
             for j in self.fired:
                 if self.detect_collision(i, j):
+                    ALIEN_CRASH_SOUND.play()
                     self.aliens.remove(i)
-                    self.score += 1  # if self.detect_collision(i,self.ship)
+                    self.score += 1
 
-    def detect_collision(self, alien, bullet):
-        off_set_x = bullet.x - alien.x
-        off_set_y = bullet.y - alien.y
-        return alien.mask.overlap(bullet.mask, (off_set_x, off_set_y)) != None
+    def detect_collision(self, alien, target):
+        off_set_x = target.x - alien.x
+        off_set_y = target.y - alien.y
+        return alien.mask.overlap(target.mask, (off_set_x, off_set_y)) != None
 
     def the_ship(self):
-        ship = Ship(SPACE_SHIP)
+        ship = TheShip(self.ship.x, self.ship.y, SPACE_SHIP)
+        ship.draw_ship(self.window)
+        return ship

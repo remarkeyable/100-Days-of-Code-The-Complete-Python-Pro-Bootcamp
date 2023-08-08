@@ -36,6 +36,31 @@ ALIEN_CRASH_PATH = "Assets/sounds/alien_crash.wav"
 ALIEN_CRASH_SOUND = pygame.mixer.Sound(ALIEN_CRASH_PATH)
 
 
+class Explosion(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        pygame.sprite.Sprite.__init__(self)
+        self.images = []
+        for num in range(1, 10):
+            img = pygame.image.load(f"Assets/explosion/Alien1/{num}.png")
+            img = pygame.transform.rotate(pygame.transform.scale(img, (40, 40)), 90)
+            self.images.append(img)
+        self.index = 0
+        self.image = self.images[self.index]
+        self.rect = self.image.get_rect()
+        self.rect = [x, y]
+        self.counter = 0
+
+    def update(self):
+        speed = 2
+        self.counter += 1
+        if self.counter >= speed and self.index < len(self.images) - 1:
+            self.counter = 0
+            self.index += 1
+            self.image = self.images[self.index]
+        if self.index >= len(self.images) - 1 and self.counter >= speed:
+            self.kill()
+
+
 class TheShip:
     def __init__(self, x, y, image):
         self.x = x
@@ -91,9 +116,13 @@ class Assets:
         self.bullet_image = self.bullet_mask.to_surface()
         self.alien_refresh = 0
         self.alien_count = 4
+        self.explosion_group = pygame.sprite.Group()
 
     def ship_movement(self):
+
+        explosion_group = pygame.sprite.Group()
         keys_pressed = pygame.key.get_pressed()
+
         if keys_pressed[pygame.K_LEFT] and self.ship.x > 0:
             self.ship.x -= 10
             self.bullet.x -= 10
@@ -126,7 +155,8 @@ class Assets:
         self.window.blit(lives_text, (10, 10))
         self.window.blit(score_text, (600 - score_text.get_width() - 10, 10))
         self.alien_shoot_laser()
-
+        self.explosion_group.draw(self.window)
+        self.explosion_group.update()
         pygame.display.update()
 
     def fire_bullet(self):
@@ -137,10 +167,11 @@ class Assets:
                 self.fired.remove(i)
 
     def append_aliens(self):
+        chances = random.randrange(0, 150)
         random_aliens = [ALIEN_1, ALIEN_2, ALIEN_3]
-        if len(self.aliens) == 0:
+        if chances == 22:
             self.alien_count += 1
-            for i in range(self.alien_count):
+            for i in range(0, 1):
                 eyl = Aliens(random.choice(random_aliens), BULLET)
                 self.aliens.append(eyl)
 
@@ -165,13 +196,14 @@ class Assets:
                     ALIEN_CRASH_SOUND.play()
                     self.aliens.remove(i)
                     self.score += 1
-            alien_bullet = None
+                    explosion = Explosion(i.x, i.y)
+                    self.explosion_group.add(explosion)
+
             chances = random.randrange(0, 200)
-            for k in range(1, random.randrange(1, self.alien_count)):
+            for k in range(0, 1):
                 if chances == 22:
-                    alien_bullet = self.alien_shoot(i.x, i.y)
-                    if self.detect_collision(alien_bullet, self.the_ship()):
-                        print("bullet hit")
+                    laser = self.alien_shoot(i.x, i.y)
+                    self.alien_laser.append(laser)
 
     def detect_collision(self, alien, target):
         off_set_x = target.x - alien.x
@@ -185,10 +217,13 @@ class Assets:
 
     def alien_shoot(self, x, y):
         laser = Laser(x, y, BULLET)
-        self.alien_laser.append(laser)
         return laser
 
     def alien_shoot_laser(self):
         for i in self.alien_laser:
             i.draw(self.window)
             i.y += 3
+            if self.detect_collision(i, self.the_ship()):
+                self.alien_laser.remove(i)
+                self.lives -= 1
+                HIT_SHIP_SOUND.play()

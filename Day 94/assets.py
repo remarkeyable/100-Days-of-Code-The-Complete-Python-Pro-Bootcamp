@@ -13,16 +13,16 @@ ALIEN1 = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'alien
 ALIEN2 = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'alien2.png')), 270)
 ALIEN3 = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'alien3.png')), 270)
 
+ALIEN_IMAGES = {"ALIEN_1": pygame.transform.scale(ALIEN1, (50, 50)),
+                "ALIEN_2": pygame.transform.scale(ALIEN2, (50, 50)),
+                "ALIEN_3": pygame.transform.scale(ALIEN3, (50, 50))}
+A_BULLET = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'alien_bullet.png')), 180)
+ALIEN_BULLET = pygame.transform.scale(A_BULLET, (12, 12))
+
 # Ship
 SHIP = pygame.image.load(os.path.join('Assets', 'spaceship.png'))
-BULLET = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'bullet.png')), 90)
 SPACE_SHIP = pygame.transform.scale(SHIP, (60, 60))
-THE_BUL = []
-
-# RESIZED ALIENS
-ALIEN_1 = pygame.transform.scale(ALIEN1, (40, 40))
-ALIEN_2 = pygame.transform.scale(ALIEN2, (60, 60))
-ALIEN_3 = pygame.transform.scale(ALIEN3, (80, 80))
+BULLET = pygame.transform.rotate(pygame.image.load(os.path.join('Assets', 'bullet.png')), 90)
 
 # Background
 BG = pygame.image.load(os.path.join('Assets', 'space_bg.png'))
@@ -37,12 +37,12 @@ ALIEN_CRASH_SOUND = pygame.mixer.Sound(ALIEN_CRASH_PATH)
 
 
 class Explosion(pygame.sprite.Sprite):
-    def __init__(self, x, y):
+    def __init__(self, x, y, alien):
         pygame.sprite.Sprite.__init__(self)
         self.images = []
         for num in range(1, 10):
-            img = pygame.image.load(f"Assets/explosion/Alien1/{num}.png")
-            img = pygame.transform.rotate(pygame.transform.scale(img, (40, 40)), 90)
+            img = pygame.image.load(f"Assets/explosions/{alien}/{num}.png")
+            img = pygame.transform.rotate(pygame.transform.scale(img, (50, 50)), 90)
             self.images.append(img)
         self.index = 0
         self.image = self.images[self.index]
@@ -86,10 +86,11 @@ class Laser:
 
 
 class Aliens:
-    def __init__(self, image, laser_image):
+    def __init__(self):
         self.x = random.randrange(25, 500)
         self.y = random.randrange(-100, -10)
-        self.image = image
+        self.random_alien = random.choice(["ALIEN_1", "ALIEN_2", "ALIEN_3"])
+        self.image = ALIEN_IMAGES[self.random_alien]
         self.mask = pygame.mask.from_surface(self.image)
         self.alien_image = self.mask.to_surface()
 
@@ -110,7 +111,7 @@ class Assets:
         self.run = True
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont('comicsans', 15)
-        self.score = 9
+        self.score = 0
         self.lives = 5
         self.bullet_mask = pygame.mask.from_surface(BULLET)
         self.bullet_image = self.bullet_mask.to_surface()
@@ -119,10 +120,7 @@ class Assets:
         self.explosion_group = pygame.sprite.Group()
 
     def ship_movement(self):
-
-        explosion_group = pygame.sprite.Group()
         keys_pressed = pygame.key.get_pressed()
-
         if keys_pressed[pygame.K_LEFT] and self.ship.x > 0:
             self.ship.x -= 10
             self.bullet.x -= 10
@@ -167,12 +165,10 @@ class Assets:
                 self.fired.remove(i)
 
     def append_aliens(self):
-        chances = random.randrange(0, 150)
-        random_aliens = [ALIEN_1, ALIEN_2, ALIEN_3]
+        chances = random.randrange(0, 100)
         if chances == 22:
-            self.alien_count += 1
             for i in range(0, 1):
-                eyl = Aliens(random.choice(random_aliens), BULLET)
+                eyl = Aliens()
                 self.aliens.append(eyl)
 
     def the_aliens(self):
@@ -196,7 +192,8 @@ class Assets:
                     ALIEN_CRASH_SOUND.play()
                     self.aliens.remove(i)
                     self.score += 1
-                    explosion = Explosion(i.x, i.y)
+                    print(i.random_alien)
+                    explosion = Explosion(i.x, i.y, i.random_alien)
                     self.explosion_group.add(explosion)
 
             chances = random.randrange(0, 200)
@@ -216,7 +213,7 @@ class Assets:
         return ship
 
     def alien_shoot(self, x, y):
-        laser = Laser(x, y, BULLET)
+        laser = Laser(x, y, ALIEN_BULLET)
         return laser
 
     def alien_shoot_laser(self):

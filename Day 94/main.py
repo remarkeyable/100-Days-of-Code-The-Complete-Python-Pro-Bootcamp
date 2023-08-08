@@ -1,7 +1,6 @@
 import pygame
-import os
-import random
 from assets import Assets
+
 
 
 assets = Assets()

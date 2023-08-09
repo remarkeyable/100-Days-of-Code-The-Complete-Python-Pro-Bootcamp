@@ -1,8 +1,6 @@
 import pygame
 from assets import Assets
 
-
-
 assets = Assets()
 
 

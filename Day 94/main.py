@@ -10,7 +10,8 @@ def main():
         assets.append_aliens()
         assets.ship_movement()
         assets.update_window()
-
+        if assets.lives <= 0:
+            assets.restart_game()
     pygame.quit()
 
 

@@ -5,13 +5,12 @@ from explosion import Explosion
 from laser import Laser
 from aliens import Aliens
 from theship import TheShip
-from reset import Reset
 
-reset = Reset()
 pygame.init()
 pygame.font.init()
 BG_COLOR = (14, 41, 84)
-LEVEL = reset.level
+LEVEL = 1
+
 # Aliens
 
 ALIEN1 = pygame.transform.rotate(pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'alien1.png')), 270)
@@ -30,9 +29,12 @@ SPACE_SHIP = pygame.transform.scale(SHIP, (60, 60))
 BULLET = pygame.transform.rotate(pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'bullet.png')), 90)
 
 # Background
-BG = pygame.image.load(os.path.join(f'Assets/level{reset.level}', 'background.png'))
+BG = pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'background.png'))
+START_BG = pygame.transform.scale(pygame.image.load(os.path.join(f'Assets', 'start_bg.jpg')), (600, 600))
 
 # SOUND FX
+OPENING_PATH = "Assets/sounds/opening.mp3"
+OPENING_SOUND = pygame.mixer.Sound(OPENING_PATH)
 BULLET_SHIP_PATH = "Assets/sounds/hitt.wav"
 BULLET_SHIP_SOUND = pygame.mixer.Sound(BULLET_SHIP_PATH)
 LASER_PATH = "Assets/sounds/laser.wav"
@@ -41,6 +43,8 @@ ALIEN_CRASH_PATH = "Assets/sounds/alien_crash2.wav"
 ALIEN_CRASH_SOUND = pygame.mixer.Sound(ALIEN_CRASH_PATH)
 HIT_SHIP_PATH = "Assets/sounds/hit_ship.wav"
 HIT_SHIP_SOUND = pygame.mixer.Sound(HIT_SHIP_PATH)
+GAMEOVER_SHIP_PATH = "Assets/sounds/gameover.wav"
+GAMEOVER_SOUND = pygame.mixer.Sound(GAMEOVER_SHIP_PATH)
 
 
 class Assets:
@@ -56,11 +60,13 @@ class Assets:
         self.run = True
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont('comicsans', 15)
+        self.font_over = pygame.font.SysFont('upheavalttbrk', 30)
         self.bullet_mask = pygame.mask.from_surface(BULLET)
         self.bullet_image = self.bullet_mask.to_surface()
         self.explosion_group = pygame.sprite.Group()
-        self.score = 9
+        self.score = 0
         self.lives = 5
+        self.dead = True
 
     def ship_movement(self):
         keys_pressed = pygame.key.get_pressed()
@@ -88,7 +94,6 @@ class Assets:
 
     def update_window(self):
         self.window.blit(BG, (0, 0))
-        # self.level_up()
         self.alien_shoot_laser()
         self.the_aliens()
         self.the_ship()
@@ -99,6 +104,7 @@ class Assets:
         self.window.blit(score_text, (600 - score_text.get_width() - 10, 10))
         self.explosion_group.draw(self.window)
         self.explosion_group.update()
+
         pygame.display.update()
 
     def fire_bullet(self):
@@ -170,40 +176,19 @@ class Assets:
                 explosion = Explosion(i.x, i.y, "bullet_ship", 40, 40)
                 self.explosion_group.add(explosion)
 
-    #
-    def level_up(self):
-        global LEVEL
-        if self.score == 11:
-            reset.level = 2
-            ALIEN1 = pygame.transform.rotate(pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'alien1.png')), 270)
-            ALIEN2 = pygame.transform.rotate(pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'alien2.png')), 270)
-            ALIEN3 = pygame.transform.rotate(pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'alien3.png')), 270)
-            ALIEN_IMAGES = {"ALIEN_1": pygame.transform.scale(ALIEN1, (50, 50)),
-                            "ALIEN_2": pygame.transform.scale(ALIEN2, (50, 50)),
-                            "ALIEN_3": pygame.transform.scale(ALIEN3, (50, 50))}
+    def game_over(self):
 
-            A_BULLET = pygame.transform.rotate(
-                pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'alien_bullet.png')), 180)
-            ALIEN_BULLET = pygame.transform.scale(A_BULLET, (12, 12))
+        self.window.blit(START_BG, (0, 0))
+        over = self.font_over.render("Awweee,You Lost!", True, (255, 255, 255))
+        tap = self.font.render("Click mouse to start over", True, (255, 255, 255))
 
-            # Ship
-            SHIP = pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'spaceship.png'))
-            SPACE_SHIP = pygame.transform.scale(SHIP, (60, 60))
-            BULLET = pygame.transform.rotate(pygame.image.load(os.path.join(f'Assets/level{LEVEL}', 'bullet.png')), 90)
-
-            # Background
-            BG = pygame.image.load(os.path.join(f'Assets/level{reset.level}', 'background.png'))
-
-            self.aliens = []
-            self.fired = []
-            self.alien_laser = []
-            pygame.display.flip()
-
-        if LEVEL == 2:
-            print("hello")
+        text_width, text_height = over.get_size()
+        x = (600 - text_width) // 2
+        y = (600 - text_height) // 2
+        self.window.blit(over, (x, y))
+        self.window.blit(tap, (x + 45, y + 40))
 
     def restart_game(self):
-        reset.level = 2
         self.ship = pygame.Rect(295, 500, 60, 60)
         self.bullet = pygame.Rect(self.ship.x, self.ship.y, 60, 60)
         self.fired = []
@@ -214,3 +199,14 @@ class Assets:
         self.score = 0
         self.lives = 5
         self.explosion_group.empty()
+
+    def game_start(self):
+        self.window.blit(START_BG, (0, 0))
+        tap = self.font_over.render("Click the mouse to start", True, (255, 255, 255))
+        text_width, text_height = tap.get_size()
+        x = (600 - text_width) // 2
+        y = (600 - text_height) // 2
+        self.window.blit(tap, (x, y))
+
+    def over_sound(self):
+        GAMEOVER_SOUND.play()

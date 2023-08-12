@@ -66,9 +66,11 @@ class Assets:
         self.explosion_group = pygame.sprite.Group()
         self.score = 0
         self.lives = 5
-        self.dead = True
+        self.number_of_aliens = 3
+        self.stop = 200
 
-    def ship_movement(self):
+    def movements(self):
+        # this function will detect the key pressed by the user which contains a corresponding movements on assets
         keys_pressed = pygame.key.get_pressed()
         if keys_pressed[pygame.K_LEFT] and self.ship.x > 0:
             self.ship.x -= 10
@@ -82,7 +84,6 @@ class Assets:
         elif keys_pressed[pygame.K_DOWN] and self.ship.y < 550:
             self.ship.y += 10
             self.bullet.y += 10
-
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.run = False
@@ -94,17 +95,17 @@ class Assets:
 
     def update_window(self):
         self.window.blit(BG, (0, 0))
-        self.alien_shoot_laser()
-        self.the_aliens()
-        self.the_ship()
         self.fire_bullet()
+        self.alien_shoot_laser()
+        self.assets_detection()
+        self.the_ship()
+        self.level_up()
         lives_text = self.font.render(f"Lives: {self.lives}", True, (255, 255, 255))
         score_text = self.font.render(f"Score: {self.score}", True, (255, 255, 255))
         self.window.blit(lives_text, (10, 10))
         self.window.blit(score_text, (600 - score_text.get_width() - 10, 10))
         self.explosion_group.draw(self.window)
         self.explosion_group.update()
-
         pygame.display.update()
 
     def fire_bullet(self):
@@ -121,7 +122,7 @@ class Assets:
                 eyl = Aliens(ALIEN_IMAGES)
                 self.aliens.append(eyl)
 
-    def the_aliens(self):
+    def assets_detection(self):
         for i in self.aliens:
             i.produce_aliens(self.window)
             i.y += 1
@@ -136,22 +137,25 @@ class Assets:
                     self.ship.x -= 50
                     self.bullet.x -= 50
             if i.y > 600:
+                self.lives -= 1
                 self.aliens.remove(i)
             for j in self.fired:
                 if self.detect_collision(i, j):
                     ALIEN_CRASH_SOUND.play()
                     self.aliens.remove(i)
                     self.score += 1
+                    self.number_of_aliens -= 1
                     explosion = Explosion(i.x - 10, i.y, i.random_alien, 65, 65)
                     self.explosion_group.add(explosion)
-
-            chances = random.randrange(0, 200)
+            # Bullets Fired by Aliens
+            chances = random.randrange(0, self.stop)
             for k in range(0, 1):
                 if chances == 22:
-                    laser = self.alien_shoot(i.x + 19, i.y + 12)
+                    laser = self.alien_lasers(i.x + 19, i.y + 12)
                     self.alien_laser.append(laser)
 
     def detect_collision(self, alien, target):
+        # this function will detect collisions on ship, bullets and aliens
         off_set_x = target.x - alien.x
         off_set_y = target.y - alien.y
         return alien.mask.overlap(target.mask, (off_set_x, off_set_y)) != None
@@ -161,7 +165,7 @@ class Assets:
         ship.draw_ship(self.window)
         return ship
 
-    def alien_shoot(self, x, y):
+    def alien_lasers(self, x, y):
         laser = Laser(x, y, ALIEN_BULLET)
         return laser
 
@@ -177,7 +181,6 @@ class Assets:
                 self.explosion_group.add(explosion)
 
     def game_over(self):
-
         self.window.blit(START_BG, (0, 0))
         over = self.font_over.render("Awweee,You Lost!", True, (255, 255, 255))
         tap = self.font.render("Click mouse to start over", True, (255, 255, 255))
@@ -210,3 +213,8 @@ class Assets:
 
     def over_sound(self):
         GAMEOVER_SOUND.play()
+
+    def level_up(self):
+        if self.number_of_aliens == 0:
+            self.stop -= 50
+            self.number_of_aliens = 20

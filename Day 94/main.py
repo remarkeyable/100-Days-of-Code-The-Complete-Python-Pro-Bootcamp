@@ -1,5 +1,6 @@
 import pygame
 from assets import Assets
+
 pygame.init()
 assets = Assets()
 
@@ -8,12 +9,13 @@ def main():
     while assets.run:
         assets.clock.tick(assets.fps)
         assets.append_aliens()
-        assets.ship_movement()
+        assets.movements()
         assets.update_window()
         if assets.lives <= 0:
             assets.restart_game()
             you_lost()
     pygame.quit()
+
 
 def start():
     run = True
@@ -26,6 +28,7 @@ def start():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 main()
     pygame.quit()
+
 
 def you_lost():
     run = True

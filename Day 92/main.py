@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
@@ -8,6 +9,7 @@ import time
 
 LINK = os.environ['LINK']
 FILE_PATH = os.environ['FILE_PATH']
+chrome_driver = "C:\chromedriver_win32"
 
 chrome_options = Options()
 chrome_options.add_experimental_option('detach', True)

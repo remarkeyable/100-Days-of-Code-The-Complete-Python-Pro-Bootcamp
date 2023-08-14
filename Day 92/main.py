@@ -36,11 +36,12 @@ book_title = []
 book_price = []
 book_link = []
 books = []
+count = 0
 the_books = "com_sci_books.csv"
 
 num = 0
 the_limit = None
-
+number_of_pages = None
 
 # def limit():
 #     global the_limit
@@ -54,7 +55,9 @@ the_limit = None
 
 #
 def pressed():
-    global num, the_limit
+    global num, the_limit, count, number_of_pages
+    print(the_limit)
+
     start = driver.find_element(By.XPATH, '//*[@id="top-1"]/div/div/div/header/div[1]/span/nav/span/ul/li/a')
     start.send_keys(Keys.TAB)
     start.send_keys(Keys.END)
@@ -79,35 +82,37 @@ def pressed():
             if "$" in price and "Regular" not in price:
                 book_price.append(price)
 
-    # if the_limit == None:  #     lim = driver.find_element(By.XPATH, '//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[5]/a')  #     the_limit = int(lim.text)  #  # time.sleep(3)  # for i in title:  #     book_title.append(i.text)  #  # for j in prices:  #     a = j.text  #     if "$" in a:  #         book_price.append(a.strip())  #  # for k in links:  #     b = k['href']  #     book_link.append(f"https://www.audible.com{b}")  #  # for l in range(len(book_title)):  #     bk = {'Book': book_title[l], 'Price': book_price[l], 'Link': book_link[l]}  #     books.append(bk)  # page = driver.find_element(By.XPATH,  #                            f'//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[{the_limit}]/span/a')  # page.click()  # num += 1  # the_limit += 1  # if the_limit == 9:  #     the_limit -=1
+        for m in range(len(book_title)):
+            bk = {'Book': book_title[m], 'Price': book_price[m], 'Link': book_link[m]}
+            books.append(bk)
+
+    if the_limit == None:
+        lim = driver.find_element(By.XPATH, '//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[5]/a')
+        the_limit = int(lim.text)-3
+        number_of_pages = int(lim.text)
 
 
-pressed()
+    page = driver.find_element(By.XPATH,f'//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[{the_limit}]/a')
+    page.click()
+    num += 1
+    count +=1
+    if the_limit != number_of_pages:
+        the_limit += 1
+
+
 
 on = True
+
 while on:
-    if num == 2:
-        on = False
     pressed()
+    if num == the_limit -1:
+        on = False
+        print(books)
+        print(count)
+        with open(the_books, mode="w", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow(['Book', 'Price', 'Link'])
+            for book in books:
+                writer.writerow([book['Book'], book['Price'], book['Link']])
 
-for i in title:
-    book_title.append(i.text)
 
-for j in prices:
-    a = j.text
-    if "$" in a:
-        book_price.append(a.strip())
-
-for k in links:
-    b = k['href']
-    book_link.append(f"https://www.audible.com{b}")
-
-for l in range(len(book_title)):
-    bk = {'Book': book_title[l], 'Price': book_price[l], 'Link': book_link[l]}
-    books.append(bk)
-
-with open(the_books, mode="w", newline="") as file:
-    writer = csv.writer(file)
-    writer.writerow(['Book', 'Price', 'Link'])
-    for book in books:
-        writer.writerow([book['Book'], book['Price'], book['Link']])

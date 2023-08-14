@@ -1,21 +1,113 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
-import requests
+from selenium import webdriver
+from selenium.webdriver import Keys
+from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 import os
+import requests
+import csv
 import time
 
-LINK = os.environ['LINK']
-FILE_PATH = os.environ['FILE_PATH']
-chrome_driver = "C:\chromedriver_win32"
+from selenium.webdriver.common.by import By
 
-chrome_options = Options()
-chrome_options.add_experimental_option('detach', True)
-chrome_options.add_argument(rf'--user-data-dir={FILE_PATH}')
-chrome_options.add_argument(r"--profile-directory=Profile 10")
-chrome_options.add_argument('--start-maximized')
-drive = webdriver.Chrome(options=chrome_options)
-drive.get(LINK)
-time.sleep(2)
+LINK = os.environ['LINK']
+
+service = Service(r"C:\chromedriver.exe")
+options = webdriver.ChromeOptions()
+options.add_experimental_option("detach", True)
+driver = webdriver.Chrome(service=service, options=options)
+driver.maximize_window()
+
+driver.get(LINK)
+
+#
+head = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0",
+    "Accept-Language": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", }
+
+request = requests.get(LINK, headers=head)
+# response = request.text
+# soup = BeautifulSoup(response, 'html.parser')
+# title = soup.find_all("h2", class_="bc-heading bc-color-base bc-text-bold")
+# prices = soup.find_all(class_="bc-text bc-size-base bc-color-base")
+# links = soup.find_all(class_="bc-link bc-color-link")
+book_title = []
+book_price = []
+book_link = []
+books = []
+the_books = "com_sci_books.csv"
+
+num = 0
+the_limit = None
+
+
+# def limit():
+#     global the_limit
+#     start = driver.find_element(By.XPATH, '//*[@id="top-1"]/div/div/div/header/div[1]/span/nav/span/ul/li/a')
+#     start.send_keys(Keys.TAB)
+#     start.send_keys(Keys.END)
+#     lim = driver.find_element(By.XPATH, '//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[5]/a')
+#
+#     the_limit = int(lim.text)
+
+
+#
+def pressed():
+    global num, the_limit
+    start = driver.find_element(By.XPATH, '//*[@id="top-1"]/div/div/div/header/div[1]/span/nav/span/ul/li/a')
+    start.send_keys(Keys.TAB)
+    start.send_keys(Keys.END)
+    the_tittle = driver.find_elements(By.ID, 'center-3')
+    for i in the_tittle:
+        bc_item = i.find_elements(By.CLASS_NAME, 'bc-list-item')
+        bc_link = i.find_elements(By.CLASS_NAME, 'bc-link')
+        bc_price = i.find_elements(By.CLASS_NAME, 'bc-text')
+        for j in bc_item:
+            title = j.get_attribute('aria-label')
+            if title == None:
+                pass
+            else:
+                book_title.append(title)
+
+        for k in bc_link:
+            link = k.get_attribute('href')
+            book_link.append(link)
+
+        for l in bc_price:
+            price = l.text
+            if "$" in price and "Regular" not in price:
+                book_price.append(price)
+
+    # if the_limit == None:  #     lim = driver.find_element(By.XPATH, '//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[5]/a')  #     the_limit = int(lim.text)  #  # time.sleep(3)  # for i in title:  #     book_title.append(i.text)  #  # for j in prices:  #     a = j.text  #     if "$" in a:  #         book_price.append(a.strip())  #  # for k in links:  #     b = k['href']  #     book_link.append(f"https://www.audible.com{b}")  #  # for l in range(len(book_title)):  #     bk = {'Book': book_title[l], 'Price': book_price[l], 'Link': book_link[l]}  #     books.append(bk)  # page = driver.find_element(By.XPATH,  #                            f'//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[{the_limit}]/span/a')  # page.click()  # num += 1  # the_limit += 1  # if the_limit == 9:  #     the_limit -=1
+
+
+pressed()
+
+on = True
+while on:
+    if num == 2:
+        on = False
+    pressed()
+
+for i in title:
+    book_title.append(i.text)
+
+for j in prices:
+    a = j.text
+    if "$" in a:
+        book_price.append(a.strip())
+
+for k in links:
+    b = k['href']
+    book_link.append(f"https://www.audible.com{b}")
+
+for l in range(len(book_title)):
+    bk = {'Book': book_title[l], 'Price': book_price[l], 'Link': book_link[l]}
+    books.append(bk)
+
+with open(the_books, mode="w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow(['Book', 'Price', 'Link'])
+    for book in books:
+        writer.writerow([book['Book'], book['Price'], book['Link']])

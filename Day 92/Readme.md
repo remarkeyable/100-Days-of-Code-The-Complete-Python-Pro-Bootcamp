@@ -7,5 +7,6 @@
 <h3>Output of a failed process</h3>
 <img src="img/2.JPG">
 <h3>File</h3>
-<img src="img/3.JPG">
+<a href="https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/blob/main/Day%2092/Science.csv"> CSV FILE </a>
+<img src="img/output.JPG">
 

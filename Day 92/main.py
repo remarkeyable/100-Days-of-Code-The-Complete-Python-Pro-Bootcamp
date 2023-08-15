@@ -1,7 +1,6 @@
 from selenium.webdriver import Keys
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-import os
 import csv
 
 from selenium.webdriver.common.by import By
@@ -33,12 +32,11 @@ def search():
     look.send_keys(Keys.ENTER)
     topic = keyword
     the_books = f"{topic}.csv"
-    print(f"{topic} books is now processing....")
+    print(f"{topic} books are now processing....")
 
 
 def pressed():
     global num, the_limit, count, number_of_pages, books, the_page
-
     start = driver.find_element(By.XPATH, '//*[@id="top-1"]/div/div/div/header/div[1]/span/nav/span/ul/li/a')
     the_tittle = driver.find_elements(By.ID, 'center-3')
     if the_limit - 1 != num:
@@ -79,7 +77,6 @@ def pressed():
         page = driver.find_element(By.XPATH,
                                    f'//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[{the_page}]/a')
         page.click()
-
         num += 1
         if the_page != 6:
             the_page += 1
@@ -98,9 +95,13 @@ def export_csv():
 search()
 on = True
 while on:
-    pressed()
+    try:
+        pressed()
+    except:
+        print(f'No results for "{topic}" in All Categories')
+        on = False
     if num == the_limit - 1:
         pressed()
         export_csv()
-        print("Done! File Exported")
+        print("Done! File Saved")
         on = False

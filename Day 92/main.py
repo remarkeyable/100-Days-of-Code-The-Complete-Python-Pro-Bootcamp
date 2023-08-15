@@ -1,107 +1,90 @@
-from bs4 import BeautifulSoup
-from selenium import webdriver
 from selenium.webdriver import Keys
-from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import os
-import requests
 import csv
-import time
 
 from selenium.webdriver.common.by import By
 
-LINK = os.environ['LINK']
-
 service = Service(r"C:\chromedriver.exe")
 options = webdriver.ChromeOptions()
+options.add_argument("start-maximized")
 options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(service=service, options=options)
-driver.maximize_window()
 
-driver.get(LINK)
-
-#
-head = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0",
-    "Accept-Language": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", }
-
-request = requests.get(LINK, headers=head)
-# response = request.text
-# soup = BeautifulSoup(response, 'html.parser')
-# title = soup.find_all("h2", class_="bc-heading bc-color-base bc-text-bold")
-# prices = soup.find_all(class_="bc-text bc-size-base bc-color-base")
-# links = soup.find_all(class_="bc-link bc-color-link")
+driver.get("https://www.audible.com/search")
+topic = None
+the_books = None
+number_of_pages = None
 book_title = []
 book_price = []
 book_link = []
 books = []
-count = 0
-the_books = "com_sci_books.csv"
-
 num = 0
-the_limit = None
-number_of_pages = None
+the_limit = 2
+the_page = 3
 
 
-# def limit():
-#     global the_limit
-#     start = driver.find_element(By.XPATH, '//*[@id="top-1"]/div/div/div/header/div[1]/span/nav/span/ul/li/a')
-#     start.send_keys(Keys.TAB)
-#     start.send_keys(Keys.END)
-#     lim = driver.find_element(By.XPATH, '//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[5]/a')
-#
-#     the_limit = int(lim.text)
+def search():
+    global topic, the_books
+    keyword = input("Enter topic to find: ").title()
+    look = driver.find_element(By.XPATH, '//*[@id="header-search"]')
+    look.send_keys(keyword)
+    look.send_keys(Keys.ENTER)
+    topic = keyword
+    the_books = f"{topic}.csv"
+    print(f"{topic} books is now processing....")
 
 
-#
 def pressed():
-    global num, the_limit, count, number_of_pages, books
+    global num, the_limit, count, number_of_pages, books, the_page
 
-    try:
-        start = driver.find_element(By.XPATH, '//*[@id="top-1"]/div/div/div/header/div[1]/span/nav/span/ul/li/a')
+    start = driver.find_element(By.XPATH, '//*[@id="top-1"]/div/div/div/header/div[1]/span/nav/span/ul/li/a')
+    the_tittle = driver.find_elements(By.ID, 'center-3')
+    if the_limit - 1 != num:
         start.send_keys(Keys.TAB)
         start.send_keys(Keys.END)
-        the_tittle = driver.find_elements(By.ID, 'center-3')
-        for i in the_tittle:
-            bc_item = i.find_elements(By.CLASS_NAME, 'bc-list-item')
-            bc_link = i.find_elements(By.CLASS_NAME, 'bc-link')
-            bc_price = i.find_elements(By.CLASS_NAME, 'bc-text')
-            for j in bc_item:
-                title = j.get_attribute('aria-label')
-                if title == None:
-                    pass
-                else:
-                    book_title.append(title)
 
-            for k in bc_link:
-                link = k.get_attribute('href')
-                book_link.append(link)
+    for i in the_tittle:
+        bc_item = i.find_elements(By.CLASS_NAME, 'bc-list-item')
+        bc_link = i.find_elements(By.CLASS_NAME, 'bc-link')
+        bc_price = i.find_elements(By.CLASS_NAME, 'bc-text')
+        for j in bc_item:
+            title = j.get_attribute('aria-label')
+            if title == None:
+                pass
+            else:
+                book_title.append(title)
 
-            for l in bc_price:
-                price = l.text
-                if "$" in price and "Regular" not in price:
-                    book_price.append(price)
+        for k in bc_link:
+            link = k.get_attribute('href')
+            book_link.append(link)
 
-            for m in range(len(book_title)):
-                bk = {'Book': book_title[m], 'Price': book_price[m], 'Link': book_link[m]}
-                books.append(bk)
+        for l in bc_price:
+            price = l.text
 
-        if the_limit == None:
-            lim = driver.find_element(By.XPATH,
-                                      '//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[5]/a')
-            the_limit = int(lim.text) - 3
-            number_of_pages = int(lim.text)
+            if "$" in price and "Regular" not in price or "Free with Plus trial" in price:
+                book_price.append(price)
 
+        for m in range(len(book_title)):
+            bk = {'Book': book_title[m], 'Price': book_price[m], 'Link': book_link[m]}
+            books.append(bk)
+
+    if the_limit == 2:
+        lim = driver.find_element(By.XPATH, '//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[5]/a')
+        the_limit = int(lim.text) - 3
+        number_of_pages = int(lim.text)
+
+    if the_limit - 1 != num:
         page = driver.find_element(By.XPATH,
-                                   f'//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[{the_limit}]/a')
+                                   f'//*[@id="pagination-a11y-skiplink-target"]/div/div[2]/div/span/ul/li[{the_page}]/a')
         page.click()
+
         num += 1
-        count += 1
+        if the_page != 6:
+            the_page += 1
         if the_limit != number_of_pages:
             the_limit += 1
-    except:
-        num += 1
 
 
 def export_csv():
@@ -112,11 +95,12 @@ def export_csv():
             writer.writerow([book['Book'], book['Price'], book['Link']])
 
 
+search()
 on = True
-
 while on:
     pressed()
-    print(num, the_limit)
-    if num == the_limit:
-        on = False
+    if num == the_limit - 1:
+        pressed()
         export_csv()
+        print("Done! File Exported")
+        on = False

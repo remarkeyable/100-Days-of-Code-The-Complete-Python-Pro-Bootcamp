@@ -122,6 +122,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 | Project Title                              | GitHub Repository                                                                                
 |--------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Day 92 - Custom Web Scraper               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2092)
 | Day 91 - Image Colour Palette Generator               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2091)
 | Day 90 - Convert PDF to Audiobook               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2090)
 | Day 89 - Disappearing Text Writing App               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2089)

@@ -122,7 +122,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 | Project Title                              | GitHub Repository                                                                                
 |--------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Day 94 - Automate the Google Dinosaur Game              | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2092)
+| Day 94 - Automate the Google Dinosaur Game              | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2093)
 | Day 93 - Custom Web Scraper               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2092)
 | Day 92 - Image Colour Palette Generator               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2091)
 | Day 91 - Convert PDF to Audiobook               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2090)

@@ -122,18 +122,18 @@ I will overcome difficulties & achieve my goals ~</em>
 
 | Project Title                              | GitHub Repository                                                                                
 |--------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Day 92 - Custom Web Scraper               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2092)
-| Day 91 - Image Colour Palette Generator               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2091)
-| Day 90 - Convert PDF to Audiobook               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2090)
-| Day 89 - Disappearing Text Writing App               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2089)
-| Day 88 - Todo List               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2088)
-| Day 87 - Cafe & Wifi Website               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2087) |
-| Day 86 - Breakout Game                      | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2086) |
-| Day 85 - Typing Speed Test                  | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2085) |
-| Day 84 - Image Watermarking Desktop app     | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2084) |
-| Day 83 - Tic Tac Toe                        | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2083) |
-| Day 82 - Portfolio                          | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2082) |
-| Day 81 - Text to Morse Code                 | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2081) |
+| Day 93 - Custom Web Scraper               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2092)
+| Day 92 - Image Colour Palette Generator               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2091)
+| Day 91 - Convert PDF to Audiobook               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2090)
+| Day 90 - Disappearing Text Writing App               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2089)
+| Day 89 - Todo List               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2088)
+| Day 88 - Cafe & Wifi Website               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2087) |
+| Day 87 - Breakout Game                      | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2086) |
+| Day 86 - Typing Speed Test                  | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2085) |
+| Day 85 - Image Watermarking Desktop app     | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2084) |
+| Day 84 - Tic Tac Toe                        | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2083) |
+| Day 83 - Portfolio                          | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2082) |
+| Day 82 - Text to Morse Code                 | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2081) |
 
 <h2>🌳 Advanced + </h2>
 

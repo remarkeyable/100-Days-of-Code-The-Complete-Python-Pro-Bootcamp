@@ -1,7 +1,95 @@
-.form-group  {
-   margin-top: 30%;
-  margin-bottom: 15px;
-  font-size: 20px;
-  font-family: 'Dongle', sans-serif;
+body{
+background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-stripes.png");
 
+
+}
+
+.tiktok {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-stripes.png");
+    color:#313437;
+    padding:20% 0;
+}
+
+
+.tiktok p {
+  color:#e0eaec;
+  line-height:1.5;
+}
+
+.tiktok h2 {
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:25px;
+  line-height:1.5;
+  padding-top:0;
+  margin-top:0;
+  color: #e0eaec;
+}
+
+.tiktok .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 25px;
+}
+
+.tiktok .intro p {
+  margin-bottom:35px;
+}
+
+.tiktok form {
+  justify-content:center;
+}
+
+.tiktok form .form-control {
+  background:#eff1f4;
+  border:none;
+  border-radius:3px;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:9px;
+  height:45px;
+  margin-right:10px;
+  min-width:250px;
+}
+
+.tiktok form .btn {
+  padding:16px 32px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:13px;
+  letter-spacing:0.4px;
+  line-height:1;
+}
+
+.tiktok form .btn:hover {
+  opacity:1;
+}
+
+.tiktok form .btn:active {
+  transform:translateY(1px);
+}
+
+.tiktok form .btn-primary {
+  background-color:#f42b53 !important;
+  color:#fff;
+  outline:none !important;
+}
+
+
+.alert-danger {
+      background-color:#f42b53 !important;
+      color:#e0eaec;
+}
+
+.alert-primary {
+    background-color: #26faf4; !important;
+    color: #040404;
 }

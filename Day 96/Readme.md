@@ -1,4 +1,4 @@
 <h1>Overview</h1>
-<img src="img/1.JPG">
+<img src="img/1.jpg">
 
 

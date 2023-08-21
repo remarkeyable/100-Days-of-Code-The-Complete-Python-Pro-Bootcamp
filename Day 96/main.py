@@ -12,6 +12,7 @@ Bootstrap(app)
 
 ERROR = "success"
 DELETE = False
+KEY = os.environ['MY_KEY]
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -26,7 +27,7 @@ def home():
 
             querystring = {"url": f"{tiktok_link}", "hd": "1"}
 
-            headers = {"X-RapidAPI-Key": "a3fc281e43msh2eaa11b1b32676ep139a38jsn52e35c774548",
+            headers = {"X-RapidAPI-Key": KEY,
                        "X-RapidAPI-Host": "tiktok-video-no-watermark2.p.rapidapi.com"}
 
             response = requests.get(url, headers=headers, params=querystring)

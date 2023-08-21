@@ -84,12 +84,12 @@ background-color: #000000;
 }
 
 
-.alert-danger {
-      background-color:#f42b53 !important;
+.alert-secondary {
+      background-color:#272829 !important;
       color:#e0eaec;
 }
 
-.alert-primary {
-    background-color: #26faf4; !important;
-    color: #040404;
+.alert-danger {
+    background-color: #fc2c54; !important;
+    color: #F9F5F6;
 }

@@ -14,8 +14,16 @@
 <div class="tiktok">
 
     <div class="container">
-
         <div class="intro">
+
+            <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                Iphone users need to download from Safari
+                <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
             {% if error == True%}
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 Oops, we've run into an issue. Please ensure that you enter a valid link.
@@ -23,20 +31,11 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-
-            {% elif error == False %}
-            <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                Download Success!
-                <button aria-label="Close" class="close" data-dismiss="alert" type="button">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-
-            </div>
-
             {% else %}
 
-
             {% endif %}
+
+
             <h2 class="text-center">Download Tiktok video without Watermark</h2>
             <p class="text-center">A part of #100DaysOfCode by Ryn</p>
 

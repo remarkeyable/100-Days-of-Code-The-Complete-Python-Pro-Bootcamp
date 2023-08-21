@@ -17,7 +17,7 @@ I will overcome difficulties & achieve my goals ~</em>
     <td align="left"><h4>IDEs and Editors</h4></td>
     <td align="left">
       <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noreferrer">
-        <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/pycharm-icon.svg" alt="PyCharm" width="20" height="20"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/PyCharm_Icon.svg" alt="PyCharm" width="20" height="20"/>
       </a>
       <a href="https://jupyter.org/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter Notebook" width="20" height="20"/>

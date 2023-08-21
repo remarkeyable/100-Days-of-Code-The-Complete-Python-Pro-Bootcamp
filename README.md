@@ -76,10 +76,10 @@ I will overcome difficulties & achieve my goals ~</em>
     <td align="left"><h4>Version Control and Collaboration</h4></td>
     <td align="left">
       <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-        <img src="https://imgtr.ee/images/2023/06/24/dv6Mr.png" alt="Git" width="20" height="20"/>
+        <img src="https://w7.pngwing.com/pngs/651/927/png-transparent-git-repository-version-control-commit-bitbucket-github-angle-git-repository.png" alt="Git" width="20" height="20"/>
       </a>
       <a href="https://github.com/" target="_blank" rel="noreferrer">
-        <img src="https://imgtr.ee/images/2023/06/24/dvVaq.png" alt="GitHub" width="20" height="20"/>
+        <img src="https://w7.pngwing.com/pngs/588/441/png-transparent-github-git-hub-repository-social-icons-circular-color-icon.png" alt="GitHub" width="20" height="20"/>
       </a>
     </td>
   </tr>

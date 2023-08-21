@@ -68,7 +68,7 @@ I will overcome difficulties & achieve my goals ~</em>
         <img src="https://seeklogo.com/images/M/matplotlib-logo-7676870AC0-seeklogo.com.png" alt="Matplotlib" width="20" height="20"/>
       </a>
       <a href="https://plotly.com/" target="_blank" rel="noreferrer">
-        <img src="https://imgtr.ee/images/2023/06/24/dJF6z.png" alt="Plotly" width="20" height="20"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Plotly_logo_for_digital_final_%286%29.png" alt="Plotly" width="20" height="20"/>
       </a>
     </td>
   </tr>

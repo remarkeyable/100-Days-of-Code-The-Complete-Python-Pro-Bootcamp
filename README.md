@@ -122,6 +122,7 @@ I will overcome difficulties & achieve my goals ~</em>
 
 | Project Title                              | GitHub Repository                                                                                
 |--------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Day 96 - Custom API Based Website              | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2096)
 | Day 95 - Space Invaders              | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2094)
 | Day 94 - Automate the Google Dinosaur Game              | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2093)
 | Day 93 - Custom Web Scraper               | [GitHub Link](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/tree/main/Day%2092)

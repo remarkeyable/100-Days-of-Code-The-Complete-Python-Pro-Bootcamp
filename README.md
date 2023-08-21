@@ -51,9 +51,6 @@ I will overcome difficulties & achieve my goals ~</em>
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" alt="Python 3" width="20" height="20"/>
       </a>
       <a href="https://customtkinter.tomschimansky.com" target="_blank" rel="noreferrer">
-        <img src="https://imgtr.ee/images/2023/06/24/dJBA7.md.png" alt="Python 3" width="20" height="20"/>
-      </a>
-      <a href="https://customtkinter.tomschimansky.com" target="_blank" rel="noreferrer">
         <img src="https://customtkinter.tomschimansky.com/img/icon.ico" alt="Python 3" width="20" height="20"/>
       </a>
     </td>

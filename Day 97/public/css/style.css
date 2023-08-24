@@ -8369,3 +8369,10 @@ textarea.form-control {
     padding-left: 10px;
 
 }
+
+img {
+  border-radius: 6px;
+  margin: 10px;
+  width: 54px;
+  height: 57px;
+}

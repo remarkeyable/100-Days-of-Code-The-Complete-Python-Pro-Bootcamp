@@ -1,85 +1,238 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #242d60;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-  'Helvetica Neue', 'Ubuntu', sans-serif;
-  height: 100vh;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-section {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 112px;
-  border-radius: 6px;
-  justify-content: space-between;
-}
-.product {
-  display: flex;
-}
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.154px;
-  color: #242d60;
-  height: 100%;
-  width: 100%;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
-img {
-  border-radius: 6px;
-  margin: 10px;
-  width: 54px;
-  height: 57px;
-}
-h3,
-h5 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.154px;
-  color: #242d60;
-  margin: 0;
-}
-h5 {
-  opacity: 0.5;
-}
-button {
-  height: 36px;
-  background: #e3bfc3;
-  color: #272829;
-  width: 100%;
-  font-size: 14px;
-  border: 0;
-  font-weight: 500;
-  cursor: pointer;
-  letter-spacing: 0.6;
-  border-radius: 0 0 6px 6px;
-  transition: all 0.2s ease;
-  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
-}
-button:hover {
-  opacity: 0.8;
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+    background-color: #f3dbd9;
+background-image: url("https://www.transparenttextures.com/patterns/light-paper-fibers.png");
+
+
+}
+
+.container {
+    position: relative;
+    border-radius: 20px;
+    -webkit-box-shadow: 20px 13px 38px -13px rgba(0,0,0,0.46);
+    -moz-box-shadow: 20px 13px 38px -13px rgba(0,0,0,0.46);
+}
+
+.container .card {
+    position: relative;
+
+    width: 320px;
+
+    height: 450px;
+    background: #fca8b0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#f69da5;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+    content: "Nike";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+
+}
+
+.container .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(-25%);
+    /* bug  */
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 270px;
+}
+
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+}
+
+.container .card:hover .contentBx {
+    height: 210px;
+}
+
+.container .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.container .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: .5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {  /* other bug */
+    background: #B90000;
+}
+
+.container .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+     background: #d89295;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+     background: #1B2FE9;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+     background: #080481;
+
+}
+
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s;
+}
+
+.container .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .7s;
+}
+
+.myButton {
+    margin-top: 15px;
+	box-shadow:inset 0px 1px 10px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:8px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#7a767a;
+	font-family:Arial;
+	font-size:16px;
+	padding:10px 29px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

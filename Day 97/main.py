@@ -36,29 +36,12 @@ def load_user(user_id):
 class Users(UserMixin, db.Model):
     __tablename__ = "users"
     id = db.Column(db.Integer, primary_key=True)
-    user_name = db.Column(db.String(100), unique=True, nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
+    user_name = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(100), nullable=False)
     password = db.Column(db.String(100))
 
 
 # db.create_all()
-
-
-# ADMIN ONLY
-# def user_only(f):
-#     @wraps(f)
-#     def decorated_function(*args, **kwargs):
-#         try:
-#             user_id = current_user.id
-#         except:
-#             user_id = 0
-#         if user_id == 1:
-#             return f(*args, **kwargs)
-#         else:
-#             return abort(403)
-#
-#     return decorated_function
-#
 
 
 @app.route('/checkout', methods=['GET', 'POST'])
@@ -66,15 +49,15 @@ def checkout():
     return render_template('checkout.html')
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/user_login', methods=['GET', 'POST'])
 def user_login():
-    email = request.form.get('email')
+    username = request.form.get('username')
     password = request.form.get('password')
-    print(email)
-    print(password)
+
     if request.method == 'POST':
-        user = Users.query.filter_by(email=email).first()
-        login_user(user)
+        print(username)
+        print(password)
+        user = Users.query.filter_by(user_name=username).first()
         if not user:
             flash(
                 'Uh-oh, it seems like that email address is as non-existent as a unicorn. Time to dust off your magic and try again!')
@@ -105,10 +88,20 @@ def success_registration():
     if request.method == "POST":
         user_name = request.form.get('username')
         email = request.form.get('email')
-        hash_password = generate_password_hash(request.form.get('password'), method='pbkdf2:sha256', salt_length=8)
-        new_user = Users(user_name=user_name, email=email, password=hash_password)
-        db.session.add(new_user)
-        db.session.commit()
+        # check if username or email already exist
+        user = Users.query.filter_by(user_name=user_name).first()
+        the_email = Users.query.filter_by(email=email).first()
+        if not user and not the_email:
+            hash_password = generate_password_hash(request.form.get('password'), method='pbkdf2:sha256', salt_length=8)
+            new_user = Users(user_name=user_name, email=email, password=hash_password)
+            db.session.add(new_user)
+            db.session.commit()
+        elif user:
+            flash('Oopsie doodpsie, looks like someone else already snagged that username!')
+            return redirect(url_for('signup'))
+        elif the_email:
+            flash('Email already in use. Please choose a different email or log in to your account.')
+            return redirect(url_for('signup'))
 
     return redirect(url_for('login'))
 
@@ -124,6 +117,11 @@ def create_checkout_session():
 
     return redirect(checkout_session.url, code=303)
 
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
 
 
 if __name__ == '__main__':

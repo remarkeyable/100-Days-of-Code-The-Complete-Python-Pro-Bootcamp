@@ -3,11 +3,10 @@
 
 <img src="img/1.jpg">
 
-<h4>stripe payment</h4>
+
 <img src="img/2.jpg">
 
 
-<h4>declined payment</h4>
 <img src="img/3.jpg">
 
 

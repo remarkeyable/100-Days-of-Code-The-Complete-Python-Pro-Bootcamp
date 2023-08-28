@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
 
 
-
-
-
-
-
-
 * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.card-pos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,3 +230,4 @@ background-image: url("https://www.transparenttextures.com/patterns/light-paper-
 	position:relative;
 	top:1px;
 }
+

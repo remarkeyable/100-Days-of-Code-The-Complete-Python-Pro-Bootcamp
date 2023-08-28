@@ -1,5 +1,4 @@
 <h1>Overview</h1>
-<h4>checkout product</h4>
 <img src="img/1.jpg">
 
 <h4>stripe payment</h4>

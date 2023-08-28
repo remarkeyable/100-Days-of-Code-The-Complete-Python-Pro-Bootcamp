@@ -1,6 +1,4 @@
 import os
-from functools import wraps
-
 from flask import Flask, render_template, redirect, request, url_for, abort, flash
 from flask_bootstrap import Bootstrap
 import stripe
@@ -15,11 +13,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 app.app_context().push()
 
-# web
 Bootstrap(app)
-PRICE = 'price_1NhlPuGp3t8zciJQV88cgirp'
-API = 'sk_test_51Nhk9xGp3t8zciJQAPM7ip9v4JYgGq5vwpGTeyIoKwNzFGT3rfg2ZJqOYvn4emRyAfXz59KuHIpMH9EjY25sfUjP00Wgc0HvMi'
-YOUR_DOMAIN = 'http://localhost:4242'
+PRICE = os.environ['PRICE']
+API = os.environ['API']
+MY_DOMAIN = 'http://localhost:4242'
 stripe.api_key = API
 
 # Authenticate
@@ -110,8 +107,8 @@ def success_registration():
 def create_checkout_session():
     try:
         checkout_session = stripe.checkout.Session.create(line_items=[{'price': PRICE, 'quantity': 1, }, ],
-                                                          mode='payment', success_url=YOUR_DOMAIN + '/success.html',
-                                                          cancel_url=YOUR_DOMAIN + '/cancel.html', )
+                                                          mode='payment', success_url=MY_DOMAIN + '/success.html',
+                                                          cancel_url=MY_DOMAIN + '/cancel.html', )
     except Exception as e:
         return str(e)
 

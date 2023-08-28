@@ -3,7 +3,7 @@
 
 
 
-<p align="center"> Payment CC sample: 4242424242424242 12/25 123 </p>
+<p align="center"> Payment CC sample:  4242424242424242 12/25 123 </p>
 
 <img src="img/1.jpg">
 

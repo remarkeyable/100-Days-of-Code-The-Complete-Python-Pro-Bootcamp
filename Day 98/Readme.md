@@ -14,6 +14,7 @@ pip install auto-py-to-exe
 ```
 py -m auto_py_to_exe
 ```
+<img src="img/1.jpg">
 
 
 

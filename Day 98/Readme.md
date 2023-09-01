@@ -15,20 +15,5 @@ dasdsa
 </code>
 </pre>
 
-<style>
-.copy-to-clipboard {
-  position: relative;
-}
 
-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-</style>
 

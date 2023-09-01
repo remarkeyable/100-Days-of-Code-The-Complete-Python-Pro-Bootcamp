@@ -1,7 +1,7 @@
 
 
 <h1>Custom Automation</h1>
-<p>Automated a repetitive task. Certain outputs and codes are confidential and  have been intentionally concealed </p>
+<p>Automated a repetitive task. Certain outputs and codes are confidential and  have been intentionally concealed. I used openpyxl & customtkinter to complate this project. </p>
 <p>In this project, I learned how to convert .py files into .exe files using auto_py_to_exe.</i></p>
 
 <h4>Install auto_py_to_exe</h4>

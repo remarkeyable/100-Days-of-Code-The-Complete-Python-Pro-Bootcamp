@@ -79,7 +79,7 @@ I will overcome difficulties & achieve my goals ~</em>
         <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="Git" width="20" height="20"/>
       </a>
       <a href="https://github.com/" target="_blank" rel="noreferrer">
-        <img src="https://w7.pngwing.com/pngs/588/441/png-transparent-github-git-hub-repository-social-icons-circular-color-icon.png" alt="GitHub" width="20" height="20"/>
+        <img src="https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_git-512.png" alt="GitHub" width="20" height="20"/>
       </a>
     </td>
   </tr>

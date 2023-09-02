@@ -1,7 +1,7 @@
 # 100-Days-of-Code-The-Complete-Python-Pro-Bootcamp
 
 
-![Sale and discounts post with shopping bags (Presentation (169)) (Facebook Cover)](https://github.com/remarkeyable/100-Days-of-Code-The-Complete-Python-Pro-Bootcamp/assets/122131469/d719e024-23c9-4f92-bb42-6745e2cf745e)
+<img src="1.jpg">
 
 
 <em>~ Hi! I'm Ryn, I am committed to completing the 100 days of code Python challenge. I hereby pledge to code and practice Python programming for 100 days or more.

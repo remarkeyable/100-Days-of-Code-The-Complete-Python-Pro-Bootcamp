@@ -1,7 +1,7 @@
 # 100-Days-of-Code-The-Complete-Python-Pro-Bootcamp
 
 
-<img src="img/1.jpg">
+<img src="img/2.jpg">
 
 
 <em>~ Hi! I'm Ryn, I am committed to completing the 100 days of code Python challenge. I hereby pledge to code and practice Python programming for 100 days or more.

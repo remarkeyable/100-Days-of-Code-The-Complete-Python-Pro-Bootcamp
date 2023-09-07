@@ -13,7 +13,7 @@ from pytube import YouTube
 
 KEY: Final = os.environ['KEY']
 USERNAME: Final = '@fbyt_downloader_bot'
-FB_TOKEN = os.environ['FB_TOKEN]
+FB_TOKEN = os.environ['FB_TOKEN']
 
 
 def download_yt(link):

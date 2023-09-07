@@ -1,21 +1,20 @@
-import asyncio
-import os
 import time
 
+import pytube
+import requests
+import wget
+from pytube.exceptions import VideoUnavailable, RegexMatchError
+from telegram import Update
+from telegram.error import TimedOut
+from telegram.ext import Application, CommandHandler, filters, MessageHandler, ContextTypes
+from typing import Final
+import re
+import os
 from pytube import YouTube
-import telebot
-from telebot import types
 
-
-# def download_video_from_youtube(link, path):
-#     yt = YouTube(link)
-#     video = yt.streams.get_highest_resolution()
-#
-#     # download the video
-#     video.download(path)
-#
-# # example usage:
-# download_video_from_youtube('https://www.youtube.com/watch?v=5a3IHwaZLMo', r'C:\Users\rsdelmonte_asticom\Day 99')
+KEY: Final = os.environ['KEY']
+USERNAME: Final = '@fbyt_downloader_bot'
+FB_TOKEN = os.environ['FB_TOKEN]
 
 
 def download_yt(link):
@@ -24,47 +23,70 @@ def download_yt(link):
     video = yt.streams.get_highest_resolution()
     video.download(file_path)
     file_name = video.default_filename
-    return file_name
+    the_file = f'{file_path}/{file_name}'
+    return the_file
 
 
-download_yt("https://www.youtube.com/watch?v=0XJJCvpe7as")
-#
-WELCOME = 'Hi'
+def download_fb(link):
+    file_path = os.path.abspath(os.getcwd())
+    url = "https://facebook-reel-and-video-downloader.p.rapidapi.com/app/main.php"
+    querystring = {"url": link}
 
-bot = telebot.TeleBot('6233247353:AAFL2hzx60axoCEUnPbGEEviR_Bf-v6x46U')
+    headers = {"X-RapidAPI-Key": FB_TOKEN ,
+               "X-RapidAPI-Host": "facebook-reel-and-video-downloader.p.rapidapi.com"}
 
+    response = requests.get(url, headers=headers, params=querystring)
 
-@bot.message_handler(commands=['start'])
-def welcome_message(message):
-    mark_up = types.InlineKeyboardMarkup(row_width=2)
-    fb = types.InlineKeyboardButton('Facebook', callback_data='facebook')
-    yt = types.InlineKeyboardButton('Youtube', callback_data='youtube')
-    mark_up.add(fb, yt)
-    bot.send_message(message.chat.id, 'Choose video source', reply_markup=mark_up)
+    video = response.json()['links']['Download High Quality']
 
-
-@bot.callback_query_handler(func=lambda call: True)
-def response(callback, context):
-    if callback.message:
-        if callback.data == 'facebook':
-            bot.send_message(callback.message.chat.id, 'Aight! Please send the link of your facebook video.')
-
-            @bot.message_handler()
-            def get_link(message):
-                chat_id = message.chat.id
-                path = os.path.abspath(os.getcwd())
-                fb_link = message.text
-                bot.reply_to(message, "processing")
-                download_yt(fb_link)
-                # with open(f"{path}/{file_name}") as video_file:
-                #     bot.send_video(chat_id, video_file)
-
-        # if callback.data == 'youtube':
-        #     bot.send_message(callback.message.chat.id, 'Aight! Please send the link of your youtube video.')
-        #
-        #     @bot.message_handler()
-        #     def get_link_yt(message):
-        #         bot.reply_to(message, "processing yt")
+    wget.download(video, 'video.mp4')
+    the_file = f'{file_path}/video.mp4'
+    return the_file
 
 
-bot.infinity_polling()
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        "Hi hooman, send your link but please keep in mind that I'm still a work in 
+        progress and can only handle videos that are 1 to 2 minutes long. Let's make it quick and snappy!")
+
+
+async def message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text
+    link = update.message.text
+    file = None
+    try:
+        file = download_yt(link)
+        await update.message.reply_text(
+            "Your video is currently in the process of downloading. Please hang tight and enjoy a cup of virtual coffee while the magic happens!")
+        time.sleep(5)
+        try:
+            await update.message.reply_video(video=open(file, 'rb'), connect_timeout=30)
+            os.remove(file)
+        except:
+            await update.message.reply_text(
+                "Error occurred, I'm still a bot in the making & can only handle videos up to 1 to 2 minutes long")
+
+    except VideoUnavailable or RegexMatchError:
+        file = download_fb(link)
+        await update.message.reply_text(
+            "Your video is currently in the process of downloading. Please hang tight and enjoy a cup of virtual coffee while the magic happens!")
+        time.sleep(5)
+        try:
+            await update.message.reply_video(video=open(file, 'rb'), connect_timeout=30)
+            os.remove(file)  # finally:  #     await update.message.reply_text("Unknown link")
+        except:
+            await update.message.reply_text(
+                "Error occurred, I'm still a bot in the making & can only handle videos up to 1 to 2 minutes long")
+    finally:
+        try:
+            os.remove(file)
+        except:
+            pass
+
+
+if __name__ == '__main__':
+    app = Application.builder().token(KEY).build()
+    app.add_handler(CommandHandler('start', start))
+    # message
+    app.add_handler(MessageHandler(filters.TEXT, message))
+    app.run_polling(poll_interval=3)

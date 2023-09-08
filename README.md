@@ -2,7 +2,7 @@
 
 <kbd>
 <img src="img/2.jpg">
-</kbd>kbd>
+</kbd>
 
 <em>~ Hi! I'm Ryn, I am committed to completing the 100 days of code Python challenge. I hereby pledge to code and practice Python programming for 100 days or more.
 I will keep myself on track, even though some days I might feel tired or frustrated. I will keep myself accountable, even though I have lots of things to do.

@@ -16,6 +16,7 @@ USERNAME: Final = '@fbyt_downloader_bot'
 FB_TOKEN = os.environ['FB_TOKEN']
 
 
+
 def download_yt(link):
     file_path = os.path.abspath(os.getcwd())
     yt = YouTube(link)
@@ -31,7 +32,7 @@ def download_fb(link):
     url = "https://facebook-reel-and-video-downloader.p.rapidapi.com/app/main.php"
     querystring = {"url": link}
 
-    headers = {"X-RapidAPI-Key": FB_TOKEN ,
+    headers = {"X-RapidAPI-Key": "a3fc281e43msh2eaa11b1b32676ep139a38jsn52e35c774548",
                "X-RapidAPI-Host": "facebook-reel-and-video-downloader.p.rapidapi.com"}
 
     response = requests.get(url, headers=headers, params=querystring)
@@ -45,8 +46,8 @@ def download_fb(link):
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Hi hooman, send your link but please keep in mind that I'm still a work in 
-        progress and can only handle videos that are 1 to 2 minutes long. Let's make it quick and snappy!")
+        "Hi hooman. send your fb or youtube video link, but just so you know, I'm still a bot in the making & can only "
+        "handle videos up to 1 to 2 minutes long. Let's keep it short and snappy!")
 
 
 async def message(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -58,33 +59,30 @@ async def message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(
             "Your video is currently in the process of downloading. Please hang tight and enjoy a cup of virtual coffee while the magic happens!")
         time.sleep(5)
-        try:
-            await update.message.reply_video(video=open(file, 'rb'), connect_timeout=30)
-            os.remove(file)
-        except:
-            await update.message.reply_text(
-                "Error occurred, I'm still a bot in the making & can only handle videos up to 1 to 2 minutes long")
+        await update.message.reply_video(video=open(file, 'rb'))
+        os.remove(file)
 
     except VideoUnavailable or RegexMatchError:
         file = download_fb(link)
         await update.message.reply_text(
             "Your video is currently in the process of downloading. Please hang tight and enjoy a cup of virtual coffee while the magic happens!")
         time.sleep(5)
-        try:
-            await update.message.reply_video(video=open(file, 'rb'), connect_timeout=30)
-            os.remove(file)  # finally:  #     await update.message.reply_text("Unknown link")
-        except:
-            await update.message.reply_text(
-                "Error occurred, I'm still a bot in the making & can only handle videos up to 1 to 2 minutes long")
+        await update.message.reply_video(video=open(file, 'rb'))
+        os.remove(file)
+    except TimedOut:
+        await update.message.reply_text(
+            "Error occurred, I'm still a bot in the making & can only handle videos up to 1 to 2 minutes long")
     finally:
         try:
+            print('finally')
+            print(file)
             os.remove(file)
         except:
             pass
 
 
 if __name__ == '__main__':
-    app = Application.builder().token(KEY).build()
+    app = Application.builder().token(KEY).read_timeout(60).write_timeout(60).build()
     app.add_handler(CommandHandler('start', start))
     # message
     app.add_handler(MessageHandler(filters.TEXT, message))

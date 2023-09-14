@@ -1,5 +1,9 @@
 <h1>Overview</h1>
 
+<li>This project was initially intended to be a data science project, but I decided to shift it to a project that aligns more with my interests, which is a Telegram bot project.</li>
+<li> This bot is capable of generating QR codes for texts, links & WiFi connections. Wifi QR code will automatically connect the users device to WiFi upon scanning.. </li>
+<br>
+
 <a href="https://t.me/the_qrgeneratorbot"> BOT LIVE DEMO </a> 
 <p><em> Necessary libraries & modules :</em> </p>
 

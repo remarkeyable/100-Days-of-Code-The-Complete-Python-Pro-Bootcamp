@@ -1,8 +1,9 @@
 # 100-Days-of-Code-The-Complete-Python-Pro-Bootcamp
-
+<em><h3>Instructor: <a href="https://www.linkedin.com/in/angela-yu1/?originalSubdomain=uk">Dr. Angela Yu </a></h3></em>
 <kbd>
 <img src="img/2.jpg">
 </kbd>
+
 
 <em>~ Hi! I'm Ryn, I am committed to completing the 100 days of code Python challenge. I hereby pledge to code and practice Python programming for 100 days or more.
 I will keep myself on track, even though some days I might feel tired or frustrated. I will keep myself accountable, even though I have lots of things to do.
